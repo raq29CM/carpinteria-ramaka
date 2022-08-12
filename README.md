@@ -1,1 +1,0 @@
-# carpinteria-ramaka
