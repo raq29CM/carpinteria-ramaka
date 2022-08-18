@@ -173,26 +173,37 @@ h1.bannerCarrusel{
 }
 
 /********************************************** CARDS **********************************************/
-.tarjetas{
-    fill: #23666a solid;
+/* ----- 2do APARTADO DEL INICIO ----- */
+.card{
+    border-radius: 10%;
 }
 
-.img-carta{
-    object-fit: cover;
+.card-title-inicio{
+    font-family: 'Open Sans Hebrew Condensed';
+    /* background-color: rgba(95, 158, 160, 0.63); */
+    color: aliceblue;
+    background-color: rgba(94, 109, 109, 0.63);
+    position:absolute ;
+    width: 100%;
+    margin-top: -6rem;
+    margin-left: -1.25rem;
+    margin-right: auto;
+    margin-bottom: 4rem;
 }
 
-h3.bannerCards{
-    background-color: rgba(63, 61, 61, 0.55);
-    color: #fff4e7; 
-    /*  */
-    text-align: center;
-    position: relative;
-    top: -60px;
-    font-family: 'Courier New', Courier, monospace;
+.card-text-inicio{
+    font-family: 'Open Sans Hebrew Condensed';
+    
 }
 
-.imgCarruselCH{
-    height: 70px;
+.img-carta-inicio{
+    height: 8rem;
+    object-fit:cover ;
+}
+
+.btn-cards{
+    color: white;
+    background-color: #814fa7;
 }
 /********************************************** FOOTER **********************************************/
 footer {
@@ -297,4 +308,36 @@ flex-direction: column;
     font-weight: 300;
     font-size: 12px;
     line-height: 14px;
+}
+
+.tituloMisionVision{
+    font-family: 'Josefin Sans';
+    text-align: center;
+    color: #000000;
+    font-size: 3rem;
+}
+
+.textoMisionVision{
+    font-family: 'Josefin Sans';
+    color: #000000;
+    text-align: justify;
+    font-size: 1.5rem;
+}
+#valor{
+    font-family: 'Josefin Sans';
+    text-align: center;
+    padding: .5em;
+    width: 1000px;
+    display: inline-block;
+    
+}
+.porqueElegirnos{
+    background-image: url(https://t3.ftcdn.net/jpg/02/98/62/46/360_F_298624693_ME6Vstt4mgB1ICNBtaZPTxIIj13HQ0hd.jpg);
+    opacity: 110%;
+    font-family: 'Josefin Sans';
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    /* font-weight: 100; */
+    
 }
