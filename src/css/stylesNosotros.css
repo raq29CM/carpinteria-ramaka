@@ -181,13 +181,15 @@ h1.bannerCarrusel{
     font-family: 'Open Sans Hebrew Condensed';
     /* background-color: rgba(95, 158, 160, 0.63); */
     color: aliceblue;
-    background-color: rgba(94, 109, 109, 0.63);
+    background-color: #CDA271;
     position:absolute ;
     width: 100%;
     margin-top: -6rem;
     margin-left: -1.25rem;
     margin-right: auto;
     margin-bottom: 4rem;
+    text-align: center;
+    opacity: 70%;
 }
 
 .card-text-inicio{
@@ -341,3 +343,6 @@ flex-direction: column;
     /* font-weight: 100; */
     
 }
+/* #galeriaH2{
+    color: rgb(255, 255, 255);
+} */

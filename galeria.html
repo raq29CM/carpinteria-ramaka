@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Galeria </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/css/stylesNosotros.css">
+</head>
+
+<body >
+
+    <!-- ---------- BARRA DE NAVEGACIÓN ---------- -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #133133;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="src/imagenes/logo_ramaka.jpeg" alt="" width="100%" height="75px"
+                    class="d-inline-block align-text-top"></a>
+
+            <!-- BOTÓN PARA CUANDO SE HACE RESPONSIVA LA PÁGINA -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse ml-auto" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Tienda </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Macetas</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Utencilios</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tips</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nosotros</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Galeria
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Salas</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Cocina</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Recámara</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Comedor</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mi cuenta</a>
+                    </li>
+
+                </ul>
+                
+                <!-- ---------- BARRA DE BÚSQUEDA EN LA PÁGINA ---------- -->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar en la página" aria-label="Search">
+                    <button class="btn" style="border-color: #b9a38a; color: #b9a38a; " type="submit">Buscar</button>
+                </form>
+
+                <!-- ---------- BOTÓN CARRITO ---------- -->
+                <button class="btn carrito" type="submit" style="border-color: #b9a38a">
+                    <i class="bi bi-cart4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#bb9569" class="bi bi-cart4" viewBox="0 0 16 16">
+                            <path
+                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                        </svg>
+                    </i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+   
+
+    <!-- Jonathan -->
+    <!-- Galeria -->
+    <h1 id="valor">GALERIA</h1>
+
+    <!-- Apartado de salas -->
+
+    <div class="productos" id="productos" style="padding-top: 10px;">
+    <!-- <div class="container"> -->
+        <h2 id="galeriaH2">SALAS</h2>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 ">
+                <!-- Sala 1 -->
+                <div class="col mb-3">
+                    
+                    <img src="src/imagenes/galeria/salas/sala0.jpg" class="card-img-top img-carta-inicio" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title-inicio">Sala 1</h4>
+                    </div>
+            </div>
+
+            <!-- Sala 2 -->
+                <div class="col mb-3">
+                    
+                        <img src="src/imagenes/galeria/salas/sala1.jpg" class="card-img-top img-carta-inicio" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title-inicio">Sala 2</h4>
+                        </div>
+                </div>
+
+                <!-- Sala 3 -->
+                <div class="col mb-3">
+                    
+                    <img src="src/imagenes/galeria/salas/sala2.jpg" class="card-img-top img-carta-inicio" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title-inicio">Sala 3</h4>
+                    </div>
+            </div>
+
+                <!-- Sala 4 -->
+            <div class="col mb-3">
+                    
+                <img src="src/imagenes/galeria/salas/sala3.jpg" class="card-img-top img-carta-inicio" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title-inicio">Sala 4</h4>
+                </div>
+            </div>          
+        </div>
+    </div>
+
+    <!-- Comedor -->
+    <div class="productos" id="productos" style="padding-top: 30px;">
+        <!-- <div class="container"> -->
+            <h2 id="galeriaH2">COMEDORES</h2>
+    
+                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 ">
+                    <!-- Comedor 1 -->
+                    <div class="col mb-3">
+                        
+                        <img src="src/imagenes/galeria/comedor/comedor1.JPG" class="card-img-top img-carta-inicio" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title-inicio">Comedor 1</h4>
+                        </div>
+                </div>
+    
+                <!-- Comedor 2 -->
+                    <div class="col mb-3">
+                        
+                            <img src="src/imagenes/galeria/comedor/comedor2.jpg" class="card-img-top img-carta-inicio" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title-inicio">Comedor 2</h4>
+                            </div>
+                    </div>
+    
+                    <!-- Comedor 3 -->
+                    <div class="col mb-3">
+                        
+                        <img src="src/imagenes/galeria/comedor/comedor3.jpg" class="card-img-top img-carta-inicio" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title-inicio">Comedor 3</h4>
+                        </div>
+                </div>
+    
+                    <!-- Comedor 4 -->
+                <div class="col mb-3">
+                        
+                    <img src="src/imagenes/galeria/comedor/comedor4.jpg" class="card-img-top img-carta-inicio" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title-inicio">Comedor 4</h4>
+                    </div>
+                </div>          
+            </div>
+        </div>
+
+
+    <!-- Cocinas -->
+    <div class="productos" id="productos" style="padding-top: 30px;">
+        <!-- <div class="container"> -->
+            <h2 id="galeriaH2">COCINAS</h2>
+    
+                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 ">
+                    <!-- Cocina 1 -->
+                    <div class="col mb-3">
+                        
+                        <img src="src/imagenes/galeria/Cocina/Cocina1.jpeg" class="card-img-top img-carta-inicio" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title-inicio">Cocina 1</h4>
+                        </div>
+                </div>
+    
+                <!-- Cocina 2 -->
+                    <div class="col mb-3">
+                        
+                            <img src="src/imagenes/galeria/Cocina/Cocina2.jpg" class="card-img-top img-carta-inicio" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title-inicio">Cocina 2</h4>
+                            </div>
+                    </div>
+    
+                    <!-- Cocina 3 -->
+                    <div class="col mb-3">
+                        
+                        <img src="src/imagenes/galeria/Cocina/Cocina3.jpeg" class="card-img-top img-carta-inicio" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title-inicio">Cocina 3</h4>
+                        </div>
+                </div>
+    
+                    <!-- Cocina 4 -->
+                <div class="col mb-3">
+                        
+                    <img src="src/imagenes/galeria/Cocina/Cocina4.jpeg" class="card-img-top img-carta-inicio" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title-inicio">Cocina 4</h4>
+                    </div>
+                </div>          
+            </div>
+        </div>
+
+        <!-- Closet  -->
+        <div class="productos" id="productos" style="padding-top: 30px;">
+            <!-- <div class="container"> -->
+                <h2 id="galeriaH2">CLOSETS</h2>
+        
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 ">
+                        <!-- Closet 1 -->
+                        <div class="col mb-3">
+                            
+                            <img src="src/imagenes/galeria/Closet/Closet1.jpg" class="card-img-top img-carta-inicio" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title-inicio">Closet 1</h4>
+                            </div>
+                    </div>
+        
+                    <!-- Closet 2 -->
+                        <div class="col mb-3">
+                            
+                                <img src="src/imagenes/galeria/Closet/Closet2.jpg" class="card-img-top img-carta-inicio" alt="...">
+                                <div class="card-body">
+                                    <h4 class="card-title-inicio">Closet 2</h4>
+                                </div>
+                        </div>
+        
+                        <!-- Closet 3 -->
+                        <div class="col mb-3">
+                            
+                            <img src="src/imagenes/galeria/Closet/Closet3.jpeg" class="card-img-top img-carta-inicio" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title-inicio">Closet 3</h4>
+                            </div>
+                    </div>
+        
+                        <!-- Closet 4 -->
+                    <div class="col mb-3">
+                            
+                        <img src="src/imagenes/galeria/Closet/Closet4.jpg" class="card-img-top img-carta-inicio" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title-inicio">Closet 4</h4>
+                        </div>
+                    </div>          
+                </div>
+            </div>
+    
+    
+
+
+
+    <!-- Footer -->
+    <footer>
+        <img src="/recursos/ramaka_foot 1.png" alt="logo">
+        <div class="iconos-redes-sociales-container">
+        <a href="https://es-la.facebook.com/" class="redes-iconos"></a>
+        <a href= "https://www.instagram.com/" class="redes-iconos"></a>
+        <a href="https://www.whatsapp.com/?lang=es" class="redes-iconos"></a>
+        <a href="tel:600123456" class="redes-iconos"></a>
+    </div>
+    <div class="class"></div>
+    
+    <ul class="pie-de-pagina-container">
+        <li class="item-menu">Politica de privacidad</li>
+        <li class="item-menu">Terminos y condiciones</li>
+        <li class="item-menu">Politica de cookies</li>
+    </ul>
+        <span class="copyright">&copy;2022, Ramaka. Todos los derechos reservados.</span>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>    
+
+</body>
+
+
+</html>
