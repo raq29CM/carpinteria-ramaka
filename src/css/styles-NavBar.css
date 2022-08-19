@@ -11,21 +11,13 @@
     justify-content: right;
 }
 
-.container-fluid ul li a {
+.container ul li a {
     /* color: #bb9569; el primero*/
     /* color: #bda182; */
     /* color: #bda284; */
     color: #b9a38a;
     font-family: 'Josefin Sans';
     font-size: 18px;
-}
-
-a:hover {
-    background-color: #012c2e;
-    /* background-color: #23666A; */
-    border-radius: 10px;
-    transition: 10ms;
-    filter: invert(1);
 }
 
 .btn-nav-pie{
@@ -38,7 +30,7 @@ a:hover {
     /* background-color: #012c2e; verde oscuro */
     /* background-color: #23666A; verde clarito */
     /* background-color: #865f31f5; cafe */
-    transition: 10ms;
+    border-radius: 15%;
     background-color: #012c2e;
     filter: invert(1);
 }
