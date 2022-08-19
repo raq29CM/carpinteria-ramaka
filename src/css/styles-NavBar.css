@@ -33,5 +33,6 @@
     border-radius: 15%;
     background-color: #012c2e;
     filter: invert(1);
+    transition: 0.5s;
 }
 
