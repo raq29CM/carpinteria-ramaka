@@ -1,0 +1,70 @@
+/* --------------- FUENTES PARA LA PÁGINA ---------- */
+@import url(https://fonts.googleapis.com/css?family=Josefin-Sans); /* FUENTE DE LA BARRA DE NAVEGACIÓN Y FOOTER */
+
+/* FUENTE TENTATIVA PARA EL CONTENIDO DE LAS PÁGINAS (MUESTRA EN H1 Y H2) */ 
+@import url(//db.onlinewebfonts.com/c/8141d57bb00c8a8cfb53c332d98c46fa?family=Open+Sans+Hebrew+Condensed);
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+
+
+.collapse{
+    justify-content: right;
+}
+
+.container-fluid ul li a {
+    /* color: #bb9569; el primero*/
+    /* color: #bda182; */
+    /* color: #bda284; */
+    color: #b9a38a;
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+  }
+
+a:hover{
+    background-color: #012c2e;
+    /* background-color: #23666A; */
+    border-radius: 10px;
+    transition: 10ms;
+}
+
+button:hover{
+    background-color: #000000;
+    /* background-color: #012c2e; verde oscuro */
+    /* background-color: #23666A; verde clarito */
+    /* background-color: #865f31f5; cafe */
+    transition: 10ms;
+}
+
+
+h1 {
+position: absolute;
+width: 290px;
+height: 97px;
+left: 493px;
+top: 144px;
+
+font-family: 'Open Sans Hebrew Condensed';
+font-style: normal;
+font-weight: 300;
+font-size: 64px;
+line-height: 87px;
+text-align: center;
+text-transform: uppercase;
+
+color: #000000;
+}
+
+h2 {
+    position: absolute;
+width: 70px;
+height: 52px;
+left: 940px;
+top: 152px;
+
+font-family: 'Tangerine';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 64px;
+
+color: #000000;
+}

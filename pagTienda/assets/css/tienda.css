@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin-Sans); /* FUENTE DE LA BARRA DE NAVEGACIÓN Y FOOTER */
+
+/* FUENTE TENTATIVA PARA EL CONTENIDO DE LAS PÁGINAS */
+@import url(//db.onlinewebfonts.com/c/8141d57bb00c8a8cfb53c332d98c46fa?family=Open+Sans+Hebrew+Condensed);
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+
+/********************************** Tienda **********************************/
+body {
+   
+    background-image: url("../Recursos/Img.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    
+  }
+
+/************ Título *********/
+
+#titulo{
+   
+     background-color: rgb(174, 133, 86,0.4);
+     justify-content: center;
+     font-family: 'Josefin-Sans';
+     height: 60px;
+     font-size: 50px;
+     position: sticky;
+     top: 60px;
+     color: rgb(0, 0, 0);
+     padding-top: 0;
+    
+    
+}
+
+#cesar{
+    padding: 0;
+}
+
+.titulo-1{
+    margin-left: 4rem;
+    
+}
+
+/********* ID de los div padre de las card *********/
+
+#bloque{
+    margin-top: 5rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
+}
+#bloque2{
+    margin-top: 2rem;
+    margin-left: 12rem;
+    margin-right:12rem ;
+    margin-bottom: 3rem;
+   
+}
+
+/*************** Clases de las cards ***********/
+
+.card-title{
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-family: 'Josefin Sans';
+    border-radius: 10px;
+    padding: 10px;
+  
+}
+
+.card-img-top{
+    background-color: #BB9569;
+    height: 300px;
+    width: 200;
+    border: 2px solid #BB9569;
+    object-fit: cover;
+    padding: 10px;
+       
+        
+}
+
+.card-body{
+    border: 2px solid #BB9569;
+    background-color: rgb(187, 149, 105,0.9);
+    
+}
+
+.card-text{
+    background: rgba(255, 255, 255, 0.64);
+    padding: 10px;
+    border-radius: 10px;
+    height: 200px;
+}
+
+  .card:hover{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 6px;
+    padding: 0;
+    -webkit-transform:scale(1.13);transform:scale(1.13);
+    overflow:hidden;
+}
