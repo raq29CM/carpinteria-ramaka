@@ -173,7 +173,6 @@ h1.bannerCarrusel{
 }
 
 /********************************************** CARDS **********************************************/
-/* ----- 2do APARTADO DEL INICIO ----- */
 .card{
     border-radius: 10%;
 }
@@ -310,6 +309,7 @@ flex-direction: column;
     line-height: 14px;
 }
 
+/**************************************** JONA ***********************************************/
 .tituloMisionVision{
     font-family: 'Josefin Sans';
     text-align: center;
