@@ -1,0 +1,45 @@
+/* --------------- FUENTES PARA LA PÁGINA ---------- */
+@import url(https://fonts.googleapis.com/css?family=Josefin-Sans); /* FUENTE DE LA BARRA DE NAVEGACIÓN Y FOOTER */
+
+/* FUENTE TENTATIVA PARA EL CONTENIDO DE LAS PÁGINAS */
+@import url(//db.onlinewebfonts.com/c/8141d57bb00c8a8cfb53c332d98c46fa?family=Open+Sans+Hebrew+Condensed);
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+
+
+/* ------ NAV BAR ----- */
+.collapse {
+    justify-content: right;
+}
+
+.container-fluid ul li a {
+    /* color: #bb9569; el primero*/
+    /* color: #bda182; */
+    /* color: #bda284; */
+    color: #b9a38a;
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+}
+
+a:hover {
+    background-color: #012c2e;
+    /* background-color: #23666A; */
+    border-radius: 10px;
+    transition: 10ms;
+    filter: invert(1);
+}
+
+.btn-nav-pie{
+    border-color: #b9a38a;
+    color: #b9a38a;
+}
+
+.btn-nav-pie:hover {
+    /* background-color: #000000; */
+    /* background-color: #012c2e; verde oscuro */
+    /* background-color: #23666A; verde clarito */
+    /* background-color: #865f31f5; cafe */
+    transition: 10ms;
+    background-color: #012c2e;
+    filter: invert(1);
+}
+
