@@ -20,14 +20,6 @@
     justify-content: right;
 }
 
-/* a:hover {
-    background-color: #012c2e;
-    /* background-color: #23666A; */
-    /*border-radius: 10px;
-    transition: 10ms;
-    filter: invert(1);
-} */
-
 .btn-nav-pie{
     border-color: #b9a38a;
     color: #b9a38a;
@@ -42,6 +34,7 @@
     border-radius: 15%;
     background-color: #012c2e;
     filter: invert(1);
+    transition: 0.5s;
 }
 
 
@@ -136,6 +129,7 @@ h1.bannerCarrusel{
     text-align: justify;
     font-size: 1.5rem;
 }
+
 #valor{
     font-family: 'Josefin Sans';
     text-align: center;
@@ -153,7 +147,6 @@ h1.bannerCarrusel{
     color: rgb(255, 255, 255);
     font-size: 1.5rem;
     /* font-weight: 100; */
-    
 }
 
 
@@ -162,19 +155,6 @@ h1.bannerCarrusel{
 
 
 /* ---------------------------------------- FOOTER ---------------------------------------- */
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Josefin Sans';
-    box-sizing: border-box;
-    transition: 0.5s;
-}
-
-/* .body {
-    height: 100vh;
-    width: 100%;
-    position: relative;
-} */
 
 footer {
     position: static;
@@ -187,13 +167,8 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family: 'Josefin Sans';
 }
-
-/* .logo {
-    height: 100px;
-    margin-bottom: 1rem;
-
-} */
 
 .iconos-redes-sociales-container,
 .pie-de-pagina-container {
@@ -214,7 +189,14 @@ footer {
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 1rem;
+}
 
+
+.redes-iconos:hover {
+    background-color: rgba(19, 49, 51, 1);
+    border-radius: 15%;
+    filter: invert(1);
+    transition: 0.5s;
 }
 
 .redes-iconos:nth-of-type(2) {
@@ -230,18 +212,6 @@ footer {
     background-image: url(../icons/phone.png);
 }
 
-.redes-iconos:hover {
-    background-color: rgba(19, 49, 51, 1);
-    filter: invert(1);
-}
-
-/* .pie-de-pagina-container {
-    list-style-type: none;
-    /*color: rgba(226, 204, 179, 1);
-    color: #0d0905;
-    font-size: 18px;
-} */
-
 .item-menu {
     margin: 1rem 1.5rem;
     cursor: pointer;
@@ -254,21 +224,6 @@ footer {
 .item.hover {
     opacity: 1;
 }
-
-/* REPETIDO */
-/* .item-menu {
-    margin: 1rem 1.5rem;
-    cursor: pointer;
-    opacity: 0.6;
-    color: rgba(226, 204, 179, 1);
-} */
-
-/* .item {
-    margin: 1rem 1.5rem;
-    cursor: pointer;
-    opacity: 0.6;
-    color: rgba(226, 204, 179, 1);
-} */
 
 .copyright {
     color: rgba(226, 204, 179, 1);
