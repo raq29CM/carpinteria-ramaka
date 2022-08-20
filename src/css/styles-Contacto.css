@@ -26,29 +26,23 @@
     border-radius: 15%;
     background-color: #012c2e;
     filter: invert(1);
+    transition: 0.5s;
 }
 
 
 /* ---------------------------------------- CONTACTO ---------------------------------------- */
-.formulario{
-    background-color: #CCC874;
-    margin-right: 10rem;
+.contacto{
+    font-family: 'Open Sans Hebrew Condensed';
+    font-size: large;
 }
 
+.formulario-contacto{
+    background-color: rgb(243, 221, 224);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.img-contact{
+    border-radius: 50%;
+}
 
 
 /* ---------------------------------------- FOOTER ---------------------------------------- */
@@ -86,7 +80,6 @@ footer {
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 1rem;
-
 }
 
 .redes-iconos:nth-of-type(2) {
@@ -103,8 +96,10 @@ footer {
 }
 
 .redes-iconos:hover {
+    border-radius: 15%;
     background-color: rgba(19, 49, 51, 1);
     filter: invert(1);
+    transition: 0.5s;
 }
 
 .item-menu {
