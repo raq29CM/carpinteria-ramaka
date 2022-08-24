@@ -43,7 +43,7 @@ body {
 /********* ID de los div padre de las card *********/
 
 #bloque{
-    margin-top: 5rem;
+    margin-top: 4rem;
     margin-left: 12rem;
     margin-right: 12rem;
 }
@@ -67,10 +67,10 @@ body {
 }
 
 .card-img-top{
-    background-color: #BB9569;
+    background-color: #8bb494;
     height: 300px;
     width: 200;
-    border: 2px solid #BB9569;
+    border: 2px solid #5b524c;
     object-fit: cover;
     padding: 10px;
        
@@ -78,8 +78,8 @@ body {
 }
 
 .card-body{
-    border: 2px solid #BB9569;
-    background-color: rgb(187, 149, 105,0.9);
+    border: 2px solid #5b524c;
+    background-color: #8bb494;
     
 }
 

@@ -1,0 +1,165 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin-Sans); /* FUENTE DE LA BARRA DE NAVEGACIÓN Y FOOTER */
+/* FUENTE TENTATIVA PARA EL CONTENIDO DE LAS PÁGINAS */
+@import url(//db.onlinewebfonts.com/c/8141d57bb00c8a8cfb53c332d98c46fa?family=Open+Sans+Hebrew+Condensed);
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+
+
+/* ------ NAV BAR ----- */
+.collapse {
+    justify-content: right;
+}
+
+.container ul li a {
+    /* color: #bb9569; el primero*/
+    /* color: #bda182; */
+    /* color: #bda284; */
+    color: #b9a38a;
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+}
+
+.btn{
+    border-color: #b9a38a;
+    color: #b9a38a; 
+}
+
+.carrito{
+    margin: 20px;
+}
+
+a:hover {
+    background-color: #012c2e;
+    /* background-color: #23666A; */
+    border-radius: 10px;
+    transition: 10ms;
+    filter: invert(1);
+}
+
+button:hover {
+    /* background-color: #000000; */
+    /* background-color: #012c2e; verde oscuro */
+    /* background-color: #23666A; verde clarito */
+    /* background-color: #865f31f5; cafe */
+    transition: 10ms;
+    background-color: #012c2e;
+    filter: invert(1);
+}
+
+/* CONTENIDO DE LA PAGINA */
+/* FOTO UNO */
+.img1{
+    border-radius: 50%;
+}
+/* FOTO DOS */
+.img2{
+    border-radius: 50%;
+}
+/* FOTO TRES */
+.img3{
+    border-radius: 50%;
+}
+
+/********************************************** FOOTER **********************************************/
+footer {
+    
+    position: static;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 2rem 8%;
+    background-color: rgba(19, 49, 51, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+    }
+    
+    .logo{
+        height: 100px;
+        margin-bottom: 1rem;
+    
+    }
+    
+    .iconos-redes-sociales-container, .pie-de-pagina-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: -0.10cm;
+    }
+    
+    .redes-iconos{
+        height: 60px;
+        width: 60px;
+        border-radius: 50px;
+        border: 1px inset rgba(226, 204, 179, 1);
+        background-image: url(../../recursos/facebook.png);
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin: 1rem;
+    
+    }
+    
+    .redes-iconos:hover{
+        background-color: rgba(19, 49, 51, 1);
+        filter: invert(1);
+    }
+    
+    .redes-iconos:nth-of-type(2){
+        background-image: url(../../recursos/instagram.png);
+        
+    }
+    .redes-iconos:nth-of-type(3){
+        background-image: url(../../recursos/Whatsapp.png);
+    }    
+    .redes-iconos:nth-of-type(4){
+        background-image: url(../../recursos/phone.png);
+    }
+    
+    .pie-de-pagina-container{
+        list-style-type: none;
+        color: rgba(226, 204, 179, 1);
+        font-size: 18px;
+    }
+    
+    .item-menu{
+        margin: 1rem 1.5rem;
+        cursor: pointer;
+        font-size: 15px;
+        opacity: 0.6;
+        color: rgba(226, 204, 179, 1);
+        
+    }
+    
+    .item.hover{
+        opacity: 1;
+    }
+    
+    .item-menu{
+        margin: 1rem 1.5rem;
+        cursor: pointer;
+        opacity: 0.6;
+        color: rgba(226, 204, 179, 1);
+    
+    }
+    .item{
+        margin: 1rem 1.5rem;
+        cursor: pointer;
+        opacity: 0.6;
+        color: rgba(226, 204, 179, 1);
+    
+    }
+    
+    
+    .copyright{
+        color: rgba(226, 204, 179, 1);
+        opacity: 0.3;
+        text-align: center;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+    }
