@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> INICIO DE SESION </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/css/styleTips.css">
+    <link rel="stylesheet" href="src/css/stylesIniciodesesion.css">
+
+</head>
+
+<body background="src/imagenes/fondo5.jpg"" >
+
+    <!-- ---------- BARRA DE NAVEGACIÓN ---------- -->
+    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #133133;">
+        <div class="container">
+            <!-- CARGAR EL LOGO DE RAMAKA -->
+            <a class="navbar-brand" href="#"><img src="src/imagenes/logo_ramaka.jpeg" alt="" width="100%" height="70px" class="d-inline-block align-text-top"></a>
+
+            <!-- BOTÓN PARA CUANDO SE HACE RESPONSIVA LA PÁGINA -->
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+            <div class="collapse navbar-collapse" id="navbarScroll">
+
+                <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+                    
+                    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+          Tienda </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Macetas</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Utencilios</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tips</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nosotros</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                          Galeria
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Salas</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Cocina</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Recámara</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Comedor</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mi cuenta</a>
+                    </li>
+
+                </ul>
+
+                <!-- ---------- BARRA DE BÚSQUEDA EN LA PÁGINA ---------- -->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar en la página"
+                        aria-label="Search">
+                    <button class="btn" type="submit">Buscar</button>
+                </form>
+
+                <!-- ---------- BOTÓN CARRITO ---------- -->
+                <button class="btn carrito" type="submit" >
+                    <i class="bi bi-cart4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#bb9569" class="bi bi-cart4" viewBox="0 0 16 16">
+                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                        </svg>
+                    </i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- CONTENIDO DE LA PAGINA -->
+    <div id="template-bg-1">
+        <div
+        class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
+        <div class="card p-4 text-light bg-dark mb-5">
+        <div class="card-header">
+        <h3>Iniciar sesión </h3>
+        </div>
+        <div class="card-body w-100">
+        <form name="login" action="" method="post">
+        <div class="input-group form-group mt-3">
+        <div class="bg-secondary rounded-start">
+        <span class="m-3"><i class="fas fa-user mt-2"></i></span>
+        </div>
+        <input type="text" class="form-control" placeholder="Usuario"
+        name="username">
+        </div>
+        <div class="input-group form-group mt-3">
+        <div class="bg-secondary rounded-start">
+        <span class="m-3"><i class="fas fa-key mt-2"></i></span>
+        </div>
+        <input type="password" class="form-control" placeholder="Contraseña"
+        name="password">
+        </div>
+        
+        <div class="form-group mt-3">
+        <input type="submit" value="Acceder"
+        class="btn bg-secondary float-end text-white w-100"
+        name="login-btn">
+        </div>
+        </form>
+        <?php if(!empty($loginResult)){?>
+        <div class="text-danger"><?php echo $loginResult;?></div>
+        <?php }?>
+        </div>
+        <div class="card-footer">
+        <div class="d-flex justify-content-center">
+        <div class="text-primary">Si es un usuario registrado, inicie sesión aquí.</div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        
+
+
+<!--
+    <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+      -->
+
+    <!-- Footer -->
+    <footer>
+        <img src="/recursos/ramaka_foot 1.png" alt="logo">
+        <div class="iconos-redes-sociales-container">
+        <a href="https://es-la.facebook.com/" class="redes-iconos"></a>
+        <a href= "https://www.instagram.com/" class="redes-iconos"></a>
+        <a href="https://www.whatsapp.com/?lang=es" class="redes-iconos"></a>
+        <a href="tel:600123456" class="redes-iconos"></a>
+    </div>
+    <div class="class"></div>
+    
+    <ul class="pie-de-pagina-container">
+        <li class="item-menu">Politica de privacidad</li>
+        <li class="item-menu">Terminos y condiciones</li>
+        <li class="item-menu">Politica de cookies</li>
+    </ul>
+        <span class="copyright">&copy;2022, Ramaka. Todos los derechos reservados.</span>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>    
+
+</body>
+
+
+</html>
