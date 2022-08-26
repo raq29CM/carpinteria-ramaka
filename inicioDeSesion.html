@@ -104,71 +104,122 @@
 
     </nav>
 
+
     <!-- CONTENIDO DE LA PAGINA -->
-    <div id="template-bg-1">
-        <div
-        class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
-        <div class="card p-4 text-light bg-dark mb-5">
-        <div class="card-header">
-        <h3>Iniciar sesión </h3>
+
+
+
+    <!-- REGISTRATE -->
+
+    <div class=" d-flex min-vh-100 justify-content-center align-items-center">
+        <div class="col-sm-5">
+            <div class="card p-4 text-light bg-dark mb-5">
+                <div class="card-header">
+                    <div class=" d-flex justify-content-center">
+                <h3>Registrate</h3>
+                </div>
+
+                </div>
+
+     <div class="card-body ">
+                    <div class="col-md-15">
+                        <label for="validationServer01" class="form-label">Nombre</label>
+                        <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Nombre Completo" required>
+                        <div class="valid-feedback">
+                          ¡Correcto!
+                        </div>
+                      </div>
+
+                      <div class="col-md-15">
+                        <label for="validationServer01" class="form-label">Correo</label>
+                        <input type="text" class="form-control is-valid" id="validationServer01" placeholder="correo@sesion.com" required>
+                        <div class="valid-feedback">
+                          ¡Correcto!
+                        </div>
+                      </div>
+
+                      <div class="col-md-15">
+                        <label for="validationServer01" class="form-label">Contraseña</label>
+                        <input type="text" class="form-control is-valid" id="validationServer01" placeholder="**********" required>
+                        <div class="valid-feedback">
+                          ¡Correcto!
+                        </div>
+                      </div>
+                      
+                <div class="form-group mt-3">
+                <input type="submit" value="Registrarme"
+                class="btn bg-secondary float-end text-white w-100"
+                name="login-btn">
+                </div>
+
+                </form>
+                <?php if(!empty($loginResult)){?>
+                <div class="text-danger"><?php echo $loginResult;?></div>
+                <?php }?>
+                </div>
+
+                
+                <div class="card-footer">
+                <div class="d-flex justify-content-center">
+                <div class="text-primary">
+                    <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>Acepto terminos y condiciones
+                    <div id="invalidCheck3Feedback" class="invalid-feedback">
+                        Debe estar de acuerdo antes de enviar.
+                      </div></div>
+                </div>
+                </div>
+                </div>
+    
         </div>
-        <div class="card-body w-100">
-        <form name="login" action="" method="post">
-        <div class="input-group form-group mt-3">
-        <div class="bg-secondary rounded-start">
-        <span class="m-3"><i class="fas fa-user mt-2"></i></span>
-        </div>
-        <input type="text" class="form-control" placeholder="Usuario"
-        name="username">
-        </div>
-        <div class="input-group form-group mt-3">
-        <div class="bg-secondary rounded-start">
-        <span class="m-3"><i class="fas fa-key mt-2"></i></span>
-        </div>
-        <input type="password" class="form-control" placeholder="Contraseña"
-        name="password">
-        </div>
+        <div class="col-sm-1"></div>
+
+
+ <!-- INICIO DE SESION -->
         
-        <div class="form-group mt-3">
-        <input type="submit" value="Acceder"
-        class="btn bg-secondary float-end text-white w-100"
-        name="login-btn">
-        </div>
-        </form>
-        <?php if(!empty($loginResult)){?>
-        <div class="text-danger"><?php echo $loginResult;?></div>
-        <?php }?>
-        </div>
-        <div class="card-footer">
-        <div class="d-flex justify-content-center">
-        <div class="text-primary">Si es un usuario registrado, inicie sesión aquí.</div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
+        <div class="col-sm-4">
+            <div class="card p-4 text-light bg-dark mb-5">
+                <div class="card-header">
+                    <div class=" d-flex justify-content-center">
+                <h3>Iniciar sesión</h3>
+                </div>
 
-        
+                </div>
+                <div class="card-body ">
+                    <div class="col-md-15">
+                        <label for="validationServer01" class="form-label">Correo</label>
+                        <input type="text" class="form-control is-valid" id="validationServer01" placeholder="correo@sesion.com" required>
+                        <div class="valid-feedback">
+                          ¡Correcto!
+                        </div>
+                      </div>
+                      <p></p>
 
+                      <div class="col-md-15">
+                        <label for="validationServer01" class="form-label">Contraseña</label>
+                        <input type="text" class="form-control is-valid" id="validationServer01" placeholder="**********" required>
+                        <div class="valid-feedback">
+                          ¡Correcto!
+                        </div>
+                      </div>
+                      
+                      
+                <div class="form-group mt-3">
+                <input type="submit" value="Entrar"
+                class="btn bg-secondary float-end text-white w-100"
+                name="login-btn">
+                </div>
 
-<!--
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
+                </form>
+                <?php if(!empty($loginResult)){?>
+                <div class="text-danger"><?php echo $loginResult;?></div>
+                <?php }?>
+                </div>
+
+                </div>
         </div>
       </div>
-      -->
+
+
 
     <!-- Footer -->
     <footer>
