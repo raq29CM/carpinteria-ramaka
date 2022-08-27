@@ -1,0 +1,254 @@
+/* FUENTE DE LA BARRA DE NAVEGACIÓN Y FOOTER */
+@import url(https://fonts.googleapis.com/css?family=Josefin-Sans);
+
+/* FUENTE TENTATIVA PARA EL CONTENIDO DE LAS PÁGINAS */
+@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrewcondensed.css);
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+
+/* ---------------------------------------- NAVBAR ---------------------------------------- */
+.collapse {
+    justify-content: right;
+}
+
+.container  ul li a {
+    /* color: #bb9569; el primero*/
+    /* color: #bda182; */
+    /* color: #bda284; */
+    color: #b9a38a;
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+    justify-content: right;
+}
+
+.btn-nav-pie{
+    border-color: #b9a38a;
+    color: #b9a38a;
+    margin-left: 10px;
+}
+
+.btn-nav-pie:hover {
+    /* background-color: #000000; */
+    /* background-color: #012c2e; verde oscuro */
+    /* background-color: #23666A; verde clarito */
+    /* background-color: #865f31f5; cafe */
+    /* transition: 20ms; */
+    border-radius: 15%;
+    background-color: #012c2e;
+    filter: invert(1);
+    transition: 0.5s;
+}
+
+
+/* ---------------------------------------- INICIO ---------------------------------------- */
+
+/* -------------------- CARRUSEL -------------------- */
+.img-carousel{
+    height: calc(73vh - 95px);
+    object-fit: cover;
+    width: 100%;
+}
+
+.contenedorBanner{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    top: -12rem;
+}
+
+.bannerCarrusel{
+    background-color: rgba(0, 0, 0, 0.55);
+    color: #CDA271;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.imgCarrusel{
+    object-position: bottom;
+}
+
+
+/* -------------------- TARJETAS -------------------- */
+
+.card{
+    border-radius: 10%;
+    margin-top: 1rem;
+}
+
+.card-title-inicio{
+    /* background-color: rgba(95, 158, 160, 0.63); */
+    color: white;
+    background-color: rgba(94, 109, 109, 0.63);
+    height: 3rem;
+    position: absolute;
+    width: 100%;
+    margin-top: -6.5rem;
+    margin-left: -1.25rem;
+    margin-right: auto;
+    margin-bottom: 4rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    font-family: 'Open Sans Hebrew Condensed';
+}
+
+.card-text-inicio{
+    font-family: 'Open Sans Hebrew Condensed';
+}
+
+.img-carta-inicio{
+    height: 8rem;
+    object-fit:cover;
+    border-top-right-radius: 15%;
+    border-top-left-radius: 15%;
+    
+}
+
+.btn-cards{
+    color: white;
+    background-color: #479faa;
+}
+
+.apartado-info{
+    color: black;
+    border-radius: 5%;
+    /* border-color: #b9a38a; */
+    background-color: rgba(207, 207, 207, 0.596);
+}
+
+.img-carousel-cards{
+    height: calc(19vh - 7.6px);
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+
+/* -------------------- PORQUÉ ELEGIRNOS -------------------- */
+
+.tituloMisionVision{
+    font-family: 'Josefin Sans';
+    text-align: center;
+    color: #000000;
+    font-size: 3rem;
+}
+
+.textoMisionVision{
+    font-family: 'Josefin Sans';
+    color: #000000;
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+#valor{
+    width: auto;
+    height: auto;
+    font-family: 'Josefin Sans';
+    display: flex;
+    justify-content: center;
+    padding: .5em;
+    
+    
+}
+
+.porqueElegirnos{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/assets/img/inicio/motivos_vision/PorqueElegirnosBackground.jpg);
+    opacity: 75%;
+    font-family: 'Josefin Sans';
+    text-align: justify;
+    color: rgb(0, 0, 0);
+    font-size: 2.5rem;
+    box-sizing: border-box;
+    padding: 10%;
+    /* font-weight: 100; */
+}
+
+
+
+
+
+
+/* ---------------------------------------- FOOTER ---------------------------------------- */
+
+footer {
+    position: static;
+    width: 100%;
+    left: 0;
+    bottom: -10;
+    padding: 2rem 8%;
+    background-color: rgba(19, 49, 51, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Josefin Sans';
+}
+
+.iconos-redes-sociales-container,
+.pie-de-pagina-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: -0.10cm;
+}
+
+.redes-iconos {
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    border: 1px inset rgba(226, 204, 179, 1);
+    background-image: url(/assets/img/icons/facebook.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+
+.redes-iconos:hover {
+    background-color: rgba(19, 49, 51, 1);
+    border-radius: 15%;
+    filter: invert(1);
+    transition: 0.5s;
+}
+
+.redes-iconos:nth-of-type(2) {
+    background-image: url(/assets/img/icons/instagram.png);
+
+}
+
+.redes-iconos:nth-of-type(3) {
+    background-image: url(/assets/img/icons/Whatsapp.png);
+}
+
+.redes-iconos:nth-of-type(4) {
+    background-image: url(/assets/img/icons/phone.png);
+}
+
+.item-menu {
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    list-style-type: none;
+    font-size: 15px;
+    opacity: 0.6;
+    color: rgba(226, 204, 179, 1);
+}
+
+.item.hover {
+    opacity: 1;
+}
+
+.copyright {
+    color: rgba(226, 204, 179, 1);
+    opacity: 0.3;
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+}
