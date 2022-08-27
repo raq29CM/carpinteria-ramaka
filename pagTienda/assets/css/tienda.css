@@ -1,99 +1,71 @@
-@import url(https://fonts.googleapis.com/css?family=Josefin-Sans); /* FUENTE DE LA BARRA DE NAVEGACIÓN Y FOOTER */
+/*********************************** Importaciones de letra *****************************/
 
-/* FUENTE TENTATIVA PARA EL CONTENIDO DE LAS PÁGINAS */
-@import url(//db.onlinewebfonts.com/c/8141d57bb00c8a8cfb53c332d98c46fa?family=Open+Sans+Hebrew+Condensed);
-@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Josefin-Sans);
 
-/********************************** Tienda **********************************/
-body {
-   
+
+
+/************************* Elementos ***********************/
+
+body{
     background-image: url("../Recursos/Img.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
-    
-  }
-
-/************ Título *********/
-
-#titulo{
-   
-     background-color: rgb(174, 133, 86,0.4);
-     justify-content: center;
-     font-family: 'Josefin-Sans';
-     height: 60px;
-     font-size: 50px;
-     position: sticky;
-     top: 60px;
-     color: rgb(0, 0, 0);
-     padding-top: 0;
-    
-    
 }
 
-#cesar{
-    padding: 0;
+h1{
+    background-color: rgb(174, 133, 86,0.4);
+    padding: 5px;
+    font-family: 'Josefin Sans';
+    font-size: 50px;
 }
-
-.titulo-1{
-    margin-left: 4rem;
-    
-}
-
-/********* ID de los div padre de las card *********/
-
-#bloque{
-    margin-top: 4rem;
-    margin-left: 12rem;
-    margin-right: 12rem;
-}
-#bloque2{
-    margin-top: 2rem;
-    margin-left: 12rem;
-    margin-right:12rem ;
-    margin-bottom: 3rem;
-   
-}
-
-/*************** Clases de las cards ***********/
-
-.card-title{
+h5{
     background: rgba(0, 0, 0, 0.7);
     color: white;
     font-family: 'Josefin Sans';
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 10px;
-  
+    
 }
 
-.card-img-top{
-    background-color: #8bb494;
-    height: 300px;
-    width: 200;
-    border: 2px solid #5b524c;
-    object-fit: cover;
-    padding: 10px;
-       
-        
+/************************** Clases de las Cards ***************************/
+
+.card{
+    background-color: #caa77e;
+    margin: 4%;
+    width: auto;
+    height: 700px;
+    display: inline-block;
+    border-radius: 19px;
 }
 
 .card-body{
-    border: 2px solid #5b524c;
-    background-color: #8bb494;
+    padding-top: 35px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.card-img-top{
+    margin-top: 4%;
+    object-fit: cover;
+    height: 300px;
+    border-radius: 3px;
     
+}
+
+.card-description{
+    margin-top: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .card-text{
     background: rgba(255, 255, 255, 0.64);
     padding: 10px;
     border-radius: 10px;
-    height: 200px;
+    height: 90px;
+    
 }
 
-  .card:hover{
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 6px;
-    padding: 0;
-    -webkit-transform:scale(1.13);transform:scale(1.13);
-    overflow:hidden;
-}
+
+
