@@ -38,21 +38,52 @@
     
 }
 
-/* --------------------------------------- TIPS ------------------------------------------- */
-/* FOTOS */
-.img{
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
-    object-position: center;
+/* --------------------------------------- CARRITO ------------------------------------------- */
+body {
+    color: #000;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: #fff;
+    background-repeat: no-repeat;
 }
 
-/* COLUMNAS */
-.col-md{
-    margin: 15px;
+.plus-minus {
+    position: relative;
 }
 
+.plus {
+    position: absolute;
+    top: -4px;
+    left: 2px;
+    cursor: pointer;
+}
+
+.minus {
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    cursor: pointer;
+}
+
+.vsm-text:hover {
+    color: #FF5252;
+}
+
+.foto-producto {
+    width: 180px;
+    height: 160px;
+    border-radius: 5px;
+}
+
+/* . {
+    margin: 20px 15px 5px 15px;
+} */
+
+.border-top {
+    border-top: 1px solid #EEEEEE !important;
+    margin-top: 20px;
+    padding-top: 15px;
+}
 
 /* ---------------------------------------- FOOTER ---------------------------------------- */
 

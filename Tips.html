@@ -8,6 +8,7 @@
     <title> TIPS </title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/styleTips.css">
+
 </head>
 
 <body>
@@ -15,8 +16,7 @@
     <!-- -------------------- BARRA DE NAVEGACIÓN -------------------- -->
     <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #133133;">
         <div class="container">
-            <a class="navbar-brand btn-nav-pie" href="#"><img src="/assets/img/icons/Logo-Ramaka.jpeg" alt="" width="100%"
-                    height="75px" class="d-inline-block align-text-top"></a>
+            <a class="navbar-brand btn-nav-pie d-inline-block align-text-top" href="#" src="/assets/img/icons/Logo-Ramaka.jpeg" alt="" width="100%" height="75px"></a>
 
             <!-- BOTÓN PARA CUANDO SE HACE RESPONSIVA LA PÁGINA -->
             <button class="btn navbar-toggler btn-nav-pie" type="button" data-toggle="collapse"
@@ -30,59 +30,70 @@
                 <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle btn-nav-pie" href="#" role="button" data-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle btn-nav-pie active" href="/tienda.html" role="button" data-toggle="dropdown"
                             aria-expanded="false">
                             Tienda </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Macetas</a></li>
+                            <li><a class="dropdown-item" href="/tienda.html">Macetas</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Utencilios</a></li>
+                            <li><a class="dropdown-item" href="/tienda.html#a-comedor">Utencilios</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle btn-nav-pie" href="/tips.html" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Tips
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/tips.html#subDatos">Datos Curiosos</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/tips.html#subTipos">Tipos de Madera</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/tips.html#subHacer">Hágalo usted mismo</a></li>
+                            <li>
                         </ul>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link btn-nav-pie" href="#">Tips</a>
+                        <a class="nav-link btn-nav-pie" href="/contacto.html">Contacto</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link btn-nav-pie" href="#">Contacto</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link btn-nav-pie" href="#">Nosotros</a>
+                        <a class="nav-link btn-nav-pie" href="/nosotros.html">Nosotros</a>
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle btn-nav-pie" href="#" role="button" data-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle btn-nav-pie" href="/galeria.html" role="button" data-toggle="dropdown"
                             aria-expanded="false">
                             Galeria
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Salas</a></li>
+                            <li><a class="dropdown-item" href="/galeria.html">Salas</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Cocina</a></li>
+                            <li><a class="dropdown-item" href="/galeria.html#galeriaH2-cocinas">Cocina</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Recámara</a></li>
+                            <li><a class="dropdown-item" href="/galeria.html#galeriaH2-closets">Closets</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Comedor</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Bares</a></li>
+                            <li><a class="dropdown-item" href="/galeria.html#galeriaH2-comedores">Comedor</a></li>
                             <li>
                         </ul>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link btn-nav-pie" href="#">Mi cuenta</a>
+                        <a class="nav-link btn-nav-pie" href="/inicioSesion.html">Mi cuenta</a>
                     </li>
 
                 </ul>
@@ -95,7 +106,7 @@
                 </form>
 
                 <!-- ---------- BOTÓN CARRITO ---------- -->
-                <button class="btn carrito btn-nav-pie" type="submit">
+                <button class="btn carrito btn-nav-pie" type="submit" >
                     <i class="bi bi-cart4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#bb9569"
                             class="bi bi-cart4" viewBox="0 0 16 16">
@@ -113,8 +124,10 @@
     <!-- CONTENIDO DE LA PAGINA -->
 
     <H1 style="margin-left: 25px; margin-top: 10px;">TIPS</H1>
+
     <!-- CUATRO COLUMNAS -->
     <div id="top" class="top bg-light my-5 p-5">
+        <h4 class="subtituloTipos text-center" id="subDatos">DATOS CURIOSOS</h4>
         <div class="container">
             <div class="row justify-content-center align-items-center">
                 <!-- COLUMNA UNO -->
@@ -158,9 +171,10 @@
             </div>
         </div>
     </div>
+
     <!-- TIPOS DE MADERAS -->
     <div id="cuatroDiv" class="top bg-light my-5 p-5">
-        <h4 class="subtituloTipos">TIPOS DE MADERAS</h4>
+        <h4 class="subtituloTipos text-center" id="subTipos">TIPOS DE MADERAS</h4>
         <div class="container">
             <div class="row justify-content-center align-items-center">
                 <!-- COLUMNA UNO -->
@@ -179,8 +193,64 @@
         </div>
     </div>
 
+
+    <!-- SECCION DE VIDEOS -->
+    <div id="divVideos" class="top my-5 p-5" style="background-color: #b9a38a;">
+        <h4 class="subtituloTipos text-center" id="subHacer">HÁGALO USTED MISMO</h4>
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <!-- COLUMNA UNO - DESCRIPCION DE VIDEOS -->
+                <div class="col-md">
+                        <h5>Hacer masilla para madera casera fácil y económica, con serrín y cola, remedio casero</h5>
+                        <p>Jose J T</p>
+                        <p>"Hola a todos!! hoy os voy a enseñar a hacer masilla casera tapagrietas y agujeros barato para madera de forma fácil y económica, solo utilizando serrín y cola blanca.
+
+                            Comenzamos a echar cola sobre un poco de serrín, con respecto a las cantidades es algo parecido a la mezcla de cemento y agua, tenemos que echar cola hasta que se convierta en una masa con una textura que permita trabajarla. Es aconsejable que no esté excesivamente espesa ya que al aplicarla donde lo necesitemos se endurece un poco.
+                            Si nos sobra podemos guardarla en un recipiente cerrado en el frigorífico.
+                            Si os ha sido útil suscribiros al canal que seguiré compartiendo consejos prácticos."</p>
+                </div>
+                <!-- COLUMNA DOS - CARRUSEL DE VIDEOS-->
+                <div class="col-md">
+                    <!-- CARRUSEL VIDEOS-->
+                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" style="background-color: #b9a38a;">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                        </ol>
+                    <div class="carousel-inner">
+                        <!-- VIDEO UNO -->
+                        <!-- <div class="carousel-item active text-center" style="margin: 15px;">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/zqxiSomv3eY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div> -->
+                        <!-- VIDEO DOS -->
+                        <div class="carousel-item active text-center" style="margin: 15px;">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/tfmlFEdxBs4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <!-- VIDEO TRES -->
+                        <!-- <div class="carousel-item text-center" style="margin: 15px;">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/9e27Hua0wzY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div> -->
+                    </div>
+                        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Siguiente</span>
+                        </a>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+    
+
    <!-- ------------------------- PIE DE PÁGINA ------------------------- -->
-   <footer>
+<footer>
     <img src="/assets/img/icons/ramaka-footer.jpeg" alt="logo" height="30px">
     <div class="iconos-redes-sociales-container">
         <a href="https://es-la.facebook.com/" class="redes-iconos"></a>
@@ -198,12 +268,8 @@
     <span class="copyright">&copy;2022, Ramaka. Todos los derechos reservados.</span>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
 </body>
 </html>
