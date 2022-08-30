@@ -1,0 +1,184 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin-Sans); /* FUENTE DE LA BARRA DE NAVEGACIÓN Y FOOTER */
+
+/* FUENTE TENTATIVA PARA EL CONTENIDO DE LAS PÁGINAS */
+@import url(//db.onlinewebfonts.com/c/8141d57bb00c8a8cfb53c332d98c46fa?family=Open+Sans+Hebrew+Condensed);
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+/* FUENTE PARA TITULOS - CLASS: fuente-titulo*/
+@import url('http://fonts.cdnfonts.com/css/perpetua-titling-mt');
+/* FUENTE PARA TEXTO NORMAL - CLASS: fuente-titulo*/
+@import url(//db.onlinewebfonts.com/c/e662339992c4abf5b43f537391bd3169?family=Candara);
+
+/* ---------------------------------------- NAVBAR ---------------------------------------- */
+.collapse {
+    justify-content: right;
+}
+
+.container  ul li a {
+    /* color: #bb9569; el primero*/
+    /* color: #bda182; */
+    /* color: #bda284; */
+    color: #b9a38a;
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+    justify-content: right;
+}
+
+.btn-nav-pie{
+    border-color: #b9a38a;
+    color: #b9a38a;
+    margin-left: 10px;
+}
+
+.btn-nav-pie:hover {
+    /* background-color: #000000; */
+    /* background-color: #012c2e; verde oscuro */
+    /* background-color: #23666A; verde clarito */
+    /* background-color: #865f31f5; cafe */
+    /* transition: 20ms; */
+    border-radius: 15%;
+    background-color: #012c2e;
+    filter: invert(1);
+    transition: 0.5s;
+    
+}
+
+/* --------------------------------------- CARRITO ------------------------------------------- */
+/* FUENTES DE LETRA */
+.fuente-titulo{
+    font-family: 'Perpetua Titling MT', sans-serif;
+}
+
+.fuente-subtitulo{
+    font-family: "Candara";
+}
+
+.fuente-texto{
+    font-family: "Candara";
+}
+
+body {
+    color: #000;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: #fff;
+    background-repeat: no-repeat;
+}
+
+.plus-minus {
+    position: relative;
+}
+
+.plus {
+    position: absolute;
+    top: -4px;
+    left: 2px;
+    cursor: pointer;
+}
+
+.minus {
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    cursor: pointer;
+}
+
+.vsm-text:hover {
+    color: #FF5252;
+}
+
+.foto-producto {
+    width: 180px;
+    height: 160px;
+    border-radius: 5px;
+}
+
+/* . {
+    margin: 20px 15px 5px 15px;
+} */
+
+.border-top {
+    border-top: 1px solid #EEEEEE !important;
+    margin-top: 20px;
+    padding-top: 15px;
+}
+
+/* ---------------------------------------- FOOTER ---------------------------------------- */
+
+footer {
+    position: static;
+    width: 100%;
+    left: 0;
+    bottom: -10;
+    padding: 2rem 8%;
+    background-color: rgba(19, 49, 51, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Josefin Sans';
+}
+
+.iconos-redes-sociales-container,
+.pie-de-pagina-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: -0.10cm;
+}
+
+.redes-iconos {
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    border: 1px inset rgba(226, 204, 179, 1);
+    background-image: url(/assets/img/icons/facebook.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+
+.redes-iconos:hover {
+    background-color: rgba(19, 49, 51, 1);
+    border-radius: 15%;
+    filter: invert(1);
+    transition: 0.5s;
+}
+
+.redes-iconos:nth-of-type(2) {
+    background-image: url(/assets/img/icons/instagram.png);
+
+}
+
+.redes-iconos:nth-of-type(3) {
+    background-image: url(/assets/img/icons/Whatsapp.png);
+}
+
+.redes-iconos:nth-of-type(4) {
+    background-image: url(/assets/img/icons/phone.png);
+}
+
+.item-menu {
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    list-style-type: none;
+    font-size: 15px;
+    opacity: 0.6;
+    color: rgba(226, 204, 179, 1);
+}
+
+.item.hover {
+    opacity: 1;
+}
+
+.copyright {
+    color: rgba(226, 204, 179, 1);
+    opacity: 0.3;
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+}
