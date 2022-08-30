@@ -5,6 +5,12 @@
 @import url(https://fonts.googleapis.com/earlyaccess/opensanshebrewcondensed.css);
 @import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
 
+/* FUENTE PARA TITULOS - CLASS: fuente-titulo*/
+@import url('http://fonts.cdnfonts.com/css/perpetua-titling-mt');
+
+/* FUENTE PARA TEXTO NORMAL - CLASS: fuente-titulo*/
+@import url(//db.onlinewebfonts.com/c/e662339992c4abf5b43f537391bd3169?family=Candara);
+
 /* ---------------------------------------- NAVBAR ---------------------------------------- */
 .collapse {
     justify-content: right;
@@ -41,6 +47,15 @@
 
 /* ---------------------------------------- INICIO ---------------------------------------- */
 
+/* FUENTES DE LETRA */
+.fuente-titulo{
+    font-family: 'Perpetua Titling MT', sans-serif;
+}
+
+.fuente-texto{
+    font-family: "Candara";
+}
+
 /* -------------------- CARRUSEL -------------------- */
 .img-carousel{
     height: calc(73vh - 95px);
@@ -64,7 +79,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    justify-content: center;
+    margin-top: -4.3rem;
+    margin-right: auto;
+    margin-bottom: 4rem;
+    padding-top: 0.5rem;
 }
 
 .imgCarrusel{
@@ -75,7 +95,7 @@
 /* -------------------- TARJETAS -------------------- */
 
 .card{
-    border-radius: 10%;
+    border-radius: 2rem;
     margin-top: 1rem;
 }
 
@@ -92,29 +112,31 @@
     margin-bottom: 4rem;
     text-align: center;
     padding-top: 0.5rem;
-    font-family: 'Open Sans Hebrew Condensed';
 }
 
 .card-text-inicio{
-    font-family: 'Open Sans Hebrew Condensed';
+    padding: 1rem;
+    text-align: justify;
+    justify-content:center;
 }
 
 .img-carta-inicio{
     height: 8rem;
     object-fit:cover;
-    border-top-right-radius: 15%;
-    border-top-left-radius: 15%;
-    
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
 }
 
 .btn-cards{
     color: white;
     background-color: #479faa;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
 }
 
 .apartado-info{
     color: black;
-    border-radius: 5%;
+    border-radius: 1rem;
     /* border-color: #b9a38a; */
     background-color: rgba(207, 207, 207, 0.596);
 }
@@ -122,21 +144,19 @@
 .img-carousel-cards{
     height: calc(19vh - 7.6px);
     object-fit: cover;
-    border-radius: 5%;
+    /* border-radius: 1rem; */
 }
 
 
 /* -------------------- PORQUÉ ELEGIRNOS -------------------- */
 
 .tituloMisionVision{
-    font-family: 'Josefin Sans';
     text-align: center;
     color: #000000;
     font-size: 3rem;
 }
 
 .textoMisionVision{
-    font-family: 'Josefin Sans';
     color: #000000;
     text-align: justify;
     font-size: 1.5rem;
@@ -145,12 +165,11 @@
 #valor{
     width: auto;
     height: auto;
-    font-family: 'Josefin Sans';
     display: flex;
+    text-align: center;
     justify-content: center;
-    padding: .5em;
-    
-    
+    padding-top:5rem;
+    font-size: 3rem;
 }
 
 .porqueElegirnos{
@@ -158,7 +177,6 @@
     background-size: cover;
     background-image: url(/assets/img/inicio/motivos_vision/PorqueElegirnosBackground.jpg);
     opacity: 75%;
-    font-family: 'Josefin Sans';
     text-align: justify;
     color: rgb(0, 0, 0);
     font-size: 2.5rem;

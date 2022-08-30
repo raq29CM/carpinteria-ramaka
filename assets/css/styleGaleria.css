@@ -4,6 +4,10 @@
 /* FUENTE TENTATIVA PARA EL CONTENIDO DE LAS PÁGINAS */
 @import url(https://fonts.googleapis.com/earlyaccess/opensanshebrewcondensed.css);
 @import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+/* FUENTE PARA TITULOS - CLASS: fuente-titulo*/
+@import url('http://fonts.cdnfonts.com/css/perpetua-titling-mt');
+/* FUENTE PARA TEXTO NORMAL - CLASS: fuente-titulo*/
+@import url(//db.onlinewebfonts.com/c/e662339992c4abf5b43f537391bd3169?family=Candara);
 
 /* ---------------------------------------- NAVBAR ---------------------------------------- */
 .collapse {
@@ -38,31 +42,19 @@
     transition: 0.5s;
 }
 
-
-/* ---------------------------------------- INICIO ---------------------------------------- */
-
-/* -------------------- CARRUSEL -------------------- */
-.img-carousel{
-    height: calc(73vh - 95px);
-    object-fit: cover;
-    width: 100%;
-}
-
-h1.bannerCarrusel{
-    background-color: rgba(0, 0, 0, 0.55);
-    color: #CDA271;
-    text-align: center;
-    position: relative;
-    top: -220px;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.imgCarrusel{
-    object-position: bottom;
-}
-
 /* --------------------------------------- GALERIA ---------------------------------------- */
+/* FUENTES DE LETRA */
+.fuente-titulo{
+    font-family: 'Perpetua Titling MT', sans-serif;
+}
 
+.fuente-subtitulo{
+    font-family: "Candara";
+}
+
+.fuente-texto{
+    font-family: "Candara";
+}
 
 /* ---------------------------------------- FOOTER ---------------------------------------- */
 

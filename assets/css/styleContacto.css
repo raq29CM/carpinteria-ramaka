@@ -4,6 +4,10 @@
 /* FUENTE TENTATIVA PARA EL CONTENIDO DE LAS PÁGINAS */
 @import url(https://fonts.googleapis.com/earlyaccess/opensanshebrewcondensed.css);
 @import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+/* FUENTE PARA TITULOS - CLASS: fuente-titulo*/
+@import url('http://fonts.cdnfonts.com/css/perpetua-titling-mt');
+/* FUENTE PARA TEXTO NORMAL - CLASS: fuente-titulo*/
+@import url(//db.onlinewebfonts.com/c/e662339992c4abf5b43f537391bd3169?family=Candara);
 
 /* ---------------------------------------- NAVBAR ---------------------------------------- */
 .collapse {
@@ -39,6 +43,19 @@
 }
 
 /* ---------------------------------------- CONTACTO ---------------------------------------- */
+/* FUENTES DE LETRA */
+.fuente-titulo{
+    font-family: 'Perpetua Titling MT', sans-serif;
+}
+
+.fuente-subtitulo{
+    font-family: "Candara";
+}
+
+.fuente-texto{
+    font-family: "Candara";
+}
+
 .contacto{
     font-family: 'Open Sans Hebrew Condensed';
     font-size: large;
