@@ -1,0 +1,264 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin-Sans); /* FUENTE DE LA BARRA DE NAVEGACIÓN Y FOOTER */
+
+/* FUENTE TENTATIVA PARA EL CONTENIDO DE LAS PÁGINAS */
+@import url(//db.onlinewebfonts.com/c/8141d57bb00c8a8cfb53c332d98c46fa?family=Open+Sans+Hebrew+Condensed);
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+/* FUENTE PARA TITULOS - CLASS: fuente-titulo*/
+@import url('http://fonts.cdnfonts.com/css/perpetua-titling-mt');
+/* FUENTE PARA TEXTO NORMAL - CLASS: fuente-titulo*/
+@import url(//db.onlinewebfonts.com/c/e662339992c4abf5b43f537391bd3169?family=Candara);
+
+/* ---------------------------------------- NAVBAR ---------------------------------------- */
+.collapse {
+    justify-content: right;
+}
+
+.container  ul li a {
+    /* color: #bb9569; el primero*/
+    /* color: #bda182; */
+    /* color: #bda284; */
+    color: #b9a38a;
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+    justify-content: right;
+}
+
+.btn-nav-pie{
+    border-color: #b9a38a;
+    color: #b9a38a;
+    margin-left: 10px;
+}
+
+.btn-nav-pie:hover {
+    /* background-color: #000000; */
+    /* background-color: #012c2e; verde oscuro */
+    /* background-color: #23666A; verde clarito */
+    /* background-color: #865f31f5; cafe */
+    /* transition: 20ms; */
+    border-radius: 15%;
+    background-color: #012c2e;
+    filter: invert(1);
+    transition: 0.5s;
+}
+
+/* ---------------------------------------- TIENDA ---------------------------------------- */
+/* FUENTES DE LETRA */
+.fuente-titulo{
+    font-family: 'Perpetua Titling MT', sans-serif;
+}
+
+.fuente-subtitulo{
+    font-family: "Candara";
+}
+
+.fuente-texto{
+    font-family: "Candara";
+}
+
+body{
+    background-image: url("/assets/img/inicioSesion/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+h1{
+    background-color: rgb(174, 133, 86,0.4);
+    padding: 5px;
+    font-family: 'Josefin Sans';
+    font-size: 50px;
+    position: sticky;
+    top: 60px;
+}
+h2{
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(252, 230, 230);
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    
+}
+p{
+    font-size: 15px;
+    font-weight: 100;
+    color: rgb(252, 230, 230);
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+
+/************************** Clases de las Cards ***************************/
+.card{
+    position: relative;
+    background-color:#012c2e;
+    margin: 4%;
+    width: 500px;
+    height: 750px;
+    display: inline-block;
+    border-radius: 20px;
+    top: 50%;
+    left: 20%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    box-shadow: 8px 8px 15px #051218,
+    -8px -8px 25px #203A43 ;
+    
+    
+    
+}
+
+.card-body{
+    padding-top: 35px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.card-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 30px;
+    box-shadow: 0px 0px 0px 1px #508090,
+    0px 0px 0px 5px #2c5364,
+    8px 8px 15px #0F2027,
+    -8px -8px 15px #203A43;
+    margin-bottom: 30px;
+
+    
+}
+
+.card-body .fields .data{
+    border-radius: 20px;
+    box-shadow: inset 8px 8px 8px #19282d,
+    inset -8px -8px #114257;
+    margin-bottom: 20px;
+}
+
+.card-body .fields .data i {
+    
+    color: rgb(215, 225, 222);
+    margin: 20px 5px 20px 20px;
+
+    }
+
+.card-body.fields .data input {
+    outline: none;
+    border:#afc1c2;
+    background: none;
+    font-size: 15px;
+    padding: 20px 20px 20px 5px;
+    color:#fff;    
+}
+
+.card-body .btn-login{
+    outline: none;
+    border: #c7e6e7;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 30px;
+    transition: .5s;
+    }
+.card-body .btn-login:hover{
+    background:#203A43;
+    color:rgb(247, 242, 242)
+}
+
+.card-body .btn-login:active{
+    background:#cad2d5;
+
+    }
+
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #012c2e;
+    padding-top: 20px;
+}
+
+
+/* ---------------------------------------- FOOTER ---------------------------------------- */
+
+footer {
+    position: static;
+    width: 100%;
+    left: 0;
+    bottom: -10;
+    padding: 2rem 8%;
+    background-color: rgba(19, 49, 51, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Josefin Sans';
+}
+
+.iconos-redes-sociales-container,
+.pie-de-pagina-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: -0.10cm;
+}
+
+.redes-iconos {
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    border: 1px inset rgba(226, 204, 179, 1);
+    background-image: url(/assets/img/icons/facebook.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+
+.redes-iconos:hover {
+    background-color: rgba(19, 49, 51, 1);
+    border-radius: 15%;
+    filter: invert(1);
+    transition: 0.5s;
+}
+
+.redes-iconos:nth-of-type(2) {
+    background-image: url(/assets/img/icons/instagram.png);
+
+}
+
+.redes-iconos:nth-of-type(3) {
+    background-image: url(/assets/img/icons/Whatsapp.png);
+}
+
+.redes-iconos:nth-of-type(4) {
+    background-image: url(/assets/img/icons/phone.png);
+}
+
+.item-menu {
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    list-style-type: none;
+    font-size: 15px;
+    opacity: 0.6;
+    color: rgba(226, 204, 179, 1);
+}
+
+.item.hover {
+    opacity: 1;
+}
+
+.copyright {
+    color: rgba(226, 204, 179, 1);
+    opacity: 0.3;
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+}
