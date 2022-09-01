@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Inicio de Sesión </title>
+
+    <!---------------------------------- Enlace a Bootstrap ----------------------------->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/c85fdf562b.js" crossorigin="anonymous"></script>
+
+    <!----------------------------- Enlaces a páginas de estilos CSS -------------------------------->
+
+    <link rel="stylesheet" href="/assets/css/stylemiCuenta.css">
+</head>
+
+<body>
+
+    <!-- -------------------- BARRA DE NAVEGACIÓN -------------------- -->
+    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #133133;">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html"> <img src="/assets/img/icons/Logo-Ramaka.jpeg" alt="" width="100%"
+                    height="45px" class="d-inline-block align-text-top"></a>
+
+            <!-- BOTÓN PARA CUANDO SE HACE RESPONSIVA LA PÁGINA -->
+            <button class="btn navbar-toggler btn-nav-pie" type="button" data-toggle="collapse"
+                data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="true"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarScroll">
+
+                <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle btn-nav-pie active" href="/tienda.html" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Tienda </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/tienda.html">Macetas</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/tienda.html#a-comedor">Utencilios</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle btn-nav-pie" href="/tips.html" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Tips
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/tips.html">Datos Curiosos</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/tips.html#subTipos">Tipos de Madera</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/tips.html#subHacer">Hágalo usted mismo</a></li>
+                            <li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link btn-nav-pie" href="/contacto.html">Contacto</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link btn-nav-pie" href="/nosotros.html">Nosotros</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle btn-nav-pie" href="/galeria.html" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Galeria
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/galeria.html">Salas</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/galeria.html#galeriaH2-cocinas">Cocina</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/galeria.html#galeriaH2-closets">Closets</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/galeria.html#galeriaH2-comedores">Comedor</a></li>
+                            <li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link btn-nav-pie" href="/inicioSesion.html">Mi cuenta</a>
+                    </li>
+
+                </ul>
+
+                <!-- ---------- BARRA DE BÚSQUEDA EN LA PÁGINA ---------- -->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar en la página"
+                        aria-label="Search">
+                    <button class="btn btn-nav-pie" type="submit" style="color: #b9a38a;">Buscar</button>
+                </form>
+
+                
+                <!-- ---------- BOTÓN CARRITO ---------- -->
+                <a href="/carrito.html" class="btn carrito btn-nav-pie">
+                    <i class="bi bi-cart4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#bb9569"
+                            class="bi bi-cart4" viewBox="0 0 16 16">
+                            <path
+                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                        </svg>
+                    </i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-------------------------------------------Mi cuenta--------------------------------------------->
+    <form action="" method="POST" id="form">
+        <div class="form">
+    
+    
+    <h1 class="text-center fuente-titulo">MI CUENTA</h1>
+
+
+    <div id="a" class="card">
+        <img src="/assets/img/icons/Logo-Ramaka.jpeg" class="card-img" alt="...">
+        <div class="card-body">
+            <h2 class="card-title text-center fuente-texto">Iniciar sesión<br><br></h2>
+           <div class="fields">
+            <div class="data">
+        
+                <i class="fas fa-user"></i>
+                <input type="username" id="name" placeholder="Usuario">
+            </div><br>
+            <div class="data">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" placeholder="Contraseña">
+            </div>
+        </div><br>
+        <button class="btn-login">Entrar</button>
+        <p class="warnings" id="warnings"></p>
+        </div>
+        <p>Al registrarte, aceptas nuestros Terminos y Condiciones</p>
+        <div class="recordar"> <a href="#">¿Olvido su contraseña?</a></div>
+    </div>
+
+    <div id="a" class="card">
+        <img src="/assets/img/icons/Logo-Ramaka.jpeg" class="card-img" alt="...">
+        <div class="card-body">
+            <h2 class="card-title text-center fuente-texto">Registrarme<br></h2>
+           <div class="fields">
+            <div class="data">
+        
+                <i class="fas fa-user"></i>
+                <input type="username" id="name"  placeholder="Nombre Completo">
+            </div>
+            <div class="data">
+                <i class="fa-regular fa-envelope"></i>
+                <input type="username" id="email" placeholder="Correo electronico">
+            </div>
+            <div class="data">
+        
+                <i class="fa-regular fa-location-pin-lock"></i>
+                <input type="pasword" id="password" placeholder="Contraseña">
+            </div>
+            <div class="data">
+                <i class="fa-regular fa-location-pin-lock"></i>
+                <input type="password" id="password" placeholder="repetir Contraseña">
+            </div>
+        </div>
+        <button class="btn-login">Registrarme</button>
+        </div>
+        <p>Al registrarte, aceptas nuestros Terminos y Condiciones</p>
+    </div>
+</div>
+</form>
+
+    
+
+    <!-- ------------------------- PIE DE PÁGINA ------------------------- -->
+    <footer>
+      <img src="/assets/img/icons/ramaka-footer.jpeg" alt="logo" height="30px">
+      <div class="iconos-redes-sociales-container">
+          <a href="https://es-la.facebook.com/" class="redes-iconos"></a>
+          <a href="https://www.instagram.com/" class="redes-iconos"></a>
+          <a href="https://www.whatsapp.com/?lang=es" class="redes-iconos"></a>
+          <a href="tel:600123456" class="redes-iconos"></a>
+      </div>
+
+        <ul class="pie-de-pagina-container">
+          <li class="item-menu">
+              <a href="/tyc.html#polPrivacy" style="color: #b9a38a;">Politica de privacidad</a>
+          </li>
+          <li class="item-menu">
+              <a href="/tyc.html" style="color: #b9a38a;">Terminos y condiciones</a>
+          </li>
+          <li class="item-menu">
+              <a href="/tyc.html#polCookies" style="color: #b9a38a;">Politica de cookies</a>
+          </li>
+      </ul>
+      <span class="copyright">&copy;2022, Ramaka. Todos los derechos reservados.</span>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"></script>
+      <script src="appmiCuenta.js"></script>
+
+</body>
+
+</html>
