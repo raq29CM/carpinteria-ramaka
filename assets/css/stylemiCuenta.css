@@ -1,8 +1,7 @@
-/* FUENTE DE LA BARRA DE NAVEGACIÓN Y FOOTER */
-@import url(https://fonts.googleapis.com/css?family=Josefin-Sans);
+@import url(https://fonts.googleapis.com/css?family=Josefin-Sans); /* FUENTE DE LA BARRA DE NAVEGACIÓN Y FOOTER */
 
 /* FUENTE TENTATIVA PARA EL CONTENIDO DE LAS PÁGINAS */
-@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrewcondensed.css);
+@import url(//db.onlinewebfonts.com/c/8141d57bb00c8a8cfb53c332d98c46fa?family=Open+Sans+Hebrew+Condensed);
 @import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
 /* FUENTE PARA TITULOS - CLASS: fuente-titulo*/
 @import url('http://fonts.cdnfonts.com/css/perpetua-titling-mt');
@@ -42,7 +41,7 @@
     transition: 0.5s;
 }
 
-/* -------------------------------------- CUERPO DE LA PAGINA ------------------------------------------ */
+/* ---------------------------------------- TIENDA ---------------------------------------- */
 /* FUENTES DE LETRA */
 .fuente-titulo{
     font-family: 'Perpetua Titling MT', sans-serif;
@@ -56,7 +55,131 @@
     font-family: "Candara";
 }
 
+body{
+    background-image: url("/assets/img/icons/fondoChulo.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
 
+h1{
+    background-color: rgb(174, 133, 86,0.4);
+    padding: 5px;
+    font-family: 'Josefin Sans';
+    font-size: 50px;
+    position: sticky;
+    top: 60px;
+}
+h2{
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(252, 230, 230);
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    
+}
+p{
+    font-size: 15px;
+    font-weight: 100;
+    color: rgb(252, 230, 230);
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+
+/************************** Clases de las Cards ***************************/
+.card{
+
+    background-color:#012c2e;
+    width: 500px;
+    height: 750px;
+    border-radius: 20px;
+    display: inline-block;
+    flex-direction:column;
+    align-items: center;
+    box-shadow: 8px 8px 15px #051218,
+    -8px -8px 25px #203A43 ;
+    
+    
+    
+}
+
+#a {
+    margin: 200px;
+}
+
+.card-body{
+    padding-top: 35px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.card-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 30px;
+    box-shadow: 0px 0px 0px 1px #508090,
+    0px 0px 0px 5px #2c5364,
+    8px 8px 15px #0F2027,
+    -8px -8px 15px #203A43;
+    margin-bottom: 30px;
+
+    
+}
+
+.card-body .fields .data{
+    border-radius: 20px;
+    box-shadow: inset 8px 8px 8px #19282d,
+    inset -8px -8px #114257;
+    margin-bottom: 20px;
+}
+
+.card-body .fields .data i {
+    
+    color: rgb(215, 225, 222);
+    margin: 20px 5px 20px 20px;
+
+    }
+
+.card-body.fields .data input {
+    outline: none;
+    border:#afc1c2;
+    background: none;
+    font-size: 15px;
+    padding: 20px 20px 20px 5px;
+    color:#fff;    
+}
+
+.card-body .btn-login{
+    outline: none;
+    border: #c7e6e7;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 30px;
+    transition: .5s;
+    }
+.card-body .btn-login:hover{
+    background:#203A43;
+    color:rgb(247, 242, 242)
+}
+
+.card-body .btn-login:active{
+    background:#cad2d5;
+
+    }
+
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #012c2e;
+    padding-top: 20px;
+}
 
 
 /* ---------------------------------------- FOOTER ---------------------------------------- */
