@@ -119,88 +119,254 @@
     </nav>
 
     <!-- CONTENIDO DEL CRUD -->
-    <div id="C1" class="container">
-
-        <div id="bloque1" class="row">
-          
-          
-            <div id="padre"class="col">
-             <h5 class="fuente-titulo">Panel de Control</h5>
-             
-              <ul><a class="links fuente-titulo" href="#">Administrador de Tienda</a></ul>
-              <ul><a class="links fuente-titulo" href="#">Tips</a></ul>
-              <ul><a class="links fuente-titulo" href="#">Clientes</a></ul>
-              <ul><a class="links fuente-titulo" href="#">Cliente preferenciales</a></ul>
-              <ul><a class="links fuente-titulo" href="#">Inventario</a></ul>
-
-
-              
-           
-             
-            </div>
-
-              <div id="tabla" id="bloque2" class="col">
-
-                <div id="C2" class="col-md-10">
-                  <h1 class="fuente-titulo">Cotizaciones</h1>
-
-<div id="contenido" class="table-responsive">
-  
-    <table id="contenido" class="table">
-        
-        <thead id="encabezados">
-          <tr>
-            <th scope="col" class="fuente-texto">ID</th>
-            <th scope="col" class="fuente-texto">Fecha de Registro</th>
-            <th scope="col" class="fuente-texto">Nombre</th>
-            <th scope="col" class="fuente-texto">Correo Electrónico</th>
-            <th scope="col" class="fuente-texto">Dirección</th>
-            <th scope="col" class="fuente-texto">Descripción del Mueble</th>
-            <th scope="col" class="fuente-texto">Número de cotización</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr id="color">
-            <th scope="row" class="fuente-texto">1</th>
-            <td>00/00/00</td>
-            <td>Mark</td>
-            <td>mark@gmail.com</td>
-            <td>Ciudad, Colonia</td>
-            <td>Mesa de caoba</td>
-            <td>N°000000</td>
-          </tr>
-          <tr id="blanco">
-            <th scope="row" class="fuente-texto">2</th>
-            <td>00/00/00</td>
-            <td>Mark</td>
-            <td>mark@gmail.com</td>
-            <td>Ciudad, Colonia</td>
-            <td>Mesa de caoba</td>
-            <td>N°000000</td>
-          </tr>
-          <tr id="color">
-            <th scope="row" class="fuente-texto">3</th>
-            <td>00/00/00</td>
-            <td>Mark</td>
-            <td>mark@gmail.com</td>
-            <td>Ciudad, Colonia</td>
-            <td>Mesa de caoba</td>
-            <td>N°000000</td>
-          </tr>
-          
-        </tbody>
-      </table>
-      
     
-  
-</div>
 
-  
+    <div class="container" id="crud" style="background-color: rgba(185, 163, 138, 0.75);">
+
+        <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="color nav-link active fuente-titulo" data-toggle="tab" href=#list role="tab" aria-controls="form" aria-selected="true">Pedidos</a>
+        </li>
+        <li class="nav-item">
+          <a class="color nav-link fuente-titulo" data-toggle="tab" href=#form role="tab" aria-controls="form" aria-selected="true">Cotizaciones</a>
+        </li>
+        <li class="nav-item">
+          <a class="color nav-link fuente-titulo" data-toggle="tab" href=#registro role="tab" aria-controls="form" aria-selected="true" >Registros</a>
+        </li>
+        <li class="nav-item">
+            <a class="color nav-link fuente-titulo" data-toggle="tab" href=#hola role="tab" aria-controls="form" aria-selected="true" >Inventario</a>
+          </li>
+    </ul>
+
+
+      <div class="tab-content" id="myTabContent">
+
+        <div class="tab-pane fade show active table-responsive" id="list" role="tabpanel" aria-labelledby="list-tab">
+
+
+
+            <table id="contenido" class="table">
+    
+                <thead id="encabezados">
+                  <tr>
+                    <th scope="col" class="fuente-texto">ID</th>
+                    <th scope="col" class="fuente-texto">Nombre</th>
+                    <th scope="col" class="fuente-texto">Correo Electrónico</th>
+                    <th scope="col" class="fuente-texto">Dirección</th>
+                    <th scope="col" class="fuente-texto">Articulos</th>
+                    <th scope="col" class="fuente-texto">Editar</th>
+
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr id="color" class="fuente-texto">
+                    <th scope="row">1</th>
+                    
+                    <td>Mark</td>
+                    <td>mark@gmail.com</td>
+                    <td>Ciudad, Colonia</td>
+                    <td>Mesa de caoba</td>
+                    <td><button class="botton_crud" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
+                  </tr>
+                  <tr id="blanco" class="fuente-texto">
+                    <th scope="row">2</th>
+                    
+                    <td>Mark</td>
+                    <td>mark@gmail.com</td>
+                    <td>Ciudad, Colonia</td>
+                    <td>Mesa de caoba</td>
+                    <td><button class="botton_crud fuente-texto" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
+                  </tr>
+                  <tr id="color" class="fuente-texto">
+                    <th scope="row">3</th>
+                    
+                    <td>Mark</td>
+                    <td>mark@gmail.com</td>
+                    <td>Ciudad, Colonia</td>
+                    <td>Mesa de caoba</td>
+                    <td><button class="botton_crud fuente-texto" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+        </div>
+        <div class="tab-pane fade fuente-texto" id="form" role="tabpanel" aria-labelledby="form-tab">
+
+
+            <div id="contenido" class="table-responsive fuente-texto">
+
+                <table id="contenido" class="table fuente-texto">
+                    
+                    <thead id="encabezados">
+                      <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Correo Electrónico</th>
+                        <th scope="col">Dirección</th>
+                        <th scope="col">Descripción del Mueble</th>
+                        <th scope="col">Número de cotización</th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr id="color">
+                        <th scope="row">1</th>
+                        <td>00/00/00</td>
+                        <td>Mark</td>
+                        <td>mark@gmail.com</td>
+                        <td>Ciudad, Colonia</td>
+                        <td>Mesa de caoba</td>
+                        <td>N°000000</td>
+                        <td><button class="botton_crud fuente-texto" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
+                      </tr>
+                      <tr id="blanco">
+                        <th scope="row">2</th>
+                        <td>00/00/00</td>
+                        <td>cesar francisco mata rodriguez</td>
+                        <td>cesar_mata48@gmail.com</td>
+                        <td>calle 309 #365 col vasco de quiroga del gustavo a madero cp 04785</td>
+                        <td>muchas cosas</td>
+                        <td>N°000000</td>
+                        <td><button class="botton_crud fuente-texto" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
+                      </tr>
+                      <tr id="color">
+                        <th scope="row">3</th>
+                        <td>00/00/00</td>
+                        <td>Mark</td>
+                        <td>mark@gmail.com</td>
+                        <td>Ciudad, Colonia</td>
+                        <td>Mesa de caoba</td>
+                        <td>N°000000</td>
+                        <td><button class="botton_crud fuente-texto" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+        <div class="tab-pane fade fuente-texto" id="registro" role="tabpanel" aria-labelledby="form-tab">
+            <div id="contenido" class="table-responsive fuente-texto">
+
+                <table id="contenido" class="table fuente-texto">
+                    
+                    <thead id="encabezados">
+                      <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Fecha de Registro</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Correo Electrónico</th>
+                        
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr id="color">
+                        <th scope="row">1</th>
+                        <td>00/00/00</td>
+                        <td>Mark</td>
+                        <td>mark@gmail.com</td>
+                        
+                        <td><button class="botton_crud" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
+                      </tr>
+                      <tr id="blanco">
+                        <th scope="row">2</th>
+                        <td>00/00/00</td>
+                        <td>cesar francisco mata rodriguez</td>
+                        <td>cesar_mata48@gmail.com</td>
+                        
+                        <td><button class="botton_crud" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
+                      </tr>
+                      <tr id="color">
+                        <th scope="row">3</th>
+                        <td>00/00/00</td>
+                        <td>Mark</td>
+                        <td>mark@gmail.com</td>
+                        
+                        <td><button class="botton_crud" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
+                      </tr>
+                      
+                </tbody>
+            </table>
+        </div>      
+        </div>
+            <div class="tab-pane fade fuente-texto" id="hola" role="tabpanel" aria-labelledby="form-tab">
+                <div id="contenido" class="table-responsive fuente-texto">
+                    <table id="contenido" class="table fuente-texto">
+                        <thead id="encabezados">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Articulo</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Estado</th>
+                                <th scope="col">Cantidad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="color">
+                                <th scope="row">1</th>
+                                <td><img class="img" src="assets/img/crud-tienda/bar.JPG" alt=""></td>
+                                <td>Mesa de centro</td>
+                                <td >Disponible</td>
+                                <td scope="row"> 5</td>
+                                <td><button class="botton_crud" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
+                            </tr>
+                            <tr id="blanco">
+                                <th scope="row">2</th>
+                        
+                                <td><img class="img" src="assets/img/crud-tienda/CasaConejo.jpg" alt=""></td>
+                                <td>Mesa de centro</td>
+                                <td >Disponible</td>
+                                <td scope="row"> 5</td>
+                                <td><button class="botton_crud" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
+                            </tr>
+                            <tr id="color">
+                                <th scope="row">3</th>
+                                <td><img class="img" src="assets/img/crud-tienda/cocina.jpeg" alt=""></td>
+                                <td>Mesa de centro</td>
+                                <td >Disponible</td>
+                                <td scope="row"> 5</td>
+                                <td><button class="botton_crud" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button class="agregar" style="background-color: rgba(180, 153, 124, 0.55);">Agregar Articulo</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- *********************************** MODAL ****************************************** -->
+    <section class="modal fuente-texto" style="overflow-y: scroll;">
+        <div class="modal_container fuente-texto" >
+            <form action="" class="formulario fuente-texto"  >
+                <h2 class="formulario_titulo">Agregar Artículo</h2>
+                <h4 class="titulo_imagenes">Subir fotos: </h4>
+                <input type="file" class="formulario_input fuente-texto">
+                <br>
+                <br>
+            
+                <label_formulario_label class="Zuli">Nombre del Producto</label_formulario_label>
+                <input type="text" class="formulario_input_dos">
+                <label_formulario_label class="Zuli">Precio</label_formulario_label>
+                <input type="text" class="formulario_input_dos">
+                <label_formulario_label class="Zuli">Descripcion 1</label_formulario_label>
+                <input type="text" class="formulario_input_dos">
+                <label_formulario_label class="Zuli">Medidas</label_formulario_label>
+                <input type="text" class="formulario_input_dos">
+                <label_formulario_label class="Zuli">Color</label_formulario_label>
+                <input type="text" class="formulario_input_dos">
+                <label_formulario_label class="Zuli">Material</label_formulario_label>
+                <input type="text" class="formulario_input_dos">
+                <label_formulario_label class="Zuli">Descripcion 2</label_formulario_label>
+                <input type="text" class="formulario_input_dos">  
+            </form>
+            <input type="submit" class="formulario_sumbmit">
+            <a href="#"class="modal_close">Cerrar</a>
         
-                </div>
-                </div>
-                </div>
-                </div>
+        </div>
+    </section>
 
     <!-- ------------------------- PIE DE PÁGINA ------------------------- -->
     <footer>

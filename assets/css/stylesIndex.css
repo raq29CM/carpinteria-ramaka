@@ -68,7 +68,7 @@
     width: 100%;
     display: inline-block;
     text-align: center;
-    top: -12rem;
+    top: -30vh;
 }
 
 .bannerCarrusel{
@@ -81,14 +81,7 @@
     transform: translate(-50%, -50%);
     text-align: center;
     justify-content: center;
-    margin-top: -4.3rem;
-    margin-right: auto;
-    margin-bottom: 4rem;
-    padding-top: 0.5rem;
-}
-
-.imgCarrusel{
-    object-position: bottom;
+    padding-top: 0.5rem; 
 }
 
 
