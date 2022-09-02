@@ -168,7 +168,7 @@
 .porqueElegirnos{
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(/assets/img/inicio/motivos_vision/PorqueElegirnosBackground.jpg);
+    background-image: url(./assets/img/inicio/motivos_vision/PorqueElegirnosBackground.jpg);
     opacity: 75%;
     text-align: justify;
     color: rgb(0, 0, 0);
@@ -213,7 +213,7 @@ footer {
     width: 45px;
     border-radius: 50px;
     border: 1px inset rgba(226, 204, 179, 1);
-    background-image: url(/assets/img/icons/facebook.png);
+    background-image: url(./assets/img/icons/facebook.png);
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -229,16 +229,16 @@ footer {
 }
 
 .redes-iconos:nth-of-type(2) {
-    background-image: url(/assets/img/icons/instagram.png);
+    background-image: url(./assets/img/icons/instagram.png);
 
 }
 
 .redes-iconos:nth-of-type(3) {
-    background-image: url(/assets/img/icons/Whatsapp.png);
+    background-image: url(./assets/img/icons/Whatsapp.png);
 }
 
 .redes-iconos:nth-of-type(4) {
-    background-image: url(/assets/img/icons/phone.png);
+    background-image: url(./assets/img/icons/phone.png);
 }
 
 .item-menu {
