@@ -43,13 +43,10 @@
 }
 
 /* ---------------------------------------- CONTACTO ---------------------------------------- */
+
 /* FUENTES DE LETRA */
 .fuente-titulo{
     font-family: 'Perpetua Titling MT', sans-serif;
-}
-
-.fuente-subtitulo{
-    font-family: "Candara";
 }
 
 .fuente-texto{
@@ -57,22 +54,23 @@
 }
 
 .contacto{
-    font-family: 'Open Sans Hebrew Condensed';
-    font-size: large;
+    padding-bottom: 2.5rem;
 }
 
 .formulario-contacto{
-    background-color: rgb(243, 221, 224);
+    /* background-color: rgb(243, 221, 224); */
+    background-color: #d5bc9f;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+    padding-top: 0.2rem;
+    max-width: 800px;
 }
 
-.img-contact{
-    border-radius:50%;
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-    object-position: center;
-    justify-content: center;
+iframe {
+    max-width: 100%;
+    height: auto;
 }
+
 
 
 /* ---------------------------------------- FOOTER ---------------------------------------- */
