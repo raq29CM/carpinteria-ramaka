@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="assets/css/styleGaleria.css">
     <link rel="stylesheet" href="/assets/css/stylesIndex.css">
-    <!-- <link rel="stylesheet" href="src/css/styles-Galeria.css"> --> 
 </head>
 
 <body>
@@ -23,9 +23,8 @@
     
                 <!-- BOTÓN PARA CUANDO SE HACE RESPONSIVA LA PÁGINA -->
                 <button class="btn navbar-toggler btn-nav-pie" type="button" data-toggle="collapse"
-                data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="true"
-                aria-label="Toggle navigation" >
-                    <img src="assets/img/icons/menu.png" alt="menuResponsive" width="20px" height="20px">
+                    data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="true"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
     
@@ -123,186 +122,193 @@
             </div>
         </nav>
 
+
     <!-- -------------------- CONTENIDO DE LA PAGINA - GALERIA -------------------- -->
+
     <h1 id="valor" class="fuente-titulo">GALERIA</h1>
+    <div class="text-center">
 
     <!-- Apartado de salas -->
-    <div class="productos" id="productos" style="padding-top: 10px;">
-        <!-- <div class="container"> -->
-        <h2 id="galeriaH2-salas" class="fuente-texto">SALAS</h2>
 
-        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 ">
+    <h2 class="apartado fuente-texto">Salas</h2>
 
-            <!-- Sala 1 -->
-            <div class="col mb-3">
+		<div class="col-sm-12 col-md-5 col-lg-3 contenedor_tarjeta">
+				<figure id="tarjeta">
+					<img src="assets/img/galeria/salas/sala0.jpg" class="frontal" alt="">
+					<figcaption class="trasera">
+						<h2 class="titulo"> <br><br> Sala estilo Vintage </h2>
+						<hr>
+						<p>Mueble con fondo y repisas de madera en Caoba acabado chocolate, puertas y mesa de Cedro con acabado natural y vetas visibles. Ideal si te gusta lo moderno y antiguo a la ves.</p>
+					</figcaption>
+				</figure>
+		</div>
 
-                <img src="/assets/img/galeria/salas/sala0.jpg" class="card-img-top img-carta-inicio" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title-inicio">Sala 1</h4>
-                </div>
-            </div>
+		<div class="col-sm-12 col-md-5 col-lg-3 contenedor_tarjeta">
+				<figure id="tarjeta">
+					<img src="assets/img/galeria/salas/sala1.jpg" class="frontal" alt="">
+					<figcaption class="trasera">
+						<h2 class="titulo"> <br><br> Repisa decorativa </h2>
+						<hr>
+						<p>Repisa en ángulo de 90 grados en madera de Cumaru acabado chocolate de 30cm x 60cm. Una excelente opción para decorar tu sala.</p>
+					</figcaption>
+				</figure>
+		</div>
 
-            <!-- Sala 2 -->
-            <div class="col mb-3">
-
-                <img src="/assets/img/galeria/salas/sala1.jpg" class="card-img-top img-carta-inicio" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title-inicio">Sala 2</h4>
-                </div>
-            </div>
-
-            <!-- Sala 3 -->
-            <div class="col mb-3">
-
-                <img src="/assets/img/galeria/salas/sala2.jpg" class="card-img-top img-carta-inicio" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title-inicio">Sala 3</h4>
-                </div>
-            </div>
-
-            <!-- Sala 4 -->
-            <div class="col mb-3">
-
-                <img src="/assets/img/galeria/salas/sala3.jpg" class="card-img-top img-carta-inicio" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title-inicio">Sala 4</h4>
-                </div>
-            </div>
+        <div class="col-sm-12 col-md-5 col-lg-3 contenedor_tarjeta">
+            <figure id="tarjeta">
+                <img src="assets/img/galeria/salas/sala3.jpg" class="frontal" alt="">
+                <figcaption class="trasera">
+                    <h2 class="titulo"><br><br> Mueble de piso.</h2>
+                    <hr>
+                    <p>Mueble de piso de 50cm x 200cm en Banac acabado chocolate con tres puertas corredizas para poder jugar con el acomodo y diseño del mismo.</p>
+                </figcaption>
+                </figure>
         </div>
-    </div>
+	<br>
 
     <!-- Comedor -->
-    <div class="productos" id="productos" style="padding-top: 30px;">
-        <!-- <div class="container"> -->
-        <h2 id="galeriaH2-comedores" class="fuente-texto">COMEDORES</h2>
 
-        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 ">
-            <!-- Comedor 1 -->
-            <div class="col mb-3">
+    <h2 class="apartado fuente-texto">Comedores</h2>
 
-                <img src="/assets/img/galeria/comedor/comedor1.JPG" class="card-img-top img-carta-inicio" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title-inicio">Comedor 1</h4>
-                </div>
+        <div class="contenedor">
+            <div class="col-sm-12 col-md-5 col-lg-3 contenedor_tarjeta">
+                    <figure id="tarjeta">
+                        <img src="assets/img/galeria/comedor/comedor1.JPG" class="frontal" alt="">
+                        <figcaption class="trasera">
+                            <h2 class="titulo"><br><br> Mesa con cubierta de mármol.</h2>
+                            <hr>
+                            <p>Mesa sencilla 60 cm x 150cm de 4 patas en madera de Roble en negro con cubierta de mármol. Sillas en roble con brazos, respaldo corto a 4 patas con forro de tela en gris oxford.</p>
+                        </figcaption>
+                    </figure>
             </div>
-
-            <!-- Comedor 2 -->
-            <div class="col mb-3">
-
-                <img src="/assets/img/galeria/comedor/comedor2.jpg" class="card-img-top img-carta-inicio" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title-inicio">Comedor 2</h4>
-                </div>
+    
+            <div class="col-sm-12 col-md-5 col-lg-3 contenedor_tarjeta">
+                    <figure id="tarjeta">
+                        <img src="assets/img/galeria/comedor/comedor2.jpg" class="frontal" alt="">
+                        <figcaption class="trasera">
+                            <h2 class="titulo"><br><br> Comedor rectangular.</h2>
+                            <hr>
+                            <p>Comedor rectangular de 150cm x 200cm en Encino nacional con cruceta en acabado natural, con 10 sillas de respaldo mediano forradas en tela.</p>
+                        </figcaption>
+                    </figure>
             </div>
-
-            <!-- Comedor 3 -->
-            <div class="col mb-3">
-
-                <img src="/assets/img/galeria/comedor/comedor3.JPG" class="card-img-top img-carta-inicio" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title-inicio">Comedor 3</h4>
-                </div>
+    
+            <div class="col-sm-12 col-md-5 col-lg-3 contenedor_tarjeta">
+                    <figure id="tarjeta">
+                        <img src="assets/img/galeria/comedor/comedor3.JPG" class="frontal" alt="">
+                        <figcaption class="trasera">
+                            <h2 class="titulo"><br><br> Comedor rectangular de 6 sillas.</h2>
+                            <hr>
+                            <p>Comedor en madera de Haya con base rectangular en medio con acabado en chocolate, acompañado de 6 sillas con respaldo alto curveado. </p>
+                        </figcaption>
+                    </figure>
             </div>
-
-            <!-- Comedor 4 -->
-            <div class="col mb-3">
-
-                <img src="/assets/img/galeria/comedor/comedor4.jpg" class="card-img-top img-carta-inicio" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title-inicio">Comedor 4</h4>
-                </div>
+            <div class="col-sm-12 col-md-5 col-lg-3 contenedor_tarjeta">
+                <figure id="tarjeta">
+                    <img src="assets/img/galeria/comedor/comedor4.jpg" class="frontal" alt="">
+                    <figcaption class="trasera">
+                        <h2 class="titulo"><br><br> Comedor sencillo.</h2>
+                        <hr>
+                        <p>Comedor rectangular de Pino a cuatro patas en acabado chocolate en conjunto de 10 sillas con respaldo mediano.</p>
+                    </figcaption>
+                </figure>
             </div>
         </div>
-    </div>
 
 
     <!-- Cocinas -->
-    <div class="productos" id="productos" style="padding-top: 30px;">
-        <!-- <div class="container"> -->
-        <h2 id="galeriaH2-cocinas" class="fuente-texto">COCINAS</h2>
 
-        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 ">
-            <!-- Cocina 1 -->
-            <div class="col mb-3">
+    <h2 class="apartado fuente-texto">Cocinas</h2>
 
-                <img src="/assets/img/galeria/Cocina/Cocina1.jpeg" class="card-img-top img-carta-inicio" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title-inicio">Cocina 1</h4>
-                </div>
+        <div class="contenedor">
+            <div class="contenedor_tarjeta">
+                    <figure id="tarjeta">
+                        <img src="assets/img/galeria/Cocina/Cocina1.jpeg" class="frontal" alt="">
+                        <figcaption class="trasera">
+                            <h2 class="titulo"><br><br> Pared de Cocina.</h2>
+                            <hr>
+                            <p>Cocina forrada con madera de Tzalam con puerta escondida en la pared y otra puerta corrediza para separar la cocina del resto de la casa.</p>
+                        </figcaption>
+                    </figure>
             </div>
-
-            <!-- Cocina 2 -->
-            <div class="col mb-3">
-
-                <img src="/assets/img/galeria/Cocina/Cocina2.jpg" class="card-img-top img-carta-inicio" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title-inicio">Cocina 2</h4>
-                </div>
+    
+            <div class="contenedor_tarjeta">
+                    <figure id="tarjeta">
+                        <img src="assets/img/galeria/Cocina/Cocina2.jpg" class="frontal" alt="">
+                        <figcaption class="trasera">
+                            <h2 class="titulo"><br><br> Cocina de dos piezas.</h2>
+                            <hr>
+                            <p>Mueble de piso en Teka de 250cm x 60cm con 4 puertas y una sección con repisas para barra de cocina. Mueble fijado a pared de 220cm x 60cm con 11 divisiones de diferentes medidas.</p>
+                        </figcaption>
+                    </figure>
             </div>
+    
+            <div class="contenedor_tarjeta">
+                    <figure id="tarjeta">
+                        <img src="assets/img/galeria/Cocina/Cocina4.jpeg" class="frontal" alt="">
+                        <figcaption class="trasera">
+                            <h2 class="titulo"><br><br> Cocina integral.</h2>
+                            <hr>
+                            <p>Alacena en madera de Cerezo con acabado natural, puertas con bisagra de cierre lento.
 
-            <!-- Cocina 3 -->
-            <div class="col mb-3">
-
-                <img src="/assets/img/galeria/Cocina/Cocina3.jpeg" class="card-img-top img-carta-inicio" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title-inicio">Cocina 3</h4>
-                </div>
+                                Mueble de piso en Chechen con acabado en chocolate.</p>
+                        </figcaption>
+                    </figure>
             </div>
-
-            <!-- Cocina 4 -->
-            <div class="col mb-3">
-
-                <img src="/assets/img/galeria/Cocina/Cocina4.jpeg" class="card-img-top img-carta-inicio" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title-inicio">Cocina 4</h4>
-                </div>
-            </div>
-        </div>
     </div>
 
     <!-- Closet  -->
-    <div class="productos" id="productos" style="padding-top: 30px;">
-        <!-- <div class="container"> -->
-        <h2 id="galeriaH2-closets" class="fuente-texto">CLOSETS</h2>
 
-        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 ">
-            <!-- Closet 1 -->
-            <div class="col mb-3">
+    <h2 class="apartado fuente-texto">Closets</h2>
 
-                <img src="/assets/img/galeria/Closet/Closet1.jpg" class="card-img-top img-carta-inicio" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title-inicio">Closet 1</h4>
-                </div>
-            </div>
-
-            <!-- Closet 2 -->
-            <div class="col mb-3">
-
-                <img src="/assets/img/galeria/Closet/Closet2.jpg" class="card-img-top img-carta-inicio" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title-inicio">Closet 2</h4>
-                </div>
-            </div>
-
-            <!-- Closet 3 -->
-            <div class="col mb-3">
-
-                <img src="/assets/img/galeria/Closet/Closet3.jpeg" class="card-img-top img-carta-inicio" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title-inicio">Closet 3</h4>
-                </div>
-            </div>
-
-            <!-- Closet 4 -->
-            <div class="col mb-3">
-
-                <img src="/assets/img/galeria/Closet/Closet4.jpg" class="card-img-top img-carta-inicio" alt="...">
-                <div class="card-body">
-                    <h4 class="card-title-inicio">Closet 4</h4>
-                </div>
-            </div>
+    <div class="contenedor">
+        <div class="contenedor_tarjeta">
+                <figure id="tarjeta">
+                    <img src="assets/img/galeria/Closet/Closet1.jpg" class="frontal" alt="">
+                    <figcaption class="trasera">
+                        <h2 class="titulo"><br><br> Closet de piso a techo.</h2>
+                        <hr>
+                        <p>Closet en Parota de 150cm x 250, con 4 puertas, 5 cajones y 3 espacios con repisa, ideal para espacios pequeños.</p>
+                    </figcaption>
+                </figure>
         </div>
+
+        <div class="contenedor_tarjeta">
+                <figure id="tarjeta">
+                    <img src="assets/img/galeria/Closet/Closet2.jpg" class="frontal" alt="">
+                    <figcaption class="trasera">
+                        <h2 class="titulo"><br><br> Closet de toda una pared.</h2>
+                        <hr>
+                        <p>Closet en Haya de 300cm x 250cm con 5 puertas completas y 2 en mitad de tamaño con bisagras de push, junto con 6 cajones de cierre lento.</p>
+                    </figcaption>
+                </figure>
+        </div>
+
+        <div class="contenedor_tarjeta">
+                <figure id="tarjeta">
+                    <img src="assets/img/galeria/Closet/Closet3.jpeg" class="frontal" alt="">
+                    <figcaption class="trasera">
+                        <h2 class="titulo"><br><br> Closet completo.</h2>
+                        <hr>
+                        <p>Closet en Haya de 300cm x 250cm con 5 puertas completas y 2 en mitad de tamaño con bisagras de push, junto con 6 cajones de cierre lento.</p>
+                    </figcaption>
+                </figure>
+        </div>
+        <div class="contenedor_tarjeta">
+            <figure id="tarjeta">
+                <img src="assets/img/galeria/Closet/Closet4.jpg" class="frontal" alt="">
+                <figcaption class="trasera">
+                    <h2 class="titulo"><br><br> Closet liso.</h2>
+                    <hr>
+                    <p>Closet en Haya de 300cm x 250cm con 5 puertas completas y 2 en mitad de tamaño con bisagras de push, junto con 6 cajones de cierre lento.</p>
+                </figcaption>
+            </figure>
     </div>
+</div>
+
+
+</div>
+        
 
 
 
