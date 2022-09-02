@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 =======
 //Semana 1
 Pase de lista - 9AGO2022 - Raquel
@@ -28,5 +27,3 @@ Pase de lista - 02SEP2022 - Raquel
 
 Pase de lista - Diana n.n
 
-
->>>>>>> a0631ba3cdbe983b7fbd7407a200f0c8f705c6e9
