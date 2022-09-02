@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Contacto </title>
+
+    <title> Mi cuenta 2 </title>
+
+    <!---------------------------------- Enlace a Bootstrap ----------------------------->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/c85fdf562b.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="/assets/css/styleContacto.css">
+    <!----------------------------- Enlaces a páginas de estilos CSS -------------------------------->
+
+    <link rel="stylesheet" href="/assets/css/stylesMiCuenta2.css">
 
 </head>
 
@@ -19,14 +26,13 @@
     <!-- -------------------- BARRA DE NAVEGACIÓN -------------------- -->
     <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #133133;">
         <div class="container">
-            <a class="navbar-brand" href="/index.html"> <img src="/assets/img/icons/Logo-Ramaka.jpeg" alt="" width="100%"
-                height="45px" class="d-inline-block align-text-top"></a>
+            <a class="navbar-brand" href="/index.html"> <img src="/assets/img/icons/Logo-Ramaka.jpeg" alt=""
+                    width="100%" height="45px" class="d-inline-block align-text-top"></a>
 
             <!-- BOTÓN PARA CUANDO SE HACE RESPONSIVA LA PÁGINA -->
             <button class="btn navbar-toggler btn-nav-pie" type="button" data-toggle="collapse"
                 data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="true"
-                aria-label="Toggle navigation" >
-                <img src="assets/img/icons/menu.png" alt="menuResponsive" width="20px" height="20px">
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -35,8 +41,8 @@
                 <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle btn-nav-pie active" href="/tienda.html" role="button" data-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle btn-nav-pie active" href="/tienda.html" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
                             Tienda </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="/tienda.html">Macetas</a></li>
@@ -48,8 +54,8 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle btn-nav-pie" href="/tips.html" role="button" data-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle btn-nav-pie" href="/tips.html" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
                             Tips
                         </a>
                         <ul class="dropdown-menu">
@@ -75,8 +81,8 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle btn-nav-pie" href="/galeria.html" role="button" data-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle btn-nav-pie" href="/galeria.html" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
                             Galeria
                         </a>
                         <ul class="dropdown-menu">
@@ -110,6 +116,7 @@
                     <button class="btn btn-nav-pie" type="submit" style="color: #b9a38a;">Buscar</button>
                 </form>
 
+
                 <!-- ---------- BOTÓN CARRITO ---------- -->
                 <a href="/carrito.html" class="btn carrito btn-nav-pie">
                     <i class="bi bi-cart4">
@@ -124,29 +131,30 @@
         </div>
     </nav>
 
-    <!-- -------------------- CONTENIDO DE LA PAGINA - CONTACTO -------------------- -->
-    <div class="contacto fuente-texto ">
-        <div class="container mt-3">
-            <div class="row row-cols-1 row-cols-md-1 row-cols-xl-1">
-                
-                <!-- DATOS DE CONTACTO -->
-                <div class="col-mb-4 mt-4">
-                    <div class="text-center">
-                        <h2 class="fuente-titulo"> Contáctanos </h2>
-                        <h4 class="fuente-texto"> Ramaka coorporativo Mexico, S.A. de C.V. </h4>
-                        <br>
-                            <h5>¡Cuéntanos tu idea y nosotros la hacemos realidad!</h5>
-                            <br>
-                            <h6>Obtén una cotización aquí.</h6>
-                        <br>
-                    </div>
-                </div>
 
-                <!-- FORMULARIO -->
+    <!------------------------------------------- MI CUENTA 2 --------------------------------------------->
+    <div class="container-fluid">
+        <!-- BARRA DE SUBMENÚ -->
+        <div class="wrap">
+            <ul class="tabs">
+                <li><a href="#miPerfil"><span class="fa fa-home"></span><span class="tab-text fuente-texto">Mis
+                            Datos</span></a></li>
+                <li><a href="#misPedidos"><span class="fa fa-briefcase"></span><span class="tab-text fuente-texto">Mis
+                            Pedidos</span></a></li>
+                <li><a href="#direcciones"><span class="fa fa-map-marker"></span><span
+                            class="tab-text fuente-texto">Direcciones</span></a></li>
+            </ul>
+        </div>
+
+        <!-- SECCIONES O APARTADOS DE CONTENIDO -->
+        <div class="secciones">
+            <!-- MI PERFIL -->
+            <section id="miPerfil">
+                <h1 class="fuente-titulo">Mi perfil</h1>
                 <div class="container formulario-contacto">
                     <form class="formulario mt-3">
                         <div class="form-group">
-                            <label for="validationDefault01">Nombre o Razón Social:</label>
+                            <label for="validationDefault01">Nombre:</label>
                             <input type="text" class="form-control" id="validationDefault01"
                                 placeholder="Nombre o Razón Social" required>
                         </div>
@@ -157,7 +165,6 @@
                                 <input type="email" class="form-control" id="validationDefault02"
                                     placeholder="email@example.com" required>
                             </div>
-
                             <div class="form-group col-md-5">
                                 <label for="validationDefault03">Teléfono de contacto:</label>
                                 <input type="tel" class="form-control" id="validationDefault03" placeholder=" Teléfono "
@@ -166,14 +173,30 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="validationDefault04">Dirección</label>
-                            <input type="text" class="form-control" id="validationDefault04" required>
+                            <label for="validationDefault04">Direcciónes</label>
+                            <input type="text" class="form-control" id="validationDefault04" placeholder="Dirección 1"
+                                required>
+                            <br>
+                            <input type="text" class="form-control" id="validationDefault04" placeholder="Dirección 2"
+                                required>
+                            <br>
+                            <input type="text" class="form-control" id="validationDefault04" placeholder="Dirección 3"
+                                required>
                         </div>
 
                         <div class="form-group">
                             <label for="validationDefault05">Referencias cercanas</label>
                             <input type="text" class="form-control" id="validationDefault05"
-                                placeholder=" Entre que calles se encuentra ubicado. Lugares de referencia " required>
+                                placeholder="Dirección 1     Entre que calles se encuentra ubicado. Lugares de referencia "
+                                required>
+                            <br>
+                            <input type="text" class="form-control" id="validationDefault05"
+                                placeholder="Dirección 2      Entre que calles se encuentra ubicado. Lugares de referencia "
+                                required>
+                            <br>
+                            <input type="text" class="form-control" id="validationDefault05"
+                                placeholder="Dirección 3     Entre que calles se encuentra ubicado. Lugares de referencia "
+                                required>
                         </div>
 
                         <div class="form-row">
@@ -226,46 +249,33 @@
                                 <input type="text" class="form-control" id="validationDefault06" placeholder="C.P"
                                     required>
                             </div>
+                            <!-- <div class="mt-5">
+                                <a href="#">EDITAR</a>
+                            </div> -->
                         </div>
-
-                        <div class="form-group">
-                            <label for="exampleFormControlTextarea1">¡Cuéntanos tu idea!</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"
-                                placeholder="Desarrolla tu idea." required></textarea>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                                <label class="form-check-label" for="invalidCheck2">
-                                    He leído los términos y condiciones.
-                                </label>
-                            </div>
-                        </div>
-
-                        <button type="submit" class="btn btn-info">Enviar</button>
+                        <button type="submit" class="btn btn-success">Editar</button>
                     </form>
                 </div>
+            </section>
 
-                <div class="text-center mt-5">
-                    <h2 class="fuente-titulo"> Ubicación </h2>
-                    <p> Calle Geranio, San Andrés Totoltepec, Tlalpan,<br>
-                        14400, Ciudad de México, CDMX</p>
-                    <p>¿Tienes dudas?</p>
-                    <p>Llámanos al número 55 8786 1218</p>
-                    <p>Horarios: Lunes a Viernes 9:00 am a 7:00 pm</p>
+            <!-- MIS PEDIDOS -->
+            <section id="misPedidos">
+                <h1 class="fuente-titulo">Mis Pedidos</h1>
+                <p class="fuente-texto"> Aún no ha realizado alguna compra. </p>
+            </section>
 
-                    <!-- MAPA CON LA UBICACIÓN -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1635.5059715727946!2d-99.15791617977928!3d19.270852797745132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce00e883fb2731%3A0x1b5c8dd74a40373a!2sCda.%20de%20Geranio%2C%20San%20Andr%C3%A9s%20Totoltepec%2C%2014640%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1661966720060!5m2!1ses!2smx" width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
+            <!-- DIRECCIONES -->
+            <section id="direcciones">
+                <h1 class="fuente-titulo">Direcciones</h1>
+                <p class="fuente-texto"> Aún no existen direcciones registradas. </p>
+            </section>
         </div>
     </div>
 
 
 
     <!-- ------------------------- PIE DE PÁGINA ------------------------- -->
-    <footer>
+    <footer style="position: relative; bottom: -15.2vh;">
         <img src="/assets/img/icons/ramaka-footer.jpeg" alt="logo" height="30px">
         <div class="iconos-redes-sociales-container">
             <a href="https://es-la.facebook.com/" class="redes-iconos"></a>
@@ -274,7 +284,6 @@
             <a href="tel:600123456" class="redes-iconos"></a>
         </div>
 
-        <div class="class"></div>
         <ul class="pie-de-pagina-container">
             <li class="item-menu">
                 <a href="/tyc.html#polPrivacy" style="color: #b9a38a;">Politica de privacidad</a>
@@ -295,6 +304,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
+    <script src="assets/js/miCuenta2.js"></script>
 
 </body>
 
