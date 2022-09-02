@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/styleCrud.css">
+  <title>CRUD</title>
+</head>
+<body>
+    <!-- -------------------- BARRA DE NAVEGACIÓN -------------------- -->
+    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #133133;">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html"> <img src="./assets/img/icons/Logo-Ramaka.jpeg" alt="" width="100%"
+                height="45px" class="d-inline-block align-text-top"></a>
+
+            <!-- BOTÓN PARA CUANDO SE HACE RESPONSIVA LA PÁGINA -->
+            <button class="btn navbar-toggler btn-nav-pie" type="button" data-toggle="collapse"
+                data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="true"
+                aria-label="Toggle navigation" >
+                <img src="./assets/img/icons/menu.png" alt="menuResponsive" width="20px" height="20px">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarScroll">
+
+                <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle btn-nav-pie active" href="./tienda.html" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Tienda </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./tienda.html">Macetas</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="./tienda.html#a-comedor">Utencilios</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle btn-nav-pie" href="./tips.html" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Tips
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./tips.html">Datos Curiosos</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="./tips.html#subTipos">Tipos de Madera</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="./tips.html#subHacer">Hágalo usted mismo</a></li>
+                            <li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link btn-nav-pie" href="./contacto.html">Contacto</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link btn-nav-pie" href="./nosotros.html">Nosotros</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle btn-nav-pie" href="./galeria.html" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Galeria
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./galeria.html">Salas</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="./galeria.html#galeriaH2-cocinas">Cocina</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="./galeria.html#galeriaH2-closets">Closets</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="./galeria.html#galeriaH2-comedores">Comedor</a></li>
+                            <li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link btn-nav-pie" href="./inicioSesion.html">Mi cuenta</a>
+                    </li>
+
+                </ul>
+
+                <!-- ---------- BARRA DE BÚSQUEDA EN LA PÁGINA ---------- -->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar en la página"
+                        aria-label="Search">
+                    <button class="btn btn-nav-pie" type="submit" style="color: #b9a38a;">Buscar</button>
+                </form>
+
+                <!-- ---------- BOTÓN CARRITO ---------- -->
+                <a href="./carrito.html" class="btn carrito btn-nav-pie">
+                    <i class="bi bi-cart4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#bb9569"
+                            class="bi bi-cart4" viewBox="0 0 16 16">
+                            <path
+                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                        </svg>
+                    </i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO DEL CRUD -->
+    
+
+    <div class="container" id="crud" style="background-color: rgba(185, 163, 138, 0.75);">
+
+        <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="color nav-link active fuente-titulo" data-toggle="tab" href=#list role="tab" aria-controls="form" aria-selected="true">Pedidos</a>
+        </li>
+        <li class="nav-item">
+          <a class="color nav-link fuente-titulo" data-toggle="tab" href=#form role="tab" aria-controls="form" aria-selected="true">Cotizaciones</a>
+        </li>
+        <li class="nav-item">
+          <a class="color nav-link fuente-titulo" data-toggle="tab" href=#registro role="tab" aria-controls="form" aria-selected="true" >Registros</a>
+        </li>
+        <li class="nav-item">
+            <a class="color nav-link fuente-titulo" data-toggle="tab" href=#hola role="tab" aria-controls="form" aria-selected="true" >Inventario</a>
+          </li>
+    </ul>
+
+
+      <div class="tab-content" id="myTabContent">
+
+        <div class="tab-pane fade show active table-responsive" id="list" role="tabpanel" aria-labelledby="list-tab">
+
+
+
+            <table id="contenido" class="table">
+    
+                <thead id="encabezados">
+                  <tr>
+                    <th scope="col" class="fuente-texto">ID</th>
+                    <th scope="col" class="fuente-texto">Nombre</th>
+                    <th scope="col" class="fuente-texto">Correo Electrónico</th>
+                    <th scope="col" class="fuente-texto">Dirección</th>
+                    <th scope="col" class="fuente-texto">Articulos</th>
+                    <th scope="col" class="fuente-texto">Editar</th>
+
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr id="color" class="fuente-texto">
+                    <th scope="row">1</th>
+                    
+                    <td>Mark</td>
+                    <td>mark@gmail.com</td>
+                    <td>Ciudad, Colonia</td>
+                    <td>Mesa de caoba</td>
+                    <td><button class="botton_crud" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
+                  </tr>
+                  <tr id="blanco" class="fuente-texto">
+                    <th scope="row">2</th>
+                    
+                    <td>Mark</td>
+                    <td>mark@gmail.com</td>
+                    <td>Ciudad, Colonia</td>
+                    <td>Mesa de caoba</td>
+                    <td><button class="botton_crud fuente-texto" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
+                  </tr>
+                  <tr id="color" class="fuente-texto">
+                    <th scope="row">3</th>
+                    
+                    <td>Mark</td>
+                    <td>mark@gmail.com</td>
+                    <td>Ciudad, Colonia</td>
+                    <td>Mesa de caoba</td>
+                    <td><button class="botton_crud fuente-texto" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+        </div>
+        <div class="tab-pane fade fuente-texto" id="form" role="tabpanel" aria-labelledby="form-tab">
+
+
+            <div id="contenido" class="table-responsive fuente-texto">
+
+                <table id="contenido" class="table fuente-texto">
+                    
+                    <thead id="encabezados">
+                      <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Correo Electrónico</th>
+                        <th scope="col">Dirección</th>
+                        <th scope="col">Descripción del Mueble</th>
+                        <th scope="col">Número de cotización</th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr id="color">
+                        <th scope="row">1</th>
+                        <td>00/00/00</td>
+                        <td>Mark</td>
+                        <td>mark@gmail.com</td>
+                        <td>Ciudad, Colonia</td>
+                        <td>Mesa de caoba</td>
+                        <td>N°000000</td>
+                        <td><button class="botton_crud fuente-texto" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
+                      </tr>
+                      <tr id="blanco">
+                        <th scope="row">2</th>
+                        <td>00/00/00</td>
+                        <td>cesar francisco mata rodriguez</td>
+                        <td>cesar_mata48@gmail.com</td>
+                        <td>calle 309 #365 col vasco de quiroga del gustavo a madero cp 04785</td>
+                        <td>muchas cosas</td>
+                        <td>N°000000</td>
+                        <td><button class="botton_crud fuente-texto" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
+                      </tr>
+                      <tr id="color">
+                        <th scope="row">3</th>
+                        <td>00/00/00</td>
+                        <td>Mark</td>
+                        <td>mark@gmail.com</td>
+                        <td>Ciudad, Colonia</td>
+                        <td>Mesa de caoba</td>
+                        <td>N°000000</td>
+                        <td><button class="botton_crud fuente-texto" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+        <div class="tab-pane fade fuente-texto" id="registro" role="tabpanel" aria-labelledby="form-tab">
+            <div id="contenido" class="table-responsive fuente-texto">
+
+                <table id="contenido" class="table fuente-texto">
+                    
+                    <thead id="encabezados">
+                      <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Fecha de Registro</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Correo Electrónico</th>
+                        
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr id="color">
+                        <th scope="row">1</th>
+                        <td>00/00/00</td>
+                        <td>Mark</td>
+                        <td>mark@gmail.com</td>
+                        
+                        <td><button class="botton_crud" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
+                      </tr>
+                      <tr id="blanco">
+                        <th scope="row">2</th>
+                        <td>00/00/00</td>
+                        <td>cesar francisco mata rodriguez</td>
+                        <td>cesar_mata48@gmail.com</td>
+                        
+                        <td><button class="botton_crud" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
+                      </tr>
+                      <tr id="color">
+                        <th scope="row">3</th>
+                        <td>00/00/00</td>
+                        <td>Mark</td>
+                        <td>mark@gmail.com</td>
+                        
+                        <td><button class="botton_crud" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
+                      </tr>
+                      
+                </tbody>
+            </table>
+        </div>      
+        </div>
+            <div class="tab-pane fade fuente-texto" id="hola" role="tabpanel" aria-labelledby="form-tab">
+                <div id="contenido" class="table-responsive fuente-texto">
+                    <table id="contenido" class="table fuente-texto">
+                        <thead id="encabezados">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Articulo</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Estado</th>
+                                <th scope="col">Cantidad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="color">
+                                <th scope="row">1</th>
+                                <td><img class="img" src="./assets/img/crud-tienda/bar.JPG" alt=""></td>
+                                <td>Mesa de centro</td>
+                                <td >Disponible</td>
+                                <td scope="row"> 5</td>
+                                <td><button class="botton_crud" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
+                            </tr>
+                            <tr id="blanco">
+                                <th scope="row">2</th>
+                        
+                                <td><img class="img" src="./assets/img/crud-tienda/CasaConejo.jpg" alt=""></td>
+                                <td>Mesa de centro</td>
+                                <td >Disponible</td>
+                                <td scope="row"> 5</td>
+                                <td><button class="botton_crud" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
+                            </tr>
+                            <tr id="color">
+                                <th scope="row">3</th>
+                                <td><img class="img" src="./assets/img/crud-tienda/cocina.jpeg" alt=""></td>
+                                <td>Mesa de centro</td>
+                                <td >Disponible</td>
+                                <td scope="row"> 5</td>
+                                <td><button class="botton_crud" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button class="agregar" style="background-color: rgba(180, 153, 124, 0.55);">Agregar Articulo</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- *********************************** MODAL ****************************************** -->
+    <section class="modal fuente-texto" style="overflow-y: scroll;" >
+        <div class="modal_container fuente-texto" >
+            <form action="" class="formulario fuente-texto"  style="background-color: #b9a38a;">
+                <h2 class="formulario_titulo text-dark">Agregar Artículo</h2>
+                <h4 class="titulo_imagenes">Subir fotos: </h4>
+                <input type="file" class="formulario_input fuente-texto">
+                <br>
+                <br>
+            
+                <label_formulario_label class="Zuli">Nombre del Producto</label_formulario_label>
+                <input type="text" class="formulario_input_dos">
+                <label_formulario_label class="Zuli">Precio</label_formulario_label>
+                <input type="text" class="formulario_input_dos">
+                <label_formulario_label class="Zuli">Descripcion 1</label_formulario_label>
+                <input type="text" class="formulario_input_dos">
+                <label_formulario_label class="Zuli">Medidas</label_formulario_label>
+                <input type="text" class="formulario_input_dos">
+                <label_formulario_label class="Zuli">Color</label_formulario_label>
+                <input type="text" class="formulario_input_dos">
+                <label_formulario_label class="Zuli">Material</label_formulario_label>
+                <input type="text" class="formulario_input_dos">
+                <label_formulario_label class="Zuli">Descripcion 2</label_formulario_label>
+                <input type="text" class="formulario_input_dos">  
+            </form>
+            <input type="submit" class="formulario_sumbmit">
+            <a href="#"class="modal_close">Cerrar</a>
+        
+        </div>
+    </section>
+
+    <!-- ------------------------- PIE DE PÁGINA ------------------------- -->
+    <footer>
+        <img src="./assets/img/icons/ramaka-footer.jpeg" alt="logo" height="30px">
+        <div class="iconos-redes-sociales-container">
+            <a href="https://es-la.facebook.com/" class="redes-iconos"></a>
+            <a href="https://www.instagram.com/" class="redes-iconos"></a>
+            <a href="https://www.whatsapp.com/?lang=es" class="redes-iconos"></a>
+            <a href="tel:600123456" class="redes-iconos"></a>
+        </div>
+
+        <div class="class"></div>
+        <ul class="pie-de-pagina-container">
+            <li class="item-menu">
+                <a href="./tyc.html#polPrivacy" style="color: #b9a38a;">Politica de privacidad</a>
+            </li>
+            <li class="item-menu">
+                <a href="./tyc.html" style="color: #b9a38a;">Terminos y condiciones</a>
+            </li>
+            <li class="item-menu">
+                <a href="./tyc.html#polCookies" style="color: #b9a38a;">Politica de cookies</a>
+            </li>
+        </ul>
+        <span class="copyright">&copy;2022, Ramaka. Todos los derechos reservados.</span>
+    </footer>
+
+    <script src="./assets/js/pagCrud.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"></script>
+
+</body>
+
+</html>
