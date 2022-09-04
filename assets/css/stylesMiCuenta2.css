@@ -1,0 +1,228 @@
+/* FUENTE DE LA BARRA DE NAVEGACIÓN Y FOOTER */
+@import url(https://fonts.googleapis.com/css?family=Josefin-Sans);
+
+/* FUENTE TENTATIVA PARA EL CONTENIDO DE LAS PÁGINAS */
+@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrewcondensed.css);
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+
+/* FUENTE PARA TITULOS - CLASS: fuente-titulo*/
+@import url('http://fonts.cdnfonts.com/css/perpetua-titling-mt');
+
+/* FUENTE PARA TEXTO NORMAL - CLASS: fuente-titulo*/
+@import url(//db.onlinewebfonts.com/c/e662339992c4abf5b43f537391bd3169?family=Candara);
+
+/* ---------------------------------------- NAVBAR ---------------------------------------- */
+.collapse {
+    justify-content: right;
+}
+
+.container  ul li a {
+    /* color: #bb9569; el primero*/
+    /* color: #bda182; */
+    /* color: #bda284; */
+    color: #b9a38a;
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+    justify-content: right;
+}
+
+.btn-nav-pie{
+    border-color: #b9a38a;
+    color: #b9a38a;
+    margin-left: 10px;
+}
+
+.btn-nav-pie:hover {
+    border-radius: 10px;
+    background-color: #012c2e;
+    filter: invert(1);
+    transition: 0.5s;
+}
+
+/* ---------------------------------------- MI CUENTA 2 ---------------------------------------- */
+
+/* FUENTES DE LETRA */
+.fuente-titulo{
+    font-family: 'Perpetua Titling MT', sans-serif;
+}
+
+.fuente-texto{
+    font-family: "Candara";
+}
+
+body{
+    background-image: url("../img/icons/fondoChulo.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+/* -------------------- MIS DATOS -------------------- */
+
+.contacto{
+    padding-bottom: 2.5rem;
+}
+
+.formulario-contacto{
+    background-color: #d5bc9f;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+    padding-top: 0.2rem;
+    max-width: 800px;
+}
+
+/* -------------------- MIS PEDIDOS -------------------- */
+
+.wrap{
+	max-width: 382px;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    text-align: center;
+}
+
+ul.tabs{
+	width: 100%;
+	background: #d5bc9f;
+	list-style: none;
+	display: flex;
+    padding: 0px;
+    border-radius: 10px;
+}
+
+ul.tabs li{
+	width: 8rem;
+}
+
+.tabs a{
+	color: #fff;
+	text-decoration: underline;
+	font-size: 16px;
+	text-align: center;
+	display: block;
+	padding: 20px 0px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.active{
+	/* background: #012c2e; */
+    background-color: #133133;
+}
+
+.secciones section{
+	padding: 2rem;
+}
+
+.secciones section p{
+	text-align: center;
+}
+
+
+@media screen and (max-width: 700px){
+	ul.tabs li{
+		width: none;
+		flex-basis: 0;
+		flex-grow: 1;
+	}
+}
+
+@media screen and (max-width: 450px){
+	ul.tabs li a{
+		padding: 15px 0px;
+	}
+
+	ul.tabs li a .tab-text{
+		display: none;
+	}
+
+	.secciones section{
+		padding: 20px;
+	}
+}
+
+
+
+
+
+
+
+/* ---------------------------------------- FOOTER ---------------------------------------- */
+
+footer {
+    position: static;
+    width: 100%;
+    left: 0;
+    bottom: -10;
+    padding: 2rem 8%;
+    background-color: rgba(19, 49, 51, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Josefin Sans';
+}
+
+.iconos-redes-sociales-container,
+.pie-de-pagina-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: -0.10cm;
+}
+
+.redes-iconos {
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    border: 1px inset rgba(226, 204, 179, 1);
+    background-image: url(../img/icons/facebook.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+
+.redes-iconos:hover {
+    background-color: rgba(19, 49, 51, 1);
+    border-radius: 15%;
+    filter: invert(1);
+    transition: 0.5s;
+}
+
+.redes-iconos:nth-of-type(2) {
+    background-image: url(../img/icons/instagram.png);
+
+}
+
+.redes-iconos:nth-of-type(3) {
+    background-image: url(../img/icons/Whatsapp.png);
+}
+
+.redes-iconos:nth-of-type(4) {
+    background-image: url(../img/icons/phone.png);
+}
+
+.item-menu {
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    list-style-type: none;
+    font-size: 15px;
+    opacity: 0.6;
+    color: rgba(226, 204, 179, 1);
+}
+
+.item.hover {
+    opacity: 1;
+}
+
+.copyright {
+    color: rgba(226, 204, 179, 1);
+    opacity: 0.3;
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+}
