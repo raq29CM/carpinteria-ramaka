@@ -9,11 +9,6 @@
 @import url(//db.onlinewebfonts.com/c/e662339992c4abf5b43f537391bd3169?family=Candara);
 
 /* ---------------------------------------- NAVBAR ---------------------------------------- */
-.imagen-navbar{
-    object-fit: cover;
-    object-position: center;
-}
-
 .collapse {
     justify-content: right;
 }
@@ -174,15 +169,15 @@ h2, h4{
 }
 
 .zul_container{
-    margin: auto;
-    width: 90%;
-    max-width: 1000px;
-    max-height: 90%;
+    margin: 155px auto;
+    width: 80%;
+    height: 62%;
     background-color: #b9a38a;
     border-radius: 10px;
     padding: 1.5em 1.5em;
     transform: var(--transform);
     transition: var(--transition);
+    overflow-y: scroll;
 }
 
 .zul{
@@ -194,12 +189,12 @@ h2, h4{
     margin-top: 4%;
     object-fit: cover;
     height: 300px;
-    width: 400px;
+    width: auto;
     border-radius: 3px;
 }
 
 .imgc{
-    height: 300px;
+    height: 330px;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -222,7 +217,8 @@ h2, h4{
 .parrafo{
     font-family: "Candara";
     display: inline-block;
-    width: 500px;
+    width: auto;
+    height: auto;
     background-color: #caa77e;
     border-radius: 0px 0px 10px 10px;
     padding: 10px;
