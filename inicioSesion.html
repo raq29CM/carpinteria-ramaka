@@ -1,34 +1,36 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title> Inicio de Sesión </title>
+    <title>Inicio de Sesión</title>
 
     <!---------------------------------- Enlace a Bootstrap ----------------------------->
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
 
     <!----------------------------- Enlaces a páginas de estilos CSS -------------------------------->
 
-    <link rel="stylesheet" href="./assets/css/stylemiCuenta.css">
+    <link rel="stylesheet" href="assets/css/styleInicioSesion.css">
+
 </head>
 
 <body>
+
     <!-- -------------------- BARRA DE NAVEGACIÓN -------------------- -->
     <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #133133;">
         <div class="container">
-            <a class="navbar-brand" href="./index.html"> <img src="./assets/img/icons/Logo-Ramaka.jpeg" alt="" width="100%"
-                height="45px" class="d-inline-block align-text-top"></a>
+            <a class="navbar-brand" href="./index.html"> <img src="./assets/img/icons/Logo-Ramaka.jpeg" alt=""
+                    width="100%" height="45px" class="d-inline-block align-text-top"></a>
 
             <!-- BOTÓN PARA CUANDO SE HACE RESPONSIVA LA PÁGINA -->
             <button class="btn navbar-toggler btn-nav-pie" type="button" data-toggle="collapse"
                 data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="true"
-                aria-label="Toggle navigation" >
+                aria-label="Toggle navigation">
                 <img src="./assets/img/icons/menu.png" alt="menuResponsive" width="20px" height="20px">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -38,8 +40,8 @@
                 <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle btn-nav-pie active" href="./tienda.html" role="button" data-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle btn-nav-pie active" href="./tienda.html" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
                             Tienda </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="./tienda.html">Macetas</a></li>
@@ -51,8 +53,8 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle btn-nav-pie" href="./tips.html" role="button" data-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle btn-nav-pie" href="./tips.html" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
                             Tips
                         </a>
                         <ul class="dropdown-menu">
@@ -78,8 +80,8 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle btn-nav-pie" href="./galeria.html" role="button" data-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle btn-nav-pie" href="./galeria.html" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
                             Galeria
                         </a>
                         <ul class="dropdown-menu">
@@ -127,73 +129,114 @@
         </div>
     </nav>
 
+    <!------------------------------ Inicio de Sesión ----------------------->
 
-    <!-------------------------------------------Mi cuenta--------------------------------------------->
-    <div class="text-center">
-        <form action="" method="POST" id="form">
-        <div class="form">
-    
-    
-    <h1 class="text-center fuente-titulo">MI CUENTA</h1>
+    <!-- Form de Inicio de sesión -->
 
-
-    <div class="card">
-        <img src="./assets/img/icons/Logo-Ramaka.jpeg" class="card-img" alt="...">
-        <div class="card-body">
-            <h2 class="card-title text-center fuente-texto">Iniciar sesión<br><br></h2>
-           <div class="fields">
-            <div class="data">
-        
-                <i class="fas fa-user"></i>
-                <input type="username" id="name" placeholder="Usuario">
-            </div><br>
-            <div class="data">
-                <i class="fas fa-lock"></i>
-                <input type="password" id="password" placeholder="Contraseña">
+    <div class="col-xs-1 col-sm-6 col-md-6 col-lg-4 inicio">
+        <form class="formulario">
+            <div class="form-group">
+                <div class="tituloI titulo text-center">Iniciar sesión en Ramaka</div>
+                <label class="texto" for="exampleInputEmail1">Correo electrónico</label>
+                <input type="email" placeholder="ramaka@gmail.com" class="form-control" id="exampleInputEmail1"
+                    aria-describedby="emailHelp" required>
             </div>
-        </div><br>
-        <button class="btn-login">
-            <a href="./miCuenta2.html" style="color: black;">Entrar</a>
-        </button>
-        <p class="warnings" id="warnings"></p>
-        </div>
-        <p>Al registrarte, aceptas nuestros Terminos y Condiciones</p>
-        <div class="recordar"> <a href="#">¿Olvido su contraseña?</a></div>
+            <div class="form-group">
+                <label class="texto" for="exampleInputPassword1">Contraseña</label>
+                <input type="password" placeholder="********" class="form-control" id="exampleInputPassword1" required>
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="texto" class="form-check-label" for="exampleCheck1">Recordarme</label>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="entrar texto btn">Entrar</button>
+
+                <a href="#" class="linkrecordar">¿Olvidó su contraseña?</a>
+
+                <button type="submit" class="texto btnCrearCuenta btn">Crear cuenta</button>
+            </div>
+        </form>
     </div>
 
-    <div id="a" class="card">
-        <img src="./assets/img/icons/Logo-Ramaka.jpeg" class="card-img" alt="...">
-        <div class="card-body">
-            <h2 class="card-title text-center fuente-texto">Registrarme<br></h2>
-           <div class="fields">
-            <div class="data">
-        
-                <i class="fas fa-user"></i>
-                <input type="username" id="name"  placeholder="Nombre Completo">
-            </div>
-            <div class="data">
-                <i class="fa-regular fa-envelope"></i>
-                <input type="username" id="email" placeholder="Correo electronico">
-            </div>
-            <div class="data">
-        
-                <i class="fa-regular fa-location-pin-lock"></i>
-                <input type="pasword" id="password" placeholder="Contraseña">
-            </div>
-            <div class="data">
-                <i class="fa-regular fa-location-pin-lock"></i>
-                <input type="password" id="password" placeholder="repetir Contraseña">
-            </div>
-        </div>
-        <button class="btn-login">Registrarme</button>
-        </div>
-        <p>Al registrarte, aceptas nuestros Terminos y Condiciones</p>
-    </div>
-</div>
-</form>
-</div>
+    <!------ Modal para Recuperar contraseña ------>
 
-    
+    <section class="recuperar">
+
+        <div class="modalRecuperar">
+            <div class="text-center tituloR titulo">Recuperación de contraseña</div>
+            <div class="contenidoRecuperar">
+                <label class="texto" for="">Introduce el correo electrónico de la cuenta</label>
+                <input type="email" placeholder="Ej: ramaka@gmail.com" class="form-control">
+            </div>
+            <div class="text-center">
+                <button type="submit" class="texto continuar btn">Continuar</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Aviso de correo -->
+
+    <section class="correo">
+
+        <div class="modalCorreo">
+            <div class="text-center tituloC titulo">Recuperación de contraseña</div>
+            <div class="text-center contenidoCorreo">
+                <p class="texto">Te hemos enviado un correo para que puedas establecer una nueva contraseña a tu cuenta
+                </p>
+                <button type="submit" class="btn texto entendido">Entendido</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!---------------------------------- Crear cuenta -------------------------------->
+
+    <section class="col-xs-1 col-sm-6 col-md-6 col-lg-4 crearCuenta">
+
+        <div class="modalCrearCuenta">
+
+            <form>
+                <div class="tituloc titulo text-center">Crear cuenta en Ramaka</div>
+                <div>
+                    <label class="texto" for="nombre">Nombre(s)</label>
+                    <input type="text" placeholder="Ana" class="form-control" required>
+                </div>
+                <div>
+                    <label class="texto" for="apellido">Apellido(s)</label>
+                    <input type="text" placeholder="Reyes" class="form-control" required>
+                </div>
+                <div>
+                    <label class="texto" for="email">Correo Electrónico</label>
+                    <input type="email" placeholder="ana@gmail.com" class="form-control" required>
+                </div>
+                <div>
+                    <label class="texto" for="numero">Número de télefono (Opcional)</label>
+                    <input type="number" placeholder="55 5655 5855" class="form-control">
+                </div>
+                <div>
+                    <label class="texto" for="password">Contraseña</label>
+                    <input type="password" placeholder="Anareyes09" class="form-control" required>
+                </div>
+                <div>
+                    <label class="texto" for="password">Confimación de contraseña</label>
+                    <input type="password" placeholder="Anareyes09" class="form-control" required>
+                </div>
+                <div>
+                    <input type="radio" placeholder="Anareyes09" required>
+                    <label class="radio texto" for="radio">Acepto términos y condiciones de Ramaka</label>
+                </div>
+                <div class="text-center">
+                    <button class="texto btnCrearCuenta2 btn" ctype="submit">Crear cuenta</button>
+                </div>
+            </form>
+
+        </div>
+
+    </section>
+
+
 
     <!-- ------------------------- PIE DE PÁGINA ------------------------- -->
     <footer>
@@ -220,15 +263,7 @@
         <span class="copyright">&copy;2022, Ramaka. Todos los derechos reservados.</span>
     </footer>
 
-  <script src="https://kit.fontawesome.com/c85fdf562b.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-      crossorigin="anonymous"></script>
-      <script src="appmiCuenta.js"></script>
-
+    <script src="assets/js/inicioSesion.js"></script>
 </body>
 
 </html>
