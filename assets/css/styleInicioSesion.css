@@ -1,0 +1,420 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin-Sans); /* FUENTE DE LA BARRA DE NAVEGACIÓN Y FOOTER */
+
+/* FUENTE TENTATIVA PARA EL CONTENIDO DE LAS PÁGINAS */
+@import url(//db.onlinewebfonts.com/c/8141d57bb00c8a8cfb53c332d98c46fa?family=Open+Sans+Hebrew+Condensed);
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+/* FUENTE PARA TITULOS - CLASS: fuente-titulo*/
+@import url('http://fonts.cdnfonts.com/css/perpetua-titling-mt');
+/* FUENTE PARA TEXTO NORMAL - CLASS: fuente-titulo*/
+@import url(//db.onlinewebfonts.com/c/e662339992c4abf5b43f537391bd3169?family=Candara);
+
+/* ---------------------------------------- NAVBAR ---------------------------------------- */
+.imagen-navbar{
+    object-fit: cover;
+    object-position: center;
+}
+
+.collapse {
+    justify-content: right;
+}
+
+.container  ul li a {
+    /* color: #bb9569; el primero*/
+    /* color: #bda182; */
+    /* color: #bda284; */
+    color: #b9a38a;
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+    justify-content: right;
+}
+
+.btn-nav-pie{
+    border-color: #b9a38a;
+    color: #b9a38a;
+    margin-left: 10px;
+}
+
+.btn-nav-pie:hover {
+    /* background-color: #000000; */
+    /* background-color: #012c2e; verde oscuro */
+    /* background-color: #23666A; verde clarito */
+    /* background-color: #865f31f5; cafe */
+    /* transition: 20ms; */
+    border-radius: 15%;
+    background-color: #012c2e;
+    filter: invert(1);
+    transition: 0.5s;
+}
+/************************* Estilos generales ***********************/
+
+/* FUENTES DE LETRA */
+.titulo{
+    font-family: 'Perpetua Titling MT', sans-serif;
+}
+
+.subtitulo{
+    font-family: "Candara";
+    font-size: 40px;
+}
+
+.texto{
+    font-family: "Candara";
+    font-size: 20px
+}
+
+body{
+    background-image: url("../img/icons/fondoChulo.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+
+/***************************** Form de Inicio de Sesión ****************************/
+
+.inicio{
+    background-color: #b9a38a;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: auto;
+    width: 80%;
+    border-radius: 10px;
+    padding: 0;
+}
+
+.formulario{
+    padding: 30px;
+}
+
+.tituloI{
+    padding: 10px;
+    background-color: rgb(0, 0, 0, 0.4);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.entrar{
+    background-color: #012c2e;
+    color: white;
+    width: 40%;
+    margin-bottom: 20px;
+    padding: 2px;
+}
+
+.entrar:hover{
+    background-color: #006368;
+    color: rgb(206, 255, 253);
+}
+
+.linkrecordar{
+    display: block;
+    text-decoration: none;
+    color: #017da3;
+}
+
+.linkrecordar:hover{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btnCrearCuenta{
+    background-color: #012c2e;
+    color: white;
+    width: 60%;
+    margin-top: 20px;
+    padding: 3px;
+}
+
+.btnCrearCuenta:hover{
+    background-color: #006368;
+    color: rgb(206, 255, 253);
+}
+
+/********************************** Modals recuperar contraseña *********************************/
+
+/* Modal para recibir la dirección de correo del usuario */
+
+.recuperar{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0, 0.7);
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+}
+
+.recuperar--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+
+}
+
+.modalRecuperar{
+    margin: auto;
+    width: 70%;
+    background-color: #a88b6a;
+    transition: opacity .6s;
+    border-radius: 10px;
+    
+}
+
+.tituloR{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding: 8px;
+    background-color: rgb(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 10px;
+
+
+}
+
+.contenidoRecuperar{
+    width: 80%;
+    margin: auto;
+    color: white;
+    
+}
+
+.continuar{
+    background-color: #012c2e;
+    color: white;
+    width: 60%;
+    margin-top: 20px;
+    padding: 3px;
+    margin-bottom: 25px;
+}
+
+.continuar:hover{
+    background-color: #006368;
+    color: rgb(206, 255, 253);
+}
+
+/* Modal de notificación de correo enviado */
+
+.correo{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0, 0.8);
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .6s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.correo--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .10s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+
+}
+
+.modalCorreo{
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color: #a88b6a;
+    transition: opacity .6s;
+    transform: var(--transform);
+    transition: var(--transition);
+    border-radius: 10px;
+}
+.tituloC{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding: 8px;
+    background-color: rgb(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 10px;
+}
+.contenidoCorreo{
+    width: 80%;
+    margin: auto;
+    color: white;
+}
+
+.entendido{
+    background-color: #012c2e;
+    color: white;
+    width: 40%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 3px;
+}
+
+.entendido:hover{
+    background-color: #006368;
+    color: rgb(206, 255, 253);
+}
+
+/**************************************** Modal crear cuenta ******************************/
+
+.crearCuenta{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .6s;
+
+    background-color: #b9a38a;
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 30px;
+    height: auto;
+    width: 80%;
+    border-radius: 10px;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+.tituloc{
+    padding: 10px;
+    background-color: rgb(0, 0, 0, 0.4);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+input{
+    margin-top: 0px;
+    margin-bottom: 7px;
+}
+
+.radio{
+    margin-top: 10px;
+}
+
+.btnCrearCuenta2{
+    background-color: #012c2e;
+    color: white;
+    width: 60%;
+    margin-top: 20px;
+    padding: 3px;
+    margin-bottom: 25px;
+}
+
+.btnCrearCuenta2:hover{
+    background-color: #006368;
+    color: rgb(206, 255, 253);
+}
+
+.crearCuenta--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .9s;
+
+}
+
+.modalCrearCuenta{
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color: #b9a38a;
+    transition: opacity .6s;
+}
+
+/* ---------------------------------------- FOOTER ---------------------------------------- */
+
+footer {
+    position: static;
+    width: 100%;
+    left: 0;
+    bottom: -10;
+    padding: 2rem 8%;
+    background-color: rgba(19, 49, 51, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Josefin Sans';
+}
+
+.iconos-redes-sociales-container,
+.pie-de-pagina-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: -0.10cm;
+}
+
+.redes-iconos {
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    border: 1px inset rgba(226, 204, 179, 1);
+    background-image: url(../img/icons/facebook.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+
+.redes-iconos:hover {
+    background-color: rgba(19, 49, 51, 1);
+    border-radius: 15%;
+    filter: invert(1);
+    transition: 0.5s;
+}
+
+.redes-iconos:nth-of-type(2) {
+    background-image: url(../img/icons/instagram.png);
+
+}
+
+.redes-iconos:nth-of-type(3) {
+    background-image: url(../img/icons/Whatsapp.png);
+}
+
+.redes-iconos:nth-of-type(4) {
+    background-image: url(../img/icons/phone.png);
+}
+
+.item-menu {
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    list-style-type: none;
+    font-size: 15px;
+    opacity: 0.6;
+    color: rgba(226, 204, 179, 1);
+}
+
+.item.hover {
+    opacity: 1;
+}
+
+.copyright {
+    color: rgba(226, 204, 179, 1);
+    opacity: 0.3;
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+}
