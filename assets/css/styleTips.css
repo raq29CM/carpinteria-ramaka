@@ -48,6 +48,13 @@
 }
 
 /* --------------------------------------- TIPS ------------------------------------------- */
+body {
+	background-image: url(../img/icons/fondoChulo.jpeg);
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
 /* FUENTES DE LETRA */
 .fuente-titulo{
     font-family: 'Perpetua Titling MT', sans-serif;

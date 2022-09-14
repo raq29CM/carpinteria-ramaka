@@ -48,14 +48,15 @@
     filter: invert(1);
     transition: 0.5s;
 }
---------------------------- CONTENIDO CARRITO ---------------------------------------
-
+/* --------------------------- CONTENIDO CARRITO --------------------------------------- */
 body {
     color: #000;
     overflow-x: hidden;
     height: 100%;
-    background-color: #fff;
-    background-repeat: no-repeat;
+    background-image: url(../img/icons/fondoChulo.jpeg);
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
 
 .plus-minus {
@@ -81,9 +82,10 @@ body {
 }
 
 .foto-producto {
-    width: 180px;
-    height: 160px;
+    width: 150px;
+    height: 140px;
     border-radius: 5px;
+    margin-top: 5%;
 }
 
 /* . {
