@@ -10,14 +10,11 @@
 @import url(//db.onlinewebfonts.com/c/e662339992c4abf5b43f537391bd3169?family=Candara);
 
 /* ---------------------------------------- NAVBAR ---------------------------------------- */
-<<<<<<< HEAD
 .imagen-navbar{
     object-fit: cover;
     object-position: center;
 }
 
-=======
->>>>>>> 4dedcf297b15fb85ca869595e160722787066592
 .collapse {
     justify-content: right;
 }
@@ -56,20 +53,12 @@
     font-family: 'Perpetua Titling MT', sans-serif;
 }
 
-<<<<<<< HEAD
-=======
-.fuente-subtitulo{
-    font-family: "Candara";
-}
-
->>>>>>> 4dedcf297b15fb85ca869595e160722787066592
 .fuente-texto{
     font-family: "Candara";
 }
 
 
 /* OTRO */
-<<<<<<< HEAD
 body{
     background-image: url(../img/icons/fondoChulo.jpeg);;
 }
@@ -275,66 +264,6 @@ color: rgb(0, 0, 0, 0.7);
 .modal_close:hover{
     color: rgb(0, 0, 0);
     background-color: #ffb6af;
-=======
-.links{
-    color: #5a1706;
-    padding: 0;
-    margin: 0;
-}
-
-h5{
-padding-left: 5%;
-margin-bottom: 50px;
-font-size: 25px;
-}
-ul{
-    padding: 0;
-}
-
-#C1{
-    margin-left: 0;
-    margin-right: 0;  
-}
-
-.links:hover{
-    color: #00b82e;
-    border-radius: 2px;
- }
-/*  #00b82e */
-
- #padre{
-    background-color: #ebe1c9;
-    padding: 10% 5% 5% 7%;
-    color: #5a1706;
-    
- }
-
- #tabla{
-    margin: 5% 0;
- }
-
- #contenido{
-    padding-right: 5%;
-
- }
-
-/* TABLAS */
-h1{
-    color: #902409;
-    font-size: 35px;
-
-}
-#encabezados{
-    background-color: #ebe1c9;
-    color: #5a1706;
-}
-
-#color{
-    background-color: #eeeeee;
-}
-#blanco{
-    background-color: white;
->>>>>>> 4dedcf297b15fb85ca869595e160722787066592
 }
 
 /* ---------------------------------------- FOOTER ---------------------------------------- */
@@ -367,11 +296,7 @@ footer {
     width: 45px;
     border-radius: 50px;
     border: 1px inset rgba(226, 204, 179, 1);
-<<<<<<< HEAD
     background-image: url(../img/icons/facebook.png);
-=======
-    background-image: url(/assets/img/icons/facebook.png);
->>>>>>> 4dedcf297b15fb85ca869595e160722787066592
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -387,28 +312,16 @@ footer {
 }
 
 .redes-iconos:nth-of-type(2) {
-<<<<<<< HEAD
     background-image: url(../img/icons/instagram.png);
-=======
-    background-image: url(/assets/img/icons/instagram.png);
->>>>>>> 4dedcf297b15fb85ca869595e160722787066592
 
 }
 
 .redes-iconos:nth-of-type(3) {
-<<<<<<< HEAD
     background-image: url(../img/icons/Whatsapp.png);
 }
 
 .redes-iconos:nth-of-type(4) {
     background-image: url(../img/icons/phone.png);
-=======
-    background-image: url(/assets/img/icons/Whatsapp.png);
-}
-
-.redes-iconos:nth-of-type(4) {
-    background-image: url(/assets/img/icons/phone.png);
->>>>>>> 4dedcf297b15fb85ca869595e160722787066592
 }
 
 .item-menu {
