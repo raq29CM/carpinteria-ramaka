@@ -9,11 +9,14 @@
 @import url(//db.onlinewebfonts.com/c/e662339992c4abf5b43f537391bd3169?family=Candara);
 
 /* ---------------------------------------- NAVBAR ---------------------------------------- */
+<<<<<<< HEAD
 .imagen-navbar{
     object-fit: cover;
     object-position: center;
 }
 
+=======
+>>>>>>> 4dedcf297b15fb85ca869595e160722787066592
 .collapse {
     justify-content: right;
 }
@@ -125,7 +128,11 @@ footer {
     width: 45px;
     border-radius: 50px;
     border: 1px inset rgba(226, 204, 179, 1);
+<<<<<<< HEAD
     background-image: url(../img/icons/facebook.png);
+=======
+    background-image: url(/assets/img/icons/facebook.png);
+>>>>>>> 4dedcf297b15fb85ca869595e160722787066592
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -141,16 +148,28 @@ footer {
 }
 
 .redes-iconos:nth-of-type(2) {
+<<<<<<< HEAD
     background-image: url(../img/icons/instagram.png);
+=======
+    background-image: url(/assets/img/icons/instagram.png);
+>>>>>>> 4dedcf297b15fb85ca869595e160722787066592
 
 }
 
 .redes-iconos:nth-of-type(3) {
+<<<<<<< HEAD
     background-image: url(../img/icons/Whatsapp.png);
 }
 
 .redes-iconos:nth-of-type(4) {
     background-image: url(../img/icons/phone.png);
+=======
+    background-image: url(/assets/img/icons/Whatsapp.png);
+}
+
+.redes-iconos:nth-of-type(4) {
+    background-image: url(/assets/img/icons/phone.png);
+>>>>>>> 4dedcf297b15fb85ca869595e160722787066592
 }
 
 .item-menu {

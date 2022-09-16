@@ -56,7 +56,11 @@
 }
 
 body{
+<<<<<<< HEAD
     background-image: url("../img/icons/fondoChulo.jpeg");
+=======
+    background-image: url("/assets/img/tienda/fondo.jpeg");
+>>>>>>> 4dedcf297b15fb85ca869595e160722787066592
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -68,19 +72,29 @@ h1{
     font-family: 'Josefin Sans';
     font-size: 50px;
     position: sticky;
+<<<<<<< HEAD
     top: 73px;
 }
 
+=======
+    top: 60px;
+}
+>>>>>>> 4dedcf297b15fb85ca869595e160722787066592
 h5{
     background: rgba(0, 0, 0, 0.7);
     color: white;
     font-family: 'Josefin Sans';
     border-radius: 5px;
+<<<<<<< HEAD
     padding: 10px; 
 }
 
 h2, h4{
     margin: 0;
+=======
+    padding: 10px;
+    
+>>>>>>> 4dedcf297b15fb85ca869595e160722787066592
 }
 
 /************************** Clases de las Cards ***************************/
@@ -91,12 +105,15 @@ h2, h4{
     height: 700px;
     display: inline-block;
     border-radius: 19px;
+<<<<<<< HEAD
     transition: .6s;
     
 }
 .card:hover{
     transition: .6s;
     -webkit-transform:scale(1.13);transform:scale(1.13);
+=======
+>>>>>>> 4dedcf297b15fb85ca869595e160722787066592
     
 }
 
@@ -127,6 +144,7 @@ h2, h4{
     height: 90px;
     
 }
+<<<<<<< HEAD
 .islas{
     text-decoration: none;
     border: 1px solid black;
@@ -250,6 +268,13 @@ h2, h4{
 
 
 
+=======
+.card:hover{
+    -webkit-transform:scale(1.13);transform:scale(1.13);
+    
+}
+
+>>>>>>> 4dedcf297b15fb85ca869595e160722787066592
 /* ---------------------------------------- FOOTER ---------------------------------------- */
 
 footer {
@@ -280,7 +305,11 @@ footer {
     width: 45px;
     border-radius: 50px;
     border: 1px inset rgba(226, 204, 179, 1);
+<<<<<<< HEAD
     background-image: url(../img/icons/facebook.png);
+=======
+    background-image: url(/assets/img/icons/facebook.png);
+>>>>>>> 4dedcf297b15fb85ca869595e160722787066592
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -296,16 +325,28 @@ footer {
 }
 
 .redes-iconos:nth-of-type(2) {
+<<<<<<< HEAD
     background-image: url(../img/icons/instagram.png);
+=======
+    background-image: url(/assets/img/icons/instagram.png);
+>>>>>>> 4dedcf297b15fb85ca869595e160722787066592
 
 }
 
 .redes-iconos:nth-of-type(3) {
+<<<<<<< HEAD
     background-image: url(../img/icons/Whatsapp.png);
 }
 
 .redes-iconos:nth-of-type(4) {
     background-image: url(../img/icons/phone.png);
+=======
+    background-image: url(/assets/img/icons/Whatsapp.png);
+}
+
+.redes-iconos:nth-of-type(4) {
+    background-image: url(/assets/img/icons/phone.png);
+>>>>>>> 4dedcf297b15fb85ca869595e160722787066592
 }
 
 .item-menu {

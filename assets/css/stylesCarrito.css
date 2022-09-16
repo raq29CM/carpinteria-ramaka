@@ -1,25 +1,14 @@
-/* FUENTE DE LA BARRA DE NAVEGACIÓN Y FOOTER */
-@import url(https://fonts.googleapis.com/css?family=Josefin-Sans);
+@import url(https://fonts.googleapis.com/css?family=Josefin-Sans); /* FUENTE DE LA BARRA DE NAVEGACIÓN Y FOOTER */
 
 /* FUENTE TENTATIVA PARA EL CONTENIDO DE LAS PÁGINAS */
-@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrewcondensed.css);
+@import url(//db.onlinewebfonts.com/c/8141d57bb00c8a8cfb53c332d98c46fa?family=Open+Sans+Hebrew+Condensed);
 @import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
-
 /* FUENTE PARA TITULOS - CLASS: fuente-titulo*/
 @import url('http://fonts.cdnfonts.com/css/perpetua-titling-mt');
-
 /* FUENTE PARA TEXTO NORMAL - CLASS: fuente-titulo*/
 @import url(//db.onlinewebfonts.com/c/e662339992c4abf5b43f537391bd3169?family=Candara);
 
 /* ---------------------------------------- NAVBAR ---------------------------------------- */
-<<<<<<< HEAD
-.imagen-navbar{
-    object-fit: cover;
-    object-position: center;
-}
-
-=======
->>>>>>> 4dedcf297b15fb85ca869595e160722787066592
 .collapse {
     justify-content: right;
 }
@@ -41,120 +30,77 @@
 }
 
 .btn-nav-pie:hover {
-    border-radius: 10px;
+    /* background-color: #000000; */
+    /* background-color: #012c2e; verde oscuro */
+    /* background-color: #23666A; verde clarito */
+    /* background-color: #865f31f5; cafe */
+    /* transition: 20ms; */
+    border-radius: 15%;
     background-color: #012c2e;
     filter: invert(1);
     transition: 0.5s;
+    
 }
 
-/* ---------------------------------------- MI CUENTA 2 ---------------------------------------- */
-<<<<<<< HEAD
-body {
-	background-image: url(../img/icons/fondoChulo.jpeg);
-	background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-attachment: fixed;
-}
-=======
->>>>>>> 4dedcf297b15fb85ca869595e160722787066592
-
+/* --------------------------------------- CARRITO ------------------------------------------- */
 /* FUENTES DE LETRA */
 .fuente-titulo{
     font-family: 'Perpetua Titling MT', sans-serif;
+}
+
+.fuente-subtitulo{
+    font-family: "Candara";
 }
 
 .fuente-texto{
     font-family: "Candara";
 }
 
-/* -------------------- MIS DATOS -------------------- */
-
-.contacto{
-    padding-bottom: 2.5rem;
+body {
+    color: #000;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: #fff;
+    background-repeat: no-repeat;
 }
 
-.formulario-contacto{
-    background-color: #d5bc9f;
-    padding-bottom: 1rem;
-    border-radius: 10px;
-    padding-top: 0.2rem;
-    max-width: 800px;
+.plus-minus {
+    position: relative;
 }
 
-/* -------------------- MIS PEDIDOS -------------------- */
-
-.wrap{
-	max-width: 382px;
-    margin-top: 3rem;
-    margin-left: 2rem;
-    text-align: center;
+.plus {
+    position: absolute;
+    top: -4px;
+    left: 2px;
+    cursor: pointer;
 }
 
-ul.tabs{
-	width: 100%;
-	background: #d5bc9f;
-	list-style: none;
-	display: flex;
-    padding: 0px;
-    border-radius: 10px;
+.minus {
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    cursor: pointer;
 }
 
-ul.tabs li{
-	width: 8rem;
+.vsm-text:hover {
+    color: #FF5252;
 }
 
-.tabs a{
-	color: #fff;
-	text-decoration: underline;
-	font-size: 16px;
-	text-align: center;
-	display: block;
-	padding: 20px 0px;
-    border-radius: 10px;
-    transition: 0.5s;
+.foto-producto {
+    width: 180px;
+    height: 160px;
+    border-radius: 5px;
 }
 
-.active{
-	/* background: #012c2e; */
-    background-color: #133133;
+/* . {
+    margin: 20px 15px 5px 15px;
+} */
+
+.border-top {
+    border-top: 1px solid #EEEEEE !important;
+    margin-top: 20px;
+    padding-top: 15px;
 }
-
-.secciones section{
-	padding: 2rem;
-}
-
-.secciones section p{
-	text-align: center;
-}
-
-
-@media screen and (max-width: 700px){
-	ul.tabs li{
-		width: none;
-		flex-basis: 0;
-		flex-grow: 1;
-	}
-}
-
-@media screen and (max-width: 450px){
-	ul.tabs li a{
-		padding: 15px 0px;
-	}
-
-	ul.tabs li a .tab-text{
-		display: none;
-	}
-
-	.secciones section{
-		padding: 20px;
-	}
-}
-
-
-
-
-
-
 
 /* ---------------------------------------- FOOTER ---------------------------------------- */
 
@@ -186,11 +132,7 @@ footer {
     width: 45px;
     border-radius: 50px;
     border: 1px inset rgba(226, 204, 179, 1);
-<<<<<<< HEAD
-    background-image: url(../img/icons/facebook.png);
-=======
     background-image: url(/assets/img/icons/facebook.png);
->>>>>>> 4dedcf297b15fb85ca869595e160722787066592
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -206,28 +148,16 @@ footer {
 }
 
 .redes-iconos:nth-of-type(2) {
-<<<<<<< HEAD
-    background-image: url(../img/icons/instagram.png);
-=======
     background-image: url(/assets/img/icons/instagram.png);
->>>>>>> 4dedcf297b15fb85ca869595e160722787066592
 
 }
 
 .redes-iconos:nth-of-type(3) {
-<<<<<<< HEAD
-    background-image: url(../img/icons/Whatsapp.png);
-}
-
-.redes-iconos:nth-of-type(4) {
-    background-image: url(../img/icons/phone.png);
-=======
     background-image: url(/assets/img/icons/Whatsapp.png);
 }
 
 .redes-iconos:nth-of-type(4) {
     background-image: url(/assets/img/icons/phone.png);
->>>>>>> 4dedcf297b15fb85ca869595e160722787066592
 }
 
 .item-menu {
