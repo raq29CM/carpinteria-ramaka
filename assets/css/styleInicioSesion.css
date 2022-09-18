@@ -80,7 +80,6 @@ body{
     height: auto;
     width: 80%;
     border-radius: 10px;
-    padding: 0;
 }
 
 .formulario{
@@ -182,7 +181,6 @@ body{
     width: 80%;
     margin: auto;
     color: white;
-    
 }
 
 .continuar{

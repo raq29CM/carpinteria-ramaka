@@ -20,12 +20,12 @@
     <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #133133;">
         <div class="container">
             <a class="navbar-brand" href="./index.html"> <img src="./assets/img/icons/Logo-Ramaka.jpeg" alt=""
-                style="height: 45px; width: 60px;" class="d-inline-block align-text-top imagen-navbar"></a>
+                    style="height: 45px; width: 60px;" class="d-inline-block align-text-top imagen-navbar"></a>
 
             <!-- BOTÓN PARA CUANDO SE HACE RESPONSIVA LA PÁGINA -->
             <button class="btn navbar-toggler btn-nav-pie" type="button" data-toggle="collapse"
                 data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="true"
-                aria-label="Toggle navigation" >
+                aria-label="Toggle navigation">
                 <img src="./assets/img/icons/menu.png" alt="menuResponsive" width="20px" height="20px">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -39,8 +39,8 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle btn-nav-pie" href="./tips.html" role="button" data-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle btn-nav-pie" href="./tips.html" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
                             Tips
                         </a>
                         <ul class="dropdown-menu">
@@ -66,8 +66,8 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle btn-nav-pie" href="./galeria.html" role="button" data-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle btn-nav-pie" href="./galeria.html" role="button"
+                            data-toggle="dropdown" aria-expanded="false">
                             Galeria
                         </a>
                         <ul class="dropdown-menu">
@@ -112,64 +112,83 @@
     <div class="contacto fuente-texto ">
         <div class="container mt-3">
             <div class="row row-cols-1 row-cols-md-1 row-cols-xl-1">
-                
+
                 <!-- DATOS DE CONTACTO -->
                 <div class="col-mb-4 mt-4">
                     <div class="text-center">
                         <h2 class="fuente-titulo"> Contáctanos </h2>
                         <h4 class="fuente-texto"> Ramaka coorporativo Mexico, S.A. de C.V. </h4>
                         <br>
-                            <h5>¡Cuéntanos tu idea y nosotros la hacemos realidad!</h5>
-                            <br>
-                            <h6>Obtén una cotización aquí.</h6>
+                        <h5>¡Cuéntanos tu idea y nosotros la hacemos realidad!</h5>
+                        <br>
+                        <h6>Obtén una cotización aquí.</h6>
                         <br>
                     </div>
                 </div>
 
                 <!-- FORMULARIO -->
+
                 <div class="container formulario-contacto">
-                    <form class="formulario mt-3">
+                    <form class="needs-validation  mt-3" novalidate>
                         <div class="form-group">
-                            <label for="validationDefault01">Nombre o Razón Social:</label>
-                            <input type="text" class="form-control" id="validationDefault01"
+                            <label for="nombreContacto">Nombre o Razón Social:</label>
+                            <input type="text" class="form-control" id="nombreContacto"
                                 placeholder="Nombre o Razón Social" required>
+                            <div class="invalid-feedback">
+                                Por favor, ingrese nombre o razón social.
+                            </div>
                         </div>
 
                         <div class="form-row">
                             <div class="form-group col-md-7">
-                                <label for="validationDefault02">Dirección de correo electrónico:</label>
-                                <input type="email" class="form-control" id="validationDefault02"
+                                <label for="emailContacto">Correo electrónico:</label>
+                                <input type="email" class="form-control" id="emailContacto"
                                     placeholder="email@example.com" required>
+                                <div class="invalid-feedback">
+                                    Por favor, ingrese un correo electrónico válido.
+                                </div>
                             </div>
 
                             <div class="form-group col-md-5">
-                                <label for="validationDefault03">Teléfono de contacto:</label>
-                                <input type="tel" class="form-control" id="validationDefault03" placeholder=" Teléfono "
-                                    required>
+                                <label for="telContacto">Teléfono de contacto:</label>
+                                <input type="tel" class="form-control" id="telContacto" placeholder=" Teléfono"
+                                    maxlength="10" pattern="[0-9]{10}" required>
+                                <div class="invalid-feedback">
+                                    Por favor, ingrese un número de teléfono válido.
+                                </div>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="validationDefault04">Dirección</label>
-                            <input type="text" class="form-control" id="validationDefault04" required>
+                            <label for="dirContacto">Dirección:</label>
+                            <input type="text" class="form-control" id="dirContacto" required>
+                            <div class="invalid-feedback">
+                                Por favor, ingrese una dirección.
+                            </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="validationDefault05">Referencias cercanas</label>
-                            <input type="text" class="form-control" id="validationDefault05"
-                                placeholder=" Entre que calles se encuentra ubicado. Lugares de referencia " required>
+                            <label for="refContacto">Referencias:</label>
+                            <input type="text" class="form-control" id="refContacto"
+                                placeholder=" Entre que calles se encuentra ubicado. Lugares de referencia" required>
+                            <div class="invalid-feedback">
+                                Por favor, ingrese alguna referencia.
+                            </div>
                         </div>
 
                         <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="validationDefault06">Ciudad</label>
-                                <input type="text" class="form-control" id="validationDefault06" required>
+                            <div class="col-md-6 mb-3">
+                                <label for="ciudadContacto">Ciudad</label>
+                                <input type="text" class="form-control" id="ciudadContacto" required>
+                                <div class="invalid-feedback">
+                                    Por favor, ingrese su ciudad.
+                                </div>
                             </div>
-
-                            <div class="form-group col-md-4">
-                                <label for="validationDefault07">Estado</label>
-                                <select class="custom-select form-control" id="validationDefault07" required>
-                                    <option selected disabled value="">...</option>
+                            <div class="col-md-3 mb-3">
+                                <label for="estadoContacto">Estado</label>
+                                <select class="custom-select" id="estadoContacto" required>
+                                    <option selected disabled value="">Elegir...</option>
+                                    <option>...</option>
                                     <option> Aguascalientes </option>
                                     <option> Baja California </option>
                                     <option> Baja California Sur </option>
@@ -203,33 +222,51 @@
                                     <option> Yucatán </option>
                                     <option> Zacatecas </option>
                                 </select>
+                                <div class="invalid-feedback">
+                                    Por favor, seleccione un estado.
+                                </div>
                             </div>
 
-                            <div class="form-group col-md-2">
-                                <label for="validationDefault08">CP</label>
-                                <input type="text" class="form-control" id="validationDefault06" placeholder="C.P"
+                            <div class="col-md-3 mb-3">
+                                <label for="cpContacto">CP</label>
+                                <input type="text" class="form-control" id="cpContacto" maxlength="5" pattern="[0-9]{5}"
                                     required>
+                                <div class="invalid-feedback">
+                                    Por favor, ingrese su código postal.
+                                </div>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="exampleFormControlTextarea1">¡Cuéntanos tu idea!</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"
-                                placeholder="Desarrolla tu idea." required></textarea>
+                            <label for="textContacto">¡Cuéntanos tu idea!</label>
+                            <textarea class="form-control" id="textContacto" rows="5" placeholder="Desarrolla tu idea."
+                                required></textarea>
+                            <div class="invalid-feedback">
+                                Por favor, cuéntanos tu idea. Queremos leerte.
+                            </div>
                         </div>
 
                         <div class="form-group">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                                <label class="form-check-label" for="invalidCheck2">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck">
                                     He leído los términos y condiciones.
                                 </label>
+                                <div class="invalid-feedback">
+                                    Debes estar de acuerdo para enviar el formulario.
+                                </div>
+
+                                <br>
+                                <a href="tyc.html" target="_blank" class="small text-muted ">Términos y Condiciones</a>
+                                <br>
+
                             </div>
                         </div>
-
-                        <button type="submit" class="btn btn-info">Enviar</button>
+                        <button class="btn btn-info" type="Enviar">Enviar</button>
                     </form>
                 </div>
+
+
 
                 <div class="text-center mt-5">
                     <h2 class="fuente-titulo"> Ubicación </h2>
@@ -240,7 +277,10 @@
                     <p>Horarios: Lunes a Viernes 9:00 am a 7:00 pm</p>
 
                     <!-- MAPA CON LA UBICACIÓN -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1635.5059715727946!2d-99.15791617977928!3d19.270852797745132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce00e883fb2731%3A0x1b5c8dd74a40373a!2sCda.%20de%20Geranio%2C%20San%20Andr%C3%A9s%20Totoltepec%2C%2014640%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1661966720060!5m2!1ses!2smx" width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1635.5059715727946!2d-99.15791617977928!3d19.270852797745132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce00e883fb2731%3A0x1b5c8dd74a40373a!2sCda.%20de%20Geranio%2C%20San%20Andr%C3%A9s%20Totoltepec%2C%2014640%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1661966720060!5m2!1ses!2smx"
+                        width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
@@ -279,6 +319,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
+
+    <script src="assets/js/contacto.js"></script>
 
 </body>
 

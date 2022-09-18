@@ -116,19 +116,26 @@
     <!------------------------------ Inicio de Sesión ----------------------->
 
     <!-- Form de Inicio de sesión -->
-
     <div class="col-xs-1 col-sm-6 col-md-6 col-lg-4 inicio">
-        <form class="formulario">
+        <form class=" formulario needs-validation" novalidate>
             <div class="form-group">
                 <div class="tituloI titulo text-center">Iniciar sesión en Ramaka</div>
-                <label class="texto" for="exampleInputEmail1">Correo electrónico</label>
-                <input type="email" placeholder="ramaka@gmail.com" class="form-control" id="exampleInputEmail1"
-                    aria-describedby="emailHelp" required>
+                <label for="emailInicioS">Correo electrónico:</label>
+                <input type="email" class="form-control" id="emailInicioS" placeholder="email@example.com" required>
+                <div class="invalid-feedback">
+                    Por favor, verifique el correo electrónico ingresado.
+                </div>
             </div>
+
             <div class="form-group">
-                <label class="texto" for="exampleInputPassword1">Contraseña</label>
-                <input type="password" placeholder="********" class="form-control" id="exampleInputPassword1" required>
+                <label class="texto" for="PassInicioSes">Contraseña</label>
+                <input type="password" placeholder="********" class="form-control" id="PassInicioSes" minlength="8"
+                    required>
+                <div class="invalid-feedback">
+                    Por favor, verifique su contraseña.
+                </div>
             </div>
+
             <div class="form-group form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="texto" class="form-check-label" for="exampleCheck1">Recordarme</label>
@@ -140,7 +147,7 @@
 
                 <a href="#" class="linkrecordar">¿Olvidó su contraseña?</a>
 
-                <button type="submit" class="texto btnCrearCuenta btn">Crear cuenta</button>
+                <button type="submit1" class="texto btnCrearCuenta btn">Crear cuenta</button>
             </div>
         </form>
     </div>
@@ -148,41 +155,39 @@
     <!------ Modal para Recuperar contraseña ------>
 
     <section class="recuperar">
-
         <div class="modalRecuperar">
-            <div class="text-center tituloR titulo">Recuperación de contraseña</div>
+            <div class="text-center tituloR titulo needs-validation">Recuperación de contraseña</div>
             <div class="contenidoRecuperar">
-                <label class="texto" for="">Introduce el correo electrónico de la cuenta</label>
-                <input type="email" placeholder="Ej: ramaka@gmail.com" class="form-control">
+                <label class="texto" for="RecuperarEmail">Introduce el correo electrónico de la cuenta</label>
+                <input type="email" placeholder="Ej: ramaka@gmail.com" id= "RecuperarEmail" class="form-control" required>
+                <div class="invalid-feedback">
+                    Por favor, verifique el correo electrónico ingresado.
+                </div>
             </div>
             <div class="text-center">
                 <button type="submit" class="texto continuar btn">Continuar</button>
             </div>
         </div>
-
     </section>
 
     <!-- Aviso de correo -->
 
     <section class="correo">
-
         <div class="modalCorreo">
             <div class="text-center tituloC titulo">Recuperación de contraseña</div>
             <div class="text-center contenidoCorreo">
-                <p class="texto">Te hemos enviado un correo para que puedas establecer una nueva contraseña a tu cuenta
+                <p class="texto">Te hemos enviado un correo para que puedas establecer una nueva contraseña a tu
+                    cuenta
                 </p>
                 <button type="submit" class="btn texto entendido">Entendido</button>
             </div>
         </div>
-
     </section>
 
     <!---------------------------------- Crear cuenta -------------------------------->
 
     <section class="col-xs-1 col-sm-6 col-md-6 col-lg-4 crearCuenta">
-
         <div class="modalCrearCuenta">
-
             <form>
                 <div class="tituloc titulo text-center">Crear cuenta en Ramaka</div>
                 <div>
@@ -217,9 +222,7 @@
                     <button class="texto btnCrearCuenta2 btn" ctype="submit">Crear cuenta</button>
                 </div>
             </form>
-
         </div>
-
     </section>
 
 
@@ -250,6 +253,7 @@
     </footer>
 
     <script src="./assets/js/inicioSesion.js"></script>
+
 </body>
 
 </html>
