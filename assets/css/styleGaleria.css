@@ -1,3 +1,8 @@
+/* FUENTE PARA TITULOS - CLASS: fuente-titulo*/
+@import url('http://fonts.cdnfonts.com/css/perpetua-titling-mt');
+/* FUENTE PARA TEXTO NORMAL - CLASS: fuente-titulo*/
+@import url(//db.onlinewebfonts.com/c/e662339992c4abf5b43f537391bd3169?family=Candara);
+
 * {
 	margin:0;
 	padding: 0;
@@ -103,15 +108,11 @@ figure .trasera {
 	background: linear-gradient(to bottom, #b9a38a 0%, #5D2417 100%);
 }
 
-
-
-
-
 figure .trasera .titulo {
 	color: #fff;
 	font-weight: normal;
 	margin-bottom: 20px;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Perpetua Titling MT', sans-serif;
 	font-size: 24px;
 }
 
@@ -124,7 +125,7 @@ figure .trasera hr {
 }
 
 figure .trasera p {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Candara', sans-serif;
 	line-height: 22px;
 	font-size: 14px;
 }

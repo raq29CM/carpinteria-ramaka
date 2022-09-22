@@ -38,6 +38,11 @@
 }
 
 .btn-nav-pie:hover {
+    /* background-color: #000000; */
+    /* background-color: #012c2e; verde oscuro */
+    /* background-color: #23666A; verde clarito */
+    /* background-color: #865f31f5; cafe */
+    /* transition: 20ms; */
     border-radius: 10px;
     background-color: #012c2e;
     filter: invert(1);
@@ -54,7 +59,7 @@ body {
 
 /* FUENTES DE LETRA */
 .fuente-titulo{
-    font-family: 'Perpetua Titling MT', sans-serif;
+    font-family: 'Perpetua Titling MT';
 }
 
 .fuente-texto{
@@ -73,12 +78,14 @@ body {
     border-radius: 10px;
     padding-top: 0.2rem;
     max-width: 800px;
+    margin-top: 1rem;
 }
 
 /* -------------------- MIS PEDIDOS -------------------- */
 
 .wrap{
-	max-width: 382px;
+	/* max-width: 382px; */
+    max-width: 254.7px;
     margin-top: 3rem;
     margin-left: 2rem;
     text-align: center;
@@ -143,10 +150,6 @@ ul.tabs li{
 		padding: 20px;
 	}
 }
-
-
-
-
 
 
 

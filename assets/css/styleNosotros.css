@@ -43,11 +43,12 @@
     /* background-color: #23666A; verde clarito */
     /* background-color: #865f31f5; cafe */
     /* transition: 20ms; */
-    border-radius: 15%;
+    border-radius: 10px;
     background-color: #012c2e;
     filter: invert(1);
     transition: 0.5s;
 }
+
 
 /* --------------------------- NOSOTROS --------------------------------------- */
 body {
@@ -57,19 +58,20 @@ body {
     background-attachment: fixed;
 }
 
+.fuente-titulo{
+    font-family: 'Perpetua Titling MT', sans-serif;
+    padding-top: 0.5rem;
+}
+
+.fuente-texto{
+    font-family: "Candara";
+}
+
+.jumbotron.jumbotron-fluid{
+    background-color: rgb(202, 167, 126, 0.5);
+}
+
 /* -- ------------------------------- FRASE ---------------------------------  */
-
-@import "compass/css3";
-
-html {
-  background: #eff0ef;
-}
-
-h1 {
-  font-size: 16px; 
-  text-align: center;
-  margin-bottom: 40px;
-}
 
 .testimonial-quote {
     font-size: 16px;
@@ -143,7 +145,10 @@ h1 {
 }
 
 .testimonial-quote {
-    position: relative; 
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.555);
+    padding: 1.5rem;
+    border-radius: 20px;
 }
 
 .testimonial-quote .quote-container {

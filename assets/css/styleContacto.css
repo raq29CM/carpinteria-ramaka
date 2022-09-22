@@ -41,7 +41,7 @@
     /* background-color: #23666A; verde clarito */
     /* background-color: #865f31f5; cafe */
     /* transition: 20ms; */
-    border-radius: 15%;
+    border-radius: 10px;
     background-color: #012c2e;
     filter: invert(1);
     transition: 0.5s;
@@ -57,7 +57,7 @@ body {
 
 /* FUENTES DE LETRA */
 .fuente-titulo{
-    font-family: 'Perpetua Titling MT', sans-serif;
+    font-family: 'Perpetua Titling MT';
 }
 
 .fuente-texto{

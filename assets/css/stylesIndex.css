@@ -43,7 +43,7 @@
     /* background-color: #23666A; verde clarito */
     /* background-color: #865f31f5; cafe */
     /* transition: 20ms; */
-    border-radius: 15%;
+    border-radius: 10px;
     background-color: #012c2e;
     filter: invert(1);
     transition: 0.5s;
@@ -86,7 +86,7 @@
     transform: translate(-50%, -50%);
     text-align: center;
     justify-content: center;
-    padding-top: 0.5rem; 
+    padding-top: 0.5rem;
 }
 
 
@@ -174,16 +174,13 @@
 }
 
 .porqueElegirnos{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(../img/inicio/motivos_vision/PorqueElegirnosBackground.jpg);
+    background-color: #d5bc9f;
     opacity: 75%;
-    text-align: justify;
+    border-radius: 2rem;
+    text-align: justify ;
     color: rgb(0, 0, 0);
-    font-size: 1rem;
-    box-sizing: border-box;
-    padding: 2%;
-    /* font-weight: 100; */
+    font-size: 1.5rem;
+    padding: 3% 7%
 }
 
 /* MISION Y VISION */

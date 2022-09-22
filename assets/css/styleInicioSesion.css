@@ -40,7 +40,7 @@
     /* background-color: #23666A; verde clarito */
     /* background-color: #865f31f5; cafe */
     /* transition: 20ms; */
-    border-radius: 15%;
+    border-radius: 10px;
     background-color: #012c2e;
     filter: invert(1);
     transition: 0.5s;
@@ -74,12 +74,14 @@ body{
 
 .inicio{
     background-color: #b9a38a;
+    /* display:inline-block ; */
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
     height: auto;
     width: 80%;
     border-radius: 10px;
+    padding: 0;
 }
 
 .formulario{
@@ -173,8 +175,6 @@ body{
     background-color: rgb(0, 0, 0, 0.7);
     color: white;
     border-radius: 10px;
-
-
 }
 
 .contenidoRecuperar{
@@ -234,6 +234,7 @@ body{
     transition: var(--transition);
     border-radius: 10px;
 }
+
 .tituloC{
     margin-top: 30px;
     margin-left: 30px;
@@ -244,6 +245,7 @@ body{
     color: white;
     border-radius: 10px;
 }
+
 .contenidoCorreo{
     width: 80%;
     margin: auto;
@@ -266,6 +268,21 @@ body{
 
 /**************************************** Modal crear cuenta ******************************/
 
+.CrearCuenta{
+    background-color: #b9a38a;
+    /* margin: 50px 20px; */
+    height: auto;
+    width: 80%;
+    border-radius: 10px;
+    display:inline-block ;
+
+}
+
+
+.container-fluid{
+    align-items: center;
+}
+
 .crearCuenta{
     position: fixed;
     top: 0;
@@ -276,7 +293,6 @@ body{
     opacity: 0;
     pointer-events: none;
     transition: opacity .6s .6s;
-
     background-color: #b9a38a;
     margin: auto;
     margin-top: 120px;
