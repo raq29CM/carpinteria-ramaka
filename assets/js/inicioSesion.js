@@ -22,19 +22,39 @@ entendido.addEventListener('click', (e)=>{
     modalCorreo.classList.remove("correo--show");
 });
 
-/****************************** Modals de creación de cuenta **************************/
+/*********************************************** API ***********************************/
 
-const crearCuenta = document.querySelector(".crearCuenta");
-const modalCrearCuenta = document.querySelector(".crearCuenta");
-const btnCrearCuenta = document.querySelector(".btnCrearCuenta");
-const btnCrearCuenta2 = document.querySelector(".btnCrearCuenta2");
-
-btnCrearCuenta.addEventListener('click', (e)=>{
-    e.preventDefault();
-    modalCrearCuenta.classList.add("crearCuenta--show");
-});
-
-btnCrearCuenta2.addEventListener('click', (e)=>{
-    e.preventDefault();
-    modalCrearCuenta.classList.remove("crearCuenta--show")
-})
+const $formLogin = document.querySelector('#cyzform');
+ const $username = document.querySelector('#cyzinicio');
+ const $password = document.querySelector('#cyzcontra');
+ 
+ $formLogin.addEventListener('submit', (e) => {
+     e.preventDefault();
+ 
+     const correoelectronico = $username.value;
+     const contraseña = $password.value;
+ 
+     console.log(correoelectronico);
+            console.log(contraseña);
+/*  
+     if(username != '' && password != '') {
+         fetch('http://localhost:8080/login', {
+             method: 'POST',
+             body: JSON.stringify( {
+                 nombre,
+                 password
+            }),
+            headers: {
+                'Content-type': 'application/json'
+            }
+        })} else {
+                localStorage.removeItem('token');
+                Swal.fire({
+                    title: 'Correo electronico o contraseña incorrecta',
+                    text: 'Reintentar',
+                    icon: 'error',
+                    confirmButtonText: 'ok'
+                });
+                //emailError.textContent = 'Usuario o contraseña incorrecta';
+            } */
+        });

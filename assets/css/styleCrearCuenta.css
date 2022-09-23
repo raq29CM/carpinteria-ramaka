@@ -1,8 +1,7 @@
-/* FUENTE DE LA BARRA DE NAVEGACIÓN Y FOOTER */
-@import url(https://fonts.googleapis.com/css?family=Josefin-Sans);
+@import url(https://fonts.googleapis.com/css?family=Josefin-Sans); /* FUENTE DE LA BARRA DE NAVEGACIÓN Y FOOTER */
 
 /* FUENTE TENTATIVA PARA EL CONTENIDO DE LAS PÁGINAS */
-@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrewcondensed.css);
+@import url(//db.onlinewebfonts.com/c/8141d57bb00c8a8cfb53c332d98c46fa?family=Open+Sans+Hebrew+Condensed);
 @import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
 /* FUENTE PARA TITULOS - CLASS: fuente-titulo*/
 @import url('http://fonts.cdnfonts.com/css/perpetua-titling-mt');
@@ -41,47 +40,156 @@
     /* background-color: #23666A; verde clarito */
     /* background-color: #865f31f5; cafe */
     /* transition: 20ms; */
-    border-radius: 10px;
+    border-radius: 15%;
     background-color: #012c2e;
     filter: invert(1);
     transition: 0.5s;
 }
+/************************* Estilos generales ***********************/
 
-/* ---------------------------------------- CONTACTO ---------------------------------------- */
-body {
-	background-image: url(../img/icons/fondoChulo.jpeg);
-	background-repeat: no-repeat;
+/* FUENTES DE LETRA */
+.titulo{
+    font-family: 'Perpetua Titling MT', sans-serif;
+}
+
+.subtitulo{
+    font-family: "Candara";
+    font-size: 40px;
+}
+
+.texto{
+    font-family: "Candara";
+    font-size: 20px
+}
+
+body{
+    background-image: url("../img/icons/fondoChulo.jpeg");
+    background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
 }
 
-/* FUENTES DE LETRA */
-.fuente-titulo{
-    font-family: 'Perpetua Titling MT';
-}
 
-.fuente-texto{
-    font-family: "Candara";
-}
+/**************************************** Modal crear cuenta ******************************/
 
-.contacto{
-    padding-bottom: 2.5rem;
-}
+.crearCuenta{
 
-.formulario-contacto{
-    /* background-color: rgb(243, 221, 224); */
-    background-color: #d5bc9f;
-    padding-bottom: 1rem;
-    border-radius: 10px;
-    padding-top: 0.2rem;
-    max-width: 800px;
-}
-
-iframe {
-    max-width: 100%;
+    background-color: #b9a38a;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
     height: auto;
+    width: 80%;
+    border-radius: 10px;
+    padding: 30px;
 }
 
+.tituloc{
+    padding: 10px;
+    background-color: rgb(0, 0, 0, 0.4);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+input{
+    margin-top: 0px;
+    margin-bottom: 7px;
+}
+
+.radio{
+    margin-top: 10px;
+}
+
+.btnCrearCuenta2{
+    background-color: #012c2e;
+    color: white;
+    width: 60%;
+    margin-top: 20px;
+    padding: 3px;
+    margin-bottom: 25px;
+}
+
+.btnCrearCuenta2:hover{
+    background-color: #006368;
+    color: rgb(206, 255, 253);
+}
+
+
+.modalCrearCuenta{
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color: #b9a38a;
+    transition: opacity .6s;
+}
+
+/*********************** Modal de notificación de correo enviado ************************/
+
+.correo{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0, 0.8);
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .6s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.correo--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .10s;
+    --transform: translateY(0);
+    --transition: transform .7s .7s;
+
+}
+
+.modalCorreo{
+    margin: auto;
+    width: 40%;
+    background-color: #a88b6a;
+    transition: opacity .6s;
+    transform: var(--transform);
+    transition: var(--transition);
+    border-radius: 10px;
+}
+.tituloC{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding: 8px;
+    background-color: rgb(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 10px;
+}
+.contenidoCorreo{
+    width: 80%;
+    margin: auto;
+    color: white;
+}
+
+.entendido{
+    background-color: #012c2e;
+    color: white;
+    width: 40%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 3px;
+}
+
+.entendido:hover{
+    background-color: #006368;
+    color: rgb(206, 255, 253);
+}
 
 
 /* ---------------------------------------- FOOTER ---------------------------------------- */
