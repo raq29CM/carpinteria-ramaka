@@ -9,6 +9,11 @@
 @import url(//db.onlinewebfonts.com/c/e662339992c4abf5b43f537391bd3169?family=Candara);
 
 /* ---------------------------------------- NAVBAR ---------------------------------------- */
+.imagen-navbar{
+    object-fit: cover;
+    object-position: center;
+}
+
 .collapse {
     justify-content: right;
 }
@@ -261,77 +266,7 @@ body{
     color: rgb(206, 255, 253);
 }
 
-/**************************************** Modal crear cuenta ******************************/
 
-.crearCuenta{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity .6s .6s;
-
-    background-color: #b9a38a;
-    margin: auto;
-    margin-top: 120px;
-    margin-bottom: 30px;
-    height: auto;
-    width: 80%;
-    border-radius: 10px;
-    padding: 0;
-    overflow-y: scroll;
-}
-
-.tituloc{
-    padding: 10px;
-    background-color: rgb(0, 0, 0, 0.4);
-    color: white;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    font-size: 25px;
-}
-
-input{
-    margin-top: 0px;
-    margin-bottom: 7px;
-}
-
-.radio{
-    margin-top: 10px;
-}
-
-.btnCrearCuenta2{
-    background-color: #012c2e;
-    color: white;
-    width: 60%;
-    margin-top: 20px;
-    padding: 3px;
-    margin-bottom: 25px;
-}
-
-.btnCrearCuenta2:hover{
-    background-color: #006368;
-    color: rgb(206, 255, 253);
-}
-
-.crearCuenta--show{
-    opacity: 1;
-    pointer-events: unset;
-    transition: opacity .9s;
-
-}
-
-.modalCrearCuenta{
-    margin: auto;
-    width: 90%;
-    max-width: 600px;
-    max-height: 90%;
-    background-color: #b9a38a;
-    transition: opacity .6s;
-}
 
 /* ---------------------------------------- FOOTER ---------------------------------------- */
 

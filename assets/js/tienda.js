@@ -38,7 +38,3 @@ openModal6.addEventListener("click", (e)=>{
     e.preventDefault();
     modal.classList.add('modal_carrito_show')
 })
-
-
-
-

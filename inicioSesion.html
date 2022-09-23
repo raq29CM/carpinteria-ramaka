@@ -15,7 +15,7 @@
 
     <!----------------------------- Enlaces a páginas de estilos CSS -------------------------------->
 
-    <link rel="stylesheet" href="assets/css/styleInicioSesion.css">
+    <link rel="stylesheet" href="./assets/css/styleInicioSesion.css">
 
 </head>
 
@@ -39,17 +39,8 @@
 
                 <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle btn-nav-pie active" href="./tienda.html" role="button"
-                            data-toggle="dropdown" aria-expanded="false">
-                            Tienda </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./tienda.html">Macetas</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="./tienda.html#a-comedor">Utencilios</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link btn-nav-pie" href="./tienda.html">Tienda</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -108,13 +99,6 @@
 
                 </ul>
 
-                <!-- ---------- BARRA DE BÚSQUEDA EN LA PÁGINA ---------- -->
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar en la página"
-                        aria-label="Search">
-                    <button class="btn btn-nav-pie" type="submit" style="color: #b9a38a;">Buscar</button>
-                </form>
-
                 <!-- ---------- BOTÓN CARRITO ---------- -->
                 <a href="./carrito.html" class="btn carrito btn-nav-pie">
                     <i class="bi bi-cart4">
@@ -134,27 +118,30 @@
     <!-- Form de Inicio de sesión -->
 
     <div class="col-xs-1 col-sm-6 col-md-6 col-lg-4 inicio">
-        <form class="formulario">
+        <form id="cyzform" class="formulario">
             <div class="form-group">
                 <div class="tituloI titulo text-center">Iniciar sesión en Ramaka</div>
+
                 <label class="texto" for="exampleInputEmail1">Correo electrónico</label>
-                <input type="email" placeholder="ramaka@gmail.com" class="form-control" id="exampleInputEmail1"
+                <input type="email" placeholder="ramaka@gmail.com" class="form-control" id="cyzinicio"
                     aria-describedby="emailHelp" required>
             </div>
             <div class="form-group">
                 <label class="texto" for="exampleInputPassword1">Contraseña</label>
-                <input type="password" placeholder="********" class="form-control" id="exampleInputPassword1" required>
+                <input type="password" placeholder="********" class="form-control" id="cyzcontra" required>
             </div>
             <div class="form-group form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="texto" class="form-check-label" for="exampleCheck1">Recordarme</label>
             </div>
             <div class="text-center">
-                <button type="submit" class="entrar texto btn">Entrar</button>
+                <button type="submit" class="entrar texto btn">
+                    <a href="./miCuenta2.html" style="color: aliceblue;">Entrar</a>
+                </button>
 
                 <a href="#" class="linkrecordar">¿Olvidó su contraseña?</a>
 
-                <button type="submit" class="texto btnCrearCuenta btn">Crear cuenta</button>
+                <a href="./crearcuenta.html" class="texto btnCrearCuenta btn">Crear cuenta</a>
             </div>
         </form>
     </div>
@@ -178,7 +165,7 @@
 
     <!-- Aviso de correo -->
 
-    <section class="correo">
+    <section class="correo"> 
 
         <div class="modalCorreo">
             <div class="text-center tituloC titulo">Recuperación de contraseña</div>
@@ -191,55 +178,12 @@
 
     </section>
 
-    <!---------------------------------- Crear cuenta -------------------------------->
-
-    <section class="col-xs-1 col-sm-6 col-md-6 col-lg-4 crearCuenta">
-
-        <div class="modalCrearCuenta">
-
-            <form>
-                <div class="tituloc titulo text-center">Crear cuenta en Ramaka</div>
-                <div>
-                    <label class="texto" for="nombre">Nombre(s)</label>
-                    <input type="text" placeholder="Ana" class="form-control" required>
-                </div>
-                <div>
-                    <label class="texto" for="apellido">Apellido(s)</label>
-                    <input type="text" placeholder="Reyes" class="form-control" required>
-                </div>
-                <div>
-                    <label class="texto" for="email">Correo Electrónico</label>
-                    <input type="email" placeholder="ana@gmail.com" class="form-control" required>
-                </div>
-                <div>
-                    <label class="texto" for="numero">Número de télefono (Opcional)</label>
-                    <input type="number" placeholder="55 5655 5855" class="form-control">
-                </div>
-                <div>
-                    <label class="texto" for="password">Contraseña</label>
-                    <input type="password" placeholder="Anareyes09" class="form-control" required>
-                </div>
-                <div>
-                    <label class="texto" for="password">Confimación de contraseña</label>
-                    <input type="password" placeholder="Anareyes09" class="form-control" required>
-                </div>
-                <div>
-                    <input type="radio" placeholder="Anareyes09" required>
-                    <label class="radio texto" for="radio">Acepto términos y condiciones de Ramaka</label>
-                </div>
-                <div class="text-center">
-                    <button class="texto btnCrearCuenta2 btn" ctype="submit">Crear cuenta</button>
-                </div>
-            </form>
-
-        </div>
-
-    </section>
+    
 
 
 
     <!-- ------------------------- PIE DE PÁGINA ------------------------- -->
-    <footer>
+    <footer style="bottom: -20vh; position: relative;">
         <img src="./assets/img/icons/ramaka-footer.jpeg" alt="logo" height="30px">
         <div class="iconos-redes-sociales-container">
             <a href="https://es-la.facebook.com/" class="redes-iconos"></a>
@@ -249,7 +193,7 @@
         </div>
 
         <div class="class"></div>
-        <ul class="pie-de-pagina-container">
+        <ul class="pie-de-pagina-container"> 
             <li class="item-menu">
                 <a href="./tyc.html#polPrivacy" style="color: #b9a38a;">Politica de privacidad</a>
             </li>
@@ -263,7 +207,7 @@
         <span class="copyright">&copy;2022, Ramaka. Todos los derechos reservados.</span>
     </footer>
 
-    <script src="assets/js/inicioSesion.js"></script>
+    <script src="./assets/js/inicioSesion.js"></script>
 </body>
 
 </html>

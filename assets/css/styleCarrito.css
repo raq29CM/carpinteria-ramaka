@@ -1,14 +1,22 @@
-@import url(https://fonts.googleapis.com/css?family=Josefin-Sans); /* FUENTE DE LA BARRA DE NAVEGACIÓN Y FOOTER */
+/* FUENTE DE LA BARRA DE NAVEGACIÓN Y FOOTER */
+@import url(https://fonts.googleapis.com/css?family=Josefin-Sans);
 
 /* FUENTE TENTATIVA PARA EL CONTENIDO DE LAS PÁGINAS */
-@import url(//db.onlinewebfonts.com/c/8141d57bb00c8a8cfb53c332d98c46fa?family=Open+Sans+Hebrew+Condensed);
+@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrewcondensed.css);
 @import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+
 /* FUENTE PARA TITULOS - CLASS: fuente-titulo*/
 @import url('http://fonts.cdnfonts.com/css/perpetua-titling-mt');
+
 /* FUENTE PARA TEXTO NORMAL - CLASS: fuente-titulo*/
 @import url(//db.onlinewebfonts.com/c/e662339992c4abf5b43f537391bd3169?family=Candara);
 
 /* ---------------------------------------- NAVBAR ---------------------------------------- */
+.imagen-navbar{
+    object-fit: cover;
+    object-position: center;
+}
+
 .collapse {
     justify-content: right;
 }
@@ -39,29 +47,16 @@
     background-color: #012c2e;
     filter: invert(1);
     transition: 0.5s;
-    
 }
-
-/* --------------------------------------- CARRITO ------------------------------------------- */
-/* FUENTES DE LETRA */
-.fuente-titulo{
-    font-family: 'Perpetua Titling MT', sans-serif;
-}
-
-.fuente-subtitulo{
-    font-family: "Candara";
-}
-
-.fuente-texto{
-    font-family: "Candara";
-}
-
+/* --------------------------- CONTENIDO CARRITO --------------------------------------- */
 body {
     color: #000;
     overflow-x: hidden;
     height: 100%;
-    background-color: #fff;
-    background-repeat: no-repeat;
+    background-image: url(../img/icons/fondoChulo.jpeg);
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
 
 .plus-minus {
@@ -87,9 +82,10 @@ body {
 }
 
 .foto-producto {
-    width: 180px;
-    height: 160px;
+    width: 150px;
+    height: 140px;
     border-radius: 5px;
+    margin-top: 5%;
 }
 
 /* . {
@@ -101,6 +97,7 @@ body {
     margin-top: 20px;
     padding-top: 15px;
 }
+
 
 /* ---------------------------------------- FOOTER ---------------------------------------- */
 

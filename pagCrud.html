@@ -13,8 +13,8 @@
     <!-- -------------------- BARRA DE NAVEGACIÓN -------------------- -->
     <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #133133;">
         <div class="container">
-            <a class="navbar-brand" href="./index.html"> <img src="./assets/img/icons/Logo-Ramaka.jpeg" alt="" width="100%"
-                height="45px" class="d-inline-block align-text-top"></a>
+            <a class="navbar-brand" href="./index.html"> <img src="./assets/img/icons/Logo-Ramaka.jpeg" alt=""
+                style="height: 45px; width: 60px;" class="d-inline-block align-text-top imagen-navbar"></a>
 
             <!-- BOTÓN PARA CUANDO SE HACE RESPONSIVA LA PÁGINA -->
             <button class="btn navbar-toggler btn-nav-pie" type="button" data-toggle="collapse"
@@ -28,17 +28,8 @@
 
                 <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle btn-nav-pie active" href="./tienda.html" role="button" data-toggle="dropdown"
-                            aria-expanded="false">
-                            Tienda </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./tienda.html">Macetas</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="./tienda.html#a-comedor">Utencilios</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link btn-nav-pie" href="./tienda.html">Tienda</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -97,13 +88,6 @@
 
                 </ul>
 
-                <!-- ---------- BARRA DE BÚSQUEDA EN LA PÁGINA ---------- -->
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar en la página"
-                        aria-label="Search">
-                    <button class="btn btn-nav-pie" type="submit" style="color: #b9a38a;">Buscar</button>
-                </form>
-
                 <!-- ---------- BOTÓN CARRITO ---------- -->
                 <a href="./carrito.html" class="btn carrito btn-nav-pie">
                     <i class="bi bi-cart4">
@@ -119,7 +103,6 @@
     </nav>
 
     <!-- CONTENIDO DEL CRUD -->
-    
 
     <div class="container" id="crud" style="background-color: rgba(185, 163, 138, 0.75);">
 
@@ -130,209 +113,275 @@
         <li class="nav-item">
           <a class="color nav-link fuente-titulo" data-toggle="tab" href=#form role="tab" aria-controls="form" aria-selected="true">Cotizaciones</a>
         </li>
-        <li class="nav-item">
-          <a class="color nav-link fuente-titulo" data-toggle="tab" href=#registro role="tab" aria-controls="form" aria-selected="true" >Registros</a>
-        </li>
+      
         <li class="nav-item">
             <a class="color nav-link fuente-titulo" data-toggle="tab" href=#hola role="tab" aria-controls="form" aria-selected="true" >Inventario</a>
-          </li>
+        </li>
     </ul>
 
-
-      <div class="tab-content" id="myTabContent">
-
-        <div class="tab-pane fade show active table-responsive" id="list" role="tabpanel" aria-labelledby="list-tab">
-
-
-
-            <table id="contenido" class="table">
-    
-                <thead id="encabezados">
+    <!-- ID, estatus, nu_ratreo, fecha_compra, tipo_envio, notas -->
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active table-responsive" id="list" role="tabpanel" aria-labelledby="list-tab">
+        <table id="contenido" class="table">
+          <button class="botton_crud float-right" style="padding: 10px; margin: 15px; border-radius: 5%; background-color: #b9a38a; width: 200px;">Guardar Cambios</button>
+          <thead id="encabezados">
                   <tr>
                     <th scope="col" class="fuente-texto">ID</th>
                     <th scope="col" class="fuente-texto">Nombre</th>
-                    <th scope="col" class="fuente-texto">Correo Electrónico</th>
+                    <th scope="col" class="fuente-texto">Fecha de Compra</th>
+                    <th scope="col" class="fuente-texto">Tipo de Envio</th>
+                    <th scope="col" class="fuente-texto">Productos</th>
                     <th scope="col" class="fuente-texto">Dirección</th>
-                    <th scope="col" class="fuente-texto">Articulos</th>
-                    <th scope="col" class="fuente-texto">Editar</th>
-
-
+                    <th scope="col" class="fuente-texto">Notas</th>
+                    <th scope="col" class="fuente-texto">No. Rastreo</th>
+                    <th scope="col" class="fuente-texto">Estatus</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr id="color" class="fuente-texto">
                     <th scope="row">1</th>
                     
-                    <td>Mark</td>
-                    <td>mark@gmail.com</td>
-                    <td>Ciudad, Colonia</td>
+                    <td>Mark Smith</td>
+                    <td>2022-06-25</td>
+                    <td>Estándar</td>
                     <td>Mesa de caoba</td>
-                    <td><button class="botton_crud" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
+                    <td>Calle djandkjn # 88 Ciudad, Colonia</td>
+                    <td>En contraesquina a una tienda de abarrotes</td>
+                    <td>9037685742749384</td>
+                    <td>
+                      <div class="input-group mb-3">
+                        <select class="custom-select" id="inputGroupSelect01" style="width: 120px;">
+                          <option selected >Seleccionar...</option>
+                          <option value="1" >Nuevo</option>
+                          <option value="2" >Pendiente</option>
+                          <option value="3" >Entregado</option>
+                          <option value="4" >Finalizado</option>
+                        </select>
+                    </div>
+                    </td>
                   </tr>
+
                   <tr id="blanco" class="fuente-texto">
                     <th scope="row">2</th>
-                    
-                    <td>Mark</td>
-                    <td>mark@gmail.com</td>
-                    <td>Ciudad, Colonia</td>
+                    <td>Jane Doe</td>
+                    <td>2022-08-18</td>
+                    <td>Exprés</td>
                     <td>Mesa de caoba</td>
-                    <td><button class="botton_crud fuente-texto" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
+                    <td>Calle blurblur # 88 Mz 2 Lt 5. Colonia whooosh. Edo Mex, Mexico 14278. </td>
+                    <td>Frente a una Farmacia Similares</td>
+                    <td>90376826663849384</td>
+                    <td>
+                      <div class="input-group mb-3">
+                        <select class="custom-select" id="inputGroupSelect01" style="width: 120px;">
+                          <option selected >Seleccionar...</option>
+                          <option value="1" >Nuevo</option>
+                          <option value="2" >Pendiente</option>
+                          <option value="3" >Entregado</option>
+                          <option value="4" >Finalizado</option>
+                        </select>
+                    </div>
+                    </td>
                   </tr>
-                  <tr id="color" class="fuente-texto">
+
+                  <tr id="blanco" class="fuente-texto">
                     <th scope="row">3</th>
-                    
-                    <td>Mark</td>
-                    <td>mark@gmail.com</td>
-                    <td>Ciudad, Colonia</td>
-                    <td>Mesa de caoba</td>
-                    <td><button class="botton_crud fuente-texto" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
+                    <td>Juan Peréz</td>
+                    <td>2022-09-19</td>
+                    <td>Estándar</td>
+                    <td>Comedor de 6 sillas</td>
+                    <td>Calle Lluvia # 25 Col. Pueblo de San Andrés Totoltepec. CDMX. 14400. </td>
+                    <td>Puerta negra</td>
+                    <td>9037685742773950</td>
+                    <td>
+                      <div class="input-group mb-3">
+                        <select class="custom-select" id="inputGroupSelect01" style="width: 120px;">
+                          <option selected >Seleccionar...</option>
+                          <option value="1" >Nuevo</option>
+                          <option value="2" >Pendiente</option>
+                          <option value="3" >Entregado</option>
+                          <option value="4" >Finalizado</option>
+                        </select>
+                    </div>
+                    </td>
                   </tr>
                   
                 </tbody>
               </table>
         </div>
-        <div class="tab-pane fade fuente-texto" id="form" role="tabpanel" aria-labelledby="form-tab">
 
+        <!-- ID, fecha, descripcion -->
+        <div class="tab-pane fade fuente-texto" id="form" role="tabpanel" aria-labelledby="form-tab">
+          
 
             <div id="contenido" class="table-responsive fuente-texto">
 
                 <table id="contenido" class="table fuente-texto">
-                    
+                  <button class="botton_crud float-right" style="padding: 10px; margin: 15px; border-radius: 5%; background-color: #b9a38a; width: 200px;">Guardar Cambios</button>  
                     <thead id="encabezados">
                       <tr>
                         <th scope="col">ID</th>
                         <th scope="col">Fecha</th>
                         <th scope="col">Nombre</th>
-                        <th scope="col">Correo Electrónico</th>
-                        <th scope="col">Dirección</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Ubicación</th>
                         <th scope="col">Descripción del Mueble</th>
-                        <th scope="col">Número de cotización</th>
+                        <th scope="col">Estatus</th>
                         
                       </tr>
                     </thead>
                     <tbody>
                       <tr id="color">
                         <th scope="row">1</th>
-                        <td>00/00/00</td>
-                        <td>Mark</td>
-                        <td>mark@gmail.com</td>
-                        <td>Ciudad, Colonia</td>
+                        <td>2021-07-30</td>
+                        <td>Julio Hermosillo</td>
+                        <td>jhermosillo@gmail.com</td>
+                        <td>Venustiano Carranza, CDMX</td>
                         <td>Mesa de caoba</td>
-                        <td>N°000000</td>
-                        <td><button class="botton_crud fuente-texto" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
+                        <td>
+                          <div class="input-group mb-3">
+                            <select class="custom-select" id="inputGroupSelect01" style="width: 120px;">
+                              <option selected >Seleccionar...</option>
+                              <option value="1" >Nuevo</option>
+                              <option value="2" >Pendiente</option>
+                              <option value="3" >Entregado</option>
+                              <option value="4" >Finalizado</option>
+                            </select>
+                        </div>
+                          
+                        </td>
                       </tr>
+
                       <tr id="blanco">
                         <th scope="row">2</th>
-                        <td>00/00/00</td>
-                        <td>cesar francisco mata rodriguez</td>
-                        <td>cesar_mata48@gmail.com</td>
-                        <td>calle 309 #365 col vasco de quiroga del gustavo a madero cp 04785</td>
-                        <td>muchas cosas</td>
-                        <td>N°000000</td>
-                        <td><button class="botton_crud fuente-texto" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
+                        <td>2021-07-30</td>
+                        <td>Maria Vargas</td>
+                        <td>mvargas@gmail.com</td>
+                        <td>Alvaro Obregón, CDMX</td>
+                        <td>Closet de pared</td>
+                        <td>
+                          <div class="input-group mb-3">
+                            <select class="custom-select" id="inputGroupSelect01" style="width: 120px;">
+                              <option selected >Seleccionar...</option>
+                              <option value="1" >Nuevo</option>
+                              <option value="2" >Pendiente</option>
+                              <option value="3" >Entregado</option>
+                              <option value="4" >Finalizado</option>
+                            </select>
+                        </div>
+                          
+                        </td>
                       </tr>
-                      <tr id="color">
-                        <th scope="row">3</th>
-                        <td>00/00/00</td>
-                        <td>Mark</td>
-                        <td>mark@gmail.com</td>
-                        <td>Ciudad, Colonia</td>
-                        <td>Mesa de caoba</td>
-                        <td>N°000000</td>
-                        <td><button class="botton_crud fuente-texto" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
+
+                      <tr id="blanco">
+                      <th scope="row">3</th>
+                      <td>2021-07-30</td>
+                        <td>Jonathan Ramírez</td>
+                        <td>jramirez@gmail.com</td>
+                        <td>Iztapalapa, CDMX</td>
+                        <td>Cabecera para cama queen size</td>
+                        <td>
+                          <div class="input-group mb-3">
+                              <select class="custom-select" id="inputGroupSelect01" style="width: 120px;">
+                                <option selected >Seleccionar...</option>
+                                <option value="1" >Nuevo</option>
+                                <option value="2" >Pendiente</option>
+                                <option value="3" >Entregado</option>
+                                <option value="4" >Finalizado</option>
+                              </select>
+                          </div>
+                          
+                        </td>
                       </tr>
                       
                     </tbody>
                   </table>
             </div>
         </div>
-        <div class="tab-pane fade fuente-texto" id="registro" role="tabpanel" aria-labelledby="form-tab">
-            <div id="contenido" class="table-responsive fuente-texto">
 
-                <table id="contenido" class="table fuente-texto">
-                    
-                    <thead id="encabezados">
-                      <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">Fecha de Registro</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Correo Electrónico</th>
-                        
-                        
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr id="color">
-                        <th scope="row">1</th>
-                        <td>00/00/00</td>
-                        <td>Mark</td>
-                        <td>mark@gmail.com</td>
-                        
-                        <td><button class="botton_crud" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
-                      </tr>
-                      <tr id="blanco">
-                        <th scope="row">2</th>
-                        <td>00/00/00</td>
-                        <td>cesar francisco mata rodriguez</td>
-                        <td>cesar_mata48@gmail.com</td>
-                        
-                        <td><button class="botton_crud" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
-                      </tr>
-                      <tr id="color">
-                        <th scope="row">3</th>
-                        <td>00/00/00</td>
-                        <td>Mark</td>
-                        <td>mark@gmail.com</td>
-                        
-                        <td><button class="botton_crud" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
-                      </tr>
-                      
-                </tbody>
-            </table>
-        </div>      
-        </div>
-            <div class="tab-pane fade fuente-texto" id="hola" role="tabpanel" aria-labelledby="form-tab">
+
+        <div class="tab-pane fade fuente-texto" id="hola" role="tabpanel" aria-labelledby="form-tab">
                 <div id="contenido" class="table-responsive fuente-texto">
                     <table id="contenido" class="table fuente-texto">
+                      <!-- Grupo de Botones -->
+                      <div class="btn-group float-right" role="group" aria-label="Basic example">
+                        <!-- Boton para guardar cambios -->
+                        <button class="botton_crud" style="padding: 10px; margin: 15px; border-radius: 5%; background-color: #b9a38a; width: 200px;">Guardar Cambios</button>
+                        <!-- boton para agregar cosas al carrito -->
+                        <button class="agregar botton_crud" style="padding: 0px; margin: 15px; border-radius: 5%; background-color: #b9a38a; width: 200px;;">Agregar Articulo</button>
+                    </div>
                         <thead id="encabezados">
                             <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Articulo</th>
+                                <th scope="col">ID</th>
+                                <th scope="col">Imagen</th>
                                 <th scope="col">Nombre</th>
-                                <th scope="col">Estado</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col">Descripción</th>
                                 <th scope="col">Cantidad</th>
+                                <th scope="col">Eliminar</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr id="color">
-                                <th scope="row">1</th>
-                                <td><img class="img" src="./assets/img/crud-tienda/bar.JPG" alt=""></td>
-                                <td>Mesa de centro</td>
-                                <td >Disponible</td>
-                                <td scope="row"> 5</td>
-                                <td><button class="botton_crud" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
-                            </tr>
+                        <tbody >
+                          <!-- Articulo UNO -->
+                          <tr id="color" >
+                            <th scope="row">1</th>
+                            <td><img class="img" src="./assets/img/crud-tienda/bar.JPG" alt=""></td>
+                            <td>Mesa de centro</td>
+                            <td >5000</td>
+                            <td >Mesa de centro rectangular de unicamente dos patas</td>
+                            <td scope="row">
+                              <form>
+                                <div class="form-group">
+                                  <label for="exampleInputNumber"></label>
+                                  <input type="number" class="form-control" id="exampleInputNumber" aria-describedby="emailHelp" placeholder="Ej. 5" style="width: 150px;">
+                                  <small id="emailHelp" class="form-text text-muted">Introduzca cantidad de elementos en inventario.</small>
+                                </div>
+                                <button type="submit" class="btn botton_crud" style="background-color: #b9a38a;">Confirmar</button>
+                              </form>
+                            </td>
+                            <td style="padding: 10px;"><button class="botton_crud" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
+                        </tr>
+
+                        <!-- Articulo DOS -->
                             <tr id="blanco">
                                 <th scope="row">2</th>
                         
                                 <td><img class="img" src="./assets/img/crud-tienda/CasaConejo.jpg" alt=""></td>
-                                <td>Mesa de centro</td>
-                                <td >Disponible</td>
-                                <td scope="row"> 5</td>
-                                <td><button class="botton_crud" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
+                                <td>Casa de conejo</td>
+                                <td >800</td>
+                                <td >Casa de madera de mascota. Para interiores y exteriores.</td>
+                                <td scope="row">
+                                  <form>
+                                    <div class="form-group">
+                                      <label for="exampleInputNumber"></label>
+                                      <input type="number" class="form-control" id="exampleInputNumber" aria-describedby="emailHelp" placeholder="Ej. 5" style="width: 150px;">
+                                      <small id="emailHelp" class="form-text text-muted">Introduzca cantidad de elementos en inventario.</small>
+                                    </div>
+                                    <button type="submit" class="btn botton_crud" style="background-color: #b9a38a;">Confirmar</button>
+                                  </form>
+                                </td>
+                                <td style="padding: 10px;"><button class="botton_crud" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
                             </tr>
                             <tr id="color">
                                 <th scope="row">3</th>
                                 <td><img class="img" src="./assets/img/crud-tienda/cocina.jpeg" alt=""></td>
-                                <td>Mesa de centro</td>
-                                <td >Disponible</td>
-                                <td scope="row"> 5</td>
-                                <td><button class="botton_crud" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
+                                <td>Cocina integral</td>
+                                <td >25000</td>
+                                <td >Elegante y moderna cocina integral con puertas de madera de cierre lento</td>
+                                <td scope="row">
+                                  <form>
+                                    <div class="form-group">
+                                      <label for="exampleInputNumber"></label>
+                                      <input type="number" class="form-control" id="exampleInputNumber" aria-describedby="emailHelp" placeholder="Ej. 5" style="width: 150px;">
+                                      <small id="emailHelp" class="form-text text-muted">Introduzca cantidad de elementos en inventario.</small>
+                                    </div>
+                                    <button type="submit" class="btn botton_crud" style="background-color: #b9a38a;">Confirmar</button>
+                                  </form>
+                                </td>
+                                <td style="padding: 10px;"><button class="botton_crud" style="background-color: rgba(180, 153, 124, 0.55);">Eliminar</button></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <button class="agregar" style="background-color: rgba(180, 153, 124, 0.55);">Agregar Articulo</button>
             </div>
         </div>
     </div>

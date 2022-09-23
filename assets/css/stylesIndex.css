@@ -12,6 +12,11 @@
 @import url(//db.onlinewebfonts.com/c/e662339992c4abf5b43f537391bd3169?family=Candara);
 
 /* ---------------------------------------- NAVBAR ---------------------------------------- */
+.imagen-navbar{
+    object-fit: cover;
+    object-position: center;
+}
+
 .collapse {
     justify-content: right;
 }
@@ -146,13 +151,15 @@
 .tituloMisionVision{
     text-align: center;
     color: #000000;
-    font-size: 3rem;
+    font-size: 1.5rem;
+    font-family: 'Perpetua Titling MT', sans-serif;
 }
 
 .textoMisionVision{
     color: #000000;
     text-align: justify;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-family: "Candara";
 }
 
 #valor{
@@ -162,7 +169,8 @@
     text-align: center;
     justify-content: center;
     padding-top:5rem;
-    font-size: 3rem;
+    font-size: 1.5rem;
+    font-family: 'Perpetua Titling MT', sans-serif;
 }
 
 .porqueElegirnos{
@@ -172,13 +180,18 @@
     opacity: 75%;
     text-align: justify;
     color: rgb(0, 0, 0);
-    font-size: 2.5rem;
+    font-size: 1rem;
     box-sizing: border-box;
-    padding: 10%;
+    padding: 2%;
     /* font-weight: 100; */
 }
 
-
+/* MISION Y VISION */
+.img-carta-mision{
+    height: 240px;
+    object-fit: cover;
+    width: fit-content;
+}
 
 
 

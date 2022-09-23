@@ -12,6 +12,11 @@
 @import url(//db.onlinewebfonts.com/c/e662339992c4abf5b43f537391bd3169?family=Candara);
 
 /* ---------------------------------------- NAVBAR ---------------------------------------- */
+.imagen-navbar{
+    object-fit: cover;
+    object-position: center;
+}
+
 .collapse {
     justify-content: right;
 }
@@ -40,6 +45,12 @@
 }
 
 /* ---------------------------------------- MI CUENTA 2 ---------------------------------------- */
+body {
+	background-image: url(../img/icons/fondoChulo.jpeg);
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
 
 /* FUENTES DE LETRA */
 .fuente-titulo{
@@ -48,13 +59,6 @@
 
 .fuente-texto{
     font-family: "Candara";
-}
-
-body{
-    background-image: url("../img/icons/fondoChulo.jpeg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-attachment: fixed;
 }
 
 /* -------------------- MIS DATOS -------------------- */
