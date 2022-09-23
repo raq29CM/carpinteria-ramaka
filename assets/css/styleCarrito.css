@@ -170,6 +170,10 @@ h2{
     font-size: 1.3rem;
 }
 
+.btn{
+    font-family: "Candara";
+}
+
 /* ----------------------------------------- CRUD ------------------------------------------ */
 /* FUENTES DE LETRA */
 .fuente-titulo{
