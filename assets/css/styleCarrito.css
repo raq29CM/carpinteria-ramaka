@@ -1,0 +1,339 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin-Sans); /* FUENTE DE LA BARRA DE NAVEGACIÓN Y FOOTER */
+
+/* FUENTE TENTATIVA PARA EL CONTENIDO DE LAS PÁGINAS */
+@import url(//db.onlinewebfonts.com/c/8141d57bb00c8a8cfb53c332d98c46fa?family=Open+Sans+Hebrew+Condensed);
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+/* FUENTE PARA TITULOS - CLASS: fuente-titulo*/
+@import url('http://fonts.cdnfonts.com/css/perpetua-titling-mt');
+/* FUENTE PARA TEXTO NORMAL - CLASS: fuente-titulo*/
+@import url(//db.onlinewebfonts.com/c/e662339992c4abf5b43f537391bd3169?family=Candara);
+
+/* ---------------------------------------- NAVBAR ---------------------------------------- */
+
+p{
+    margin: none !important; 
+}
+
+.imagen-navbar{
+    object-fit: cover;
+    object-position: center;
+}
+
+.collapse {
+    justify-content: right;
+}
+
+.container  ul li a {
+    /* color: #bb9569; el primero*/
+    /* color: #bda182; */
+    /* color: #bda284; */
+    color: #b9a38a;
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+    justify-content: right;
+}
+
+.btn-nav-pie{
+    border-color: #b9a38a;
+    color: #b9a38a;
+    margin-left: 10px;
+}
+
+.btn-nav-pie:hover {
+    /* background-color: #000000; */
+    /* background-color: #012c2e; verde oscuro */
+    /* background-color: #23666A; verde clarito */
+    /* background-color: #865f31f5; cafe */
+    /* transition: 20ms; */
+    border-radius: 15%;
+    background-color: #012c2e;
+    filter: invert(1);
+    transition: 0.5s;
+}
+
+.cart{
+    position: relative;
+    color: #b9a38a;
+    font-size: 27px;
+    padding: 5px;
+    border-radius: 4px;
+    
+
+}
+
+.cartAmount{
+    position: absolute;
+    top: -1px;
+    right: -6px;
+    font-size: 11px;
+    background-color: #b9a38a;
+    color: #012c2e;
+    padding: 3px;
+    border-radius: 3px;
+    
+}
+
+a:link, a:visited,  a:hover, a:active
+{
+    
+    color: #b9a38a
+    
+    
+}
+
+/* --------------------------- CONTENIDO CARRITO --------------------------------------- */
+
+
+body{
+    background-image: url("../img/icons/fondoChulo.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+i{
+    cursor:pointer
+}
+
+a{
+    text-decoration: none;
+    color: #b9a38a;
+}
+
+h1{
+    background-color: rgb(174, 133, 86,0.4);
+    padding: 5px;
+    font-family: 'Josefin Sans';
+    font-size: 50px;
+    position: static;
+    top: 73px;
+    
+}
+
+h5{
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-family: 'Josefin Sans';
+    border-radius: 5px;
+    padding: 10px; 
+}
+
+/**
+* ! Estilo para el contenido y botones
+**/
+
+.text-center{
+    
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+
+}
+
+.HomeBtn, .checkout .removeAll  {
+    background-color: #012c2e;
+    color: aliceblue;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+
+
+}
+
+.bi-x-circle{
+    color: #e63946;
+    font-weight: bold;
+}
+
+
+
+
+/**
+* ! Estilo shopping cart
+**/
+
+.img-set{
+
+    border-radius: 5px;
+    
+    
+}
+
+.card-body{
+    font-family: "Candara";
+}
+
+/* ----------------------------------------- CRUD ------------------------------------------ */
+/* FUENTES DE LETRA */
+.fuente-titulo{
+    font-family: 'Perpetua Titling MT', sans-serif;
+}
+
+.fuente-texto{
+    font-family: "Candara";
+}
+
+
+/* OTRO */
+body{
+    background-image: url(../img/icons/fondoChulo.jpeg);;
+}
+th{
+    border-bottom: 2px solid #7B6C65;
+}
+
+td{
+border-bottom: 2px solid #7B6C65;
+color: rgb(0, 0, 0, 0.7);
+
+}
+#crud{
+    border-radius: 10px;
+}
+#encabezados{
+    color: #7B6C65;
+}
+
+.nav-tabs .nav-item a:not(.active){
+	background-color: rgba(180, 153, 124, 0.55);
+    color: rgb(0,0,0,0.7);
+    transition: .6s;
+    
+}
+
+
+
+.nav-tabs{
+	border-bottom:0px;
+    
+}
+
+.img{
+    height: 8rem;
+    width: 10rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.agregar{
+    position: sticky;
+    left: 60rem;
+    background-color: transparent;
+    color: rgb(0, 0, 0,0.5);
+    border: 2px solid rgb(184, 183, 183);
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.agregar:hover{
+    background-color: rgb(0, 0, 0,0.5);
+    color:white;
+}
+
+#crud{
+    margin-bottom: 20rem;
+    margin-top: 40px;
+    background-color: rgb(223, 225, 227);
+    padding: 2em 2em;
+    border-radius: 10p;
+}
+
+.botton_crud{
+    background-color: transparent;
+    border-radius: 6px;
+    color: rgb(0, 0, 0,0.5);
+    border: 2px solid rgb(184, 183, 183);
+    transition: .4s;
+
+}
+
+.botton_crud:hover{
+    background-color: rgb(0, 0, 0,0.5);
+    color:white;
+}
+
+
+/* ---------------------------------------- FOOTER ---------------------------------------- */
+
+footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: -10;
+    padding: 2rem 8%;
+    background-color: rgba(19, 49, 51, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Josefin Sans';
+    clear: both;
+}
+
+.iconos-redes-sociales-container,
+.pie-de-pagina-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: -0.10cm;
+}
+
+.redes-iconos {
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    border: 1px inset rgba(226, 204, 179, 1);
+    background-image: url(../img/icons/facebook.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+
+.redes-iconos:hover {
+    background-color: rgba(19, 49, 51, 1);
+    border-radius: 15%;
+    filter: invert(1);
+    transition: 0.5s;
+}
+
+.redes-iconos:nth-of-type(2) {
+    background-image: url(../img/icons/instagram.png);
+
+}
+
+.redes-iconos:nth-of-type(3) {
+    background-image: url(../img/icons/Whatsapp.png);
+}
+
+.redes-iconos:nth-of-type(4) {
+    background-image: url(../img/icons/phone.png);
+}
+
+.item-menu {
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    list-style-type: none;
+    font-size: 15px;
+    opacity: 0.6;
+    color: rgba(226, 204, 179, 1);
+}
+
+.item.hover {
+    opacity: 1;
+}
+
+.copyright {
+    color: rgba(226, 204, 179, 1);
+    opacity: 0.3;
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+}
