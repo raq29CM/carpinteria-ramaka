@@ -49,6 +49,37 @@
     transition: 0.5s;
 }
 
+.cart{
+    position: relative;
+    color: #b9a38a;
+    font-size: 27px;
+    padding: 5px;
+    border-radius: 4px;
+    
+
+}
+
+.cartAmount{
+    position: absolute;
+    top: -1px;
+    right: -6px;
+    font-size: 11px;
+    background-color: #b9a38a;
+    color: #012c2e;
+    padding: 3px;
+    border-radius: 3px;
+    
+}
+
+a:link, a:visited,  a:hover, a:active
+{
+    
+    color: #b9a38a
+    
+    
+}
+
+
 
 /* ---------------------------------------- INICIO ---------------------------------------- */
 
