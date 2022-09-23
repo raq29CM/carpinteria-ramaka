@@ -88,6 +88,19 @@ body {
     background-attachment: fixed;
 }
 
+.container-fluid{
+
+    font-size: 1.2rem;
+    font-family: "Candara";
+
+}
+
+.display-4{
+
+    font-family: "Perpetua-titling-mt";
+
+}
+
 /* -- ------------------------------- FRASE ---------------------------------  */
 
 @import "compass/css3";
